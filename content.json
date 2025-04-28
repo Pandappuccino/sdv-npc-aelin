@@ -1,11 +1,93 @@
 {
   "Format": "2.5.0",
+  "ConfigSchema": {
+    "Adjust Gift Tastes": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": "false",
+      "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk."
+    },
+  },
   "Changes": [
     {
       "LogName": "Dummy JSON load",
       "Action": "Load",
       "Target": "Characters/Dialogue/{{ModId}}_NPCName, Characters/schedules/{{ModId}}_NPCName, Strings/schedules/{{ModId}}_NPCName",
       "From": "assets/data/dummy.json"
+    },
+
+    {
+      "LogName": "Load Aelin disposition.json",
+      "Action": "Include",
+      "From": "assets/data/disposition.json"
+    },
+
+    {
+      "LogName": "Remove Aelin if player has Joja Membership (disposition)",
+      "Action": "Include",
+      "From": "assets/data/disposition_alt.json",
+      "When": {
+        "HasFlag": "jojaMember",
+      }
+    },
+
+    {
+      "LogName": "Load Aelin portraits",
+      "Action": "Load",
+      "Target": "Portraits/{{ModID}}_Aelin",
+      "From": "assets/img/Aelin_{{Season}}.png"
+    },
+
+    {
+      "LogName": "Load Aelin sprites",
+      "Action": "Load",
+      "Target": "Characters/{{ModID}}_Aelin",
+      "From": "assets/img/Aelin_sprite_{{Season}}.png"
+    },
+
+    {
+      "LogName": "Load Aelin standard dialogue",
+      "Action": "Include",
+      "From": "assets/data/dialogue.json"
+    },
+
+    {
+      "LogName": "Load NPC dialogue",
+      "Action": "Include",
+      "From": "assets/data/dialogue_npc.json"
+    },
+
+    {
+      "LogName": "Load Aelin schedule",
+      "Action": "Include",
+      "From": "assets/data/schedule.json"
+    },
+
+    {
+      "LogName": "Remove Aelin if player has Joja Membership (schedule)",
+      "Action": "Include",
+      "From": "assets/data/schedule_alt.json",
+      "When": {
+        "HasFlag": "jojaMember",
+      }
+    },
+
+    {
+      "LogName": "Load Aelin gift tastes",
+      "Action": "Include",
+      "From": "assets/data/gifts.json"
+    },
+
+    {
+      "LogName": "Load Aelin events",
+      "Action": "Include",
+      "From": "assets/data/events.json"
+    },
+
+    {
+      "LogName": "Load new items",
+      "Action": "Include",
+      "From": "assets/data/items.json"
     },
   ]
 }
