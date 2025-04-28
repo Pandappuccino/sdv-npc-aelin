@@ -1,6 +1,11 @@
 {
   "Format": "2.5.0",
   "Changes": [
-
+    {
+      "LogName": "Dummy JSON load",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_NPCName, Characters/schedules/{{ModId}}_NPCName, Strings/schedules/{{ModId}}_NPCName",
+      "From": "assets/data/dummy.json"
+    },
   ]
 }
