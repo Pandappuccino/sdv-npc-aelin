@@ -4,7 +4,7 @@
     "Adjust Gift Tastes": {
       "AllowValues": "true, false",
       "Default": "false",
-      "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk. True: neutral towards eggs and milk, and towards dishes made with them. False: dislikes milk/cheese and dishes made with them, hates eggs/mayonnaise and dishes made with them."
+      "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk. True: neutral towards eggs/mayonnaise and milk/cheese, and towards dishes made with them. False: dislikes milk/cheese and dishes made with them, hates eggs/mayonnaise and dishes made with them."
     },
 
     "Move Into Loft": {
