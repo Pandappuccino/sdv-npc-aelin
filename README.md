@@ -14,10 +14,12 @@ This mod introduces a new custom NPC, **Aelin**, to Stardew Valley! Aelin is a n
 * Mod compatibilities
 
 ## Meeting Aelin
-So, how do you find Aelin? He's in Cindersap Forest, but there's no new houses (except those other NPCs might be using). That's because he's not in the main forest: he's in the Secret Wood. There are three requirements for the player to meet with Aelin for the first time:
-* The player must have a Steel Axe to break the hardwood log blocking off the Secret Wood.
+So, how do you find Aelin? He's in Cindersap Forest, but there's no new houses (except those other NPCs might be using). That's because he's not in the main forest: he's in the Secret Woods. There are three requirements for the player to meet with Aelin for the first time:
+* The player must have a Steel Axe or better to break the hardwood log blocking off the Secret Woods.
 * The player must have met the Wizard for the first time, and obtained the ability to communicate with the Junimos.
 * The player ***cannot*** have a Joja Membership. ***This is retroactive!*** If the player buys a Joja Membership at any time, even if they've started to complete bundles at the Community Center, it's over. Aelin will disappear from the game world completely and the path to his home will be gone for the rest of that save file.
+
+Visit the Secret Woods at any time between 6AM and 6PM on a sunny day to get a small cutscene showcasing the entrance to Aelin's home.
 
 ## New Recipes
 By improving your relationship with Aelin and completing some bundles in the Community Center, Aelin will have his Junimo friends deliver recipes for new consumables.
@@ -25,10 +27,13 @@ By improving your relationship with Aelin and completing some bundles in the Com
 * 4+ Hearts and Minecarts repaired: Energizing Tonic (2 Kale, 1 Carrot, 1 Honey; restores 250 energy and grants Speed +2 for 2 in-game hours)
 * 8+ Hearts and Bus Repaired: Sunshine Tonic (3 Strawberry, 3 Summer Spangle, 1 Honey; restores 200 energy and grants Farming and Foraging +3 for 2 in-game hours)
 * 10+ Hearts and Greenhouse Unlocked: Ancient Tonic (3 Ancient Fruit, 3 Sweet Gem Berry, 3 Honey; fully restores HP and energy, grants +1 to all skills for the entire day)
+
 If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be available to buy from Harvey at the clinic.
 
 ## Mod Compatibilities
 This mod contains compatibility for the following mods:
 * Alchemistry: Aelin has dedicated gift tastes--and responses--for the forage and items introduced through Alchemistry.
+* Ancient Crops: Aelin has dedicated gift tastes for the crops introduced through Ancient Crops.
 * Eugene (Custom NPC): Eugene and Aelin have two events together. Eugene also has a quest chain relating to Aelin.
 * Lucikiel (King's Raid NPC): Lucikiel and Aelin have an event together.
+* Pelican Valley Lofts (NPC Apartments): Aelin can move into an apartment after a certain event. By default, he is on Floor 2, Room B.
