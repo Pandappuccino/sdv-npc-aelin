@@ -86,6 +86,12 @@
     },
 
     {
+      "LogName": "Load Aelin maps",
+      "Action": "Include",
+      "From": "assets/data/maps.json"
+    },
+
+    {
       "LogName": "Load new items",
       "Action": "Include",
       "From": "assets/data/items.json"
