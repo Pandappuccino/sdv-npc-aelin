@@ -1,12 +1,6 @@
 {
   "Format": "2.5.0",
   "ConfigSchema": {
-    "Adjust Gift Tastes": {
-      "AllowValues": "true, false",
-      "Default": "false",
-      "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk. True: neutral towards eggs/mayonnaise and milk/cheese, and towards dishes made with them. False: dislikes milk/cheese and dishes made with them, hates eggs/mayonnaise and dishes made with them."
-    },
-
     "Move Into Loft": {
       "AllowValues": "true, false",
       "Default": "false",
@@ -103,18 +97,42 @@
     {
       "LogName": "Load Aelin gift tastes",
       "Action": "Include",
-      "From": "assets/data/gifts.json",
+      "From": "assets/data/gifts.json"
+    },
+
+    {
+      "LogName": "Load Aelin gift tastes for Alchemistry",
+      "Action": "Include",
+      "From": "assets/data/gifts_alchemistry.json",
       "When": {
-        "Adjust Gift Tastes": false
+        "HasMod": "" // get ID for Alchemistry mod
       }
     },
 
     {
-      "LogName": "Load Aelin alternative gift tastes",
+      "LogName": "Load Aelin gift tastes for Ancient Crops",
       "Action": "Include",
-      "From": "assets/data/gifts_alternate.json",
+      "From": "assets/data/gifts_ancientCrops.json",
+      "When" {
+        "HasMod": "" // get ID for Ancient Crops mod
+      }
+    },
+
+    {
+      "LogName": "Load Aelin gift tastes for Chocolate Valley",
+      "Action": "Include",
+      "From": "assets/data/gifts_chocolateValley.json",
       "When": {
-        "Adjust Gift Tastes": true
+        "HasMod": "" // get ID for Chocolate Valley mod
+      }
+    },
+
+    {
+      "LogName": "Load Aelin gift tastes for Stardew Valley Extended",
+      "Action": "Include",
+      "From": "assets/data/gifts_sve.json",
+      "When": {
+        "HasMod": "" //get ID for Stardew Valley Extended
       }
     },
     
@@ -122,6 +140,42 @@
       "LogName": "Load Aelin events",
       "Action": "Include",
       "From": "assets/data/events.json"
+    },
+
+    {
+      "LogName": "Load Aelin and Eugene events",
+      "Action": "Include",
+      "From": "assets/data/events_eugene.json",
+      "When": {
+        "HasMod": "" // get ID for Eugene mod
+      }
+    },
+
+    {
+      "LogName": "Load Aelin and Lucikiel event",
+      "Action": "Include",
+      "From": "assets/data/events_lucikiel.json",
+      "When": {
+        "HasMod": "" // get ID for Lucikiel mod
+      }
+    },
+
+    {
+      "LogName": "Load Aelin and Magnus events",
+      "Action": "Include",
+      "From": "assets/data/events_rrrr.json",
+      "When": {
+        "HasMod": "" // get ID for RRRR mod
+      }
+    },
+
+    {
+      "LogName": "Load Aelin and Morris event",
+      "Action": "Include",
+      "From": "assets/data/events_morris.json",
+      "When": {
+        "HasMod": "" // get ID for Redeemable Morris mod
+      }
     },
 
     {
