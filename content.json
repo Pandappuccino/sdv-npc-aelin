@@ -5,9 +5,10 @@
       "AllowValues": "true, false",
       "Default": "false",
       "AllowBlank": "false",
-      "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk."
+      "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk. True: neutral towards eggs and milk, and towards dishes made with them. False: dislikes milk/cheese and dishes made with them, hates eggs/mayonnaise and dishes made with them."
     },
   },
+  
   "Changes": [
     {
       "LogName": "Dummy JSON load",
@@ -20,15 +21,6 @@
       "LogName": "Load Aelin disposition.json",
       "Action": "Include",
       "From": "assets/data/disposition.json"
-    },
-
-    {
-      "LogName": "Remove Aelin if player has Joja Membership (disposition)",
-      "Action": "Include",
-      "From": "assets/data/disposition_alt.json",
-      "When": {
-        "HasFlag": "jojaMember",
-      }
     },
 
     {
@@ -50,7 +42,7 @@
       "Action": "Include",
       "From": "assets/data/dialogue.json"
     },
-
+    
     {
       "LogName": "Load NPC dialogue",
       "Action": "Include",
@@ -64,18 +56,27 @@
     },
 
     {
-      "LogName": "Remove Aelin if player has Joja Membership (schedule)",
+      "LogName": "Load Aelin gift tastes",
       "Action": "Include",
-      "From": "assets/data/schedule_alt.json",
+      "From": "assets/data/gifts.json",
       "When": {
-        "HasFlag": "jojaMember",
+        "Adjust Gift Tastes": false
       }
     },
 
     {
-      "LogName": "Load Aelin gift tastes",
+      "LogName": "Load Aelin alternative gift tastes",
       "Action": "Include",
-      "From": "assets/data/gifts.json"
+      "From": "assets/data/gifts_alternate.json",
+      "When": {
+        "Adjust Gift Tastes": true
+      }
+    },
+
+    {
+      "LogName": "Load Aelin modded gift tastes",
+      "Action": "Include",
+      "From": "assets/data/gifts_modded.json"
     },
 
     {
