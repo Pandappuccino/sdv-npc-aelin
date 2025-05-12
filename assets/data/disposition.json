@@ -53,11 +53,11 @@
           "PerfectionScore": true,
           "EndSlideshow": "TrailingGroup",
           "Breather": true,
-          "HiddenProfileEmoteSound": "0000015f",
-          "HiddenProfileEmoteDuration": 7000,
+          "HiddenProfileEmoteSound": "000000d0",
+          "HiddenProfileEmoteDuration": 3000,
           "HiddenProfileStartFrame": 32,
           "HiddenProfileFrameCount": 2,
-          "HiddenProfileEmoteFrameDuration": 350.0
+          "HiddenProfileEmoteFrameDuration": 400.0
         }
       }
     }
