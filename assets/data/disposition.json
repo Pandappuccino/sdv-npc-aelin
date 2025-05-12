@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_Aelin": {
+          "DisplayName": "Aelin",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Neutral",
+          "BirthSeason": "spring",
+          "BirthDay": "20",
+          "HomeRegion": "Other",
+          "CanBeRomanced": true,
+          "CanVisitIsland": false,
+          "SpouseAdopts": true,
+          "SpouseWantsChildren": true,
+          "SpouseGiftJealousy": false,
+          "SpouseRoom": {
+            "MapAsset": "Custom_Aelin_SpouseRoom"
+          },
+          "SpousePatio": {
+            "MapAsset": "Custom_Aelin_SpousePatio",
+            "SpriteAnimationFrames": [
+              [
+                16,
+                1500
+              ]
+            ]
+          },
+          "KissSpriteIndex": 0,
+          "KissSpriteFacingRight": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "FlowerDanceCanDance": false,
+          "WinterStarParticipant": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_Aelin_HouseInterior",
+              "Tile": {
+                "X": 0,
+                "Y": 0
+              },
+              "Direction": "down"
+            }
+          ],
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "PerfectionScore": true,
+          "EndSlideshow": "TrailingGroup",
+          "Breather": true,
+          "HiddenProfileEmoteSound": "0000015f",
+          "HiddenProfileEmoteDuration": 7000,
+          "HiddenProfileStartFrame": 32,
+          "HiddenProfileFrameCount": 2,
+          "HiddenProfileEmoteFrameDuration": 350.0
+        }
+      }
+    }
+  ]
+}
