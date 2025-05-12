@@ -4,9 +4,14 @@
     "Adjust Gift Tastes": {
       "AllowValues": "true, false",
       "Default": "false",
-      "AllowBlank": "false",
       "Description": "Adjusts Aelin's gift tastes to make him less picky with eggs and milk. True: neutral towards eggs and milk, and towards dishes made with them. False: dislikes milk/cheese and dishes made with them, hates eggs/mayonnaise and dishes made with them."
     },
+
+    "Move Into Loft": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "If \"Pelican Village Loft\" is installed, enables Aelin to move into an apartment to more easily travel to Pelican Town after his eight-hearts event. Default false."
+    }
   },
   
   "Changes": [
@@ -21,6 +26,26 @@
       "LogName": "Load Aelin disposition.json",
       "Action": "Include",
       "From": "assets/data/disposition.json"
+    },
+
+    {
+      "LogName": "Load Aelin disposition after eight-hearts event",
+      "Action": "Include",
+      "From": "assets/data/disposition_eightHeart.json",
+      "When": {
+        "HasSeenEvent": "" // get ID for eight-hearts event
+      }
+    },
+
+    {
+      "LogName": "Load Aelin disposition after eight-hearts event (loft)",
+      "Action": "Include",
+      "From": "assets/data/disposition_eightHeart_loft.json",
+      "When": {
+        "HasSeenEvent": "", // get ID for eight-hearts event
+        "HasMod": "", // get mod ID for Pelican Village Loft mod
+        "Move Into Loft": true
+      }
     },
 
     {
@@ -56,6 +81,26 @@
     },
 
     {
+      "LogName": "Load Aelin schedule after eight-hearts event",
+      "Action": "Include",
+      "From": "assets/data/schedule_eightHearts.json",
+      "When": {
+        "HasSeenEvent": "" // get ID for eight-hearts event
+      }
+    },
+
+    {
+      "LogName": "Load Aelin schedule after eight-hearts event (loft)",
+      "Action": "Include",
+      "From": "assets/data/schedule_eightHearts_loft.json",
+      "When": {
+        "HasSeenEvent": "", // get ID for eight-hearts event
+        "HasMod": "", // get mod ID for Pelican Village Loft
+        "Move Into Loft": true
+      }
+    },
+
+    {
       "LogName": "Load Aelin gift tastes",
       "Action": "Include",
       "From": "assets/data/gifts.json",
@@ -72,13 +117,7 @@
         "Adjust Gift Tastes": true
       }
     },
-
-    {
-      "LogName": "Load Aelin modded gift tastes",
-      "Action": "Include",
-      "From": "assets/data/gifts_modded.json"
-    },
-
+    
     {
       "LogName": "Load Aelin events",
       "Action": "Include",
@@ -96,5 +135,47 @@
       "Action": "Include",
       "From": "assets/data/items.json"
     },
+
+    {
+      "LogName": "Load letters with item recipes",
+      "Action": "Include",
+      "From": "assets/data/mail.json"
+    },
+
+    {
+      "LogName": "Remove Aelin from save on Joja path (disposition)"
+      "Action": "Include",
+      "From": "assets/data/disposition_joja.json",
+      "When": {
+        "HasFlag": "jojaMember"
+      }
+    },
+    
+    {
+      "LogName": "Remove Aelin from save on Joja path (schedule)",
+      "Action": "Include",
+      "From": "assets/data/schedule_joja.json",
+      "When": {
+        "HasFlag": "jojaMember"
+      }
+    },
+
+    {
+      "LogName": "Add special event for Joja path",
+      "Action": "Include",
+      "From": "assets/data/events_joja.json",
+      "When" {
+        "HasFlag": "jojaMember"
+      }
+    },
+
+    {
+      "LogName": "Give recipes for new items on Joja path",
+      "Action": "Include",
+      "From": "assets/data/mail_joja.json",
+      "When": {
+        "HasFlag": "jojaMember"
+      }
+    }
   ]
 }
