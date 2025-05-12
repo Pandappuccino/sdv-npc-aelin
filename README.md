@@ -31,9 +31,19 @@ By improving your relationship with Aelin and completing some bundles in the Com
 If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be available to buy from Harvey at the clinic.
 
 ## Mod Compatibilities
-This mod contains compatibility for the following mods:
-* Alchemistry: Aelin has dedicated gift tastes--and responses--for the forage and items introduced through Alchemistry.
-* Ancient Crops: Aelin has dedicated gift tastes for the crops introduced through Ancient Crops.
-* Eugene (Custom NPC): Eugene and Aelin have two events together. Eugene also has a quest chain relating to Aelin.
-* Lucikiel (King's Raid NPC): Lucikiel and Aelin have an event together.
-* Pelican Valley Lofts (NPC Apartments): Aelin can move into an apartment after a certain event. By default, he is on Floor 2, Room B.
+This mod contains compatibilities for various mods. Primarily, these compatibilities are for gift tastes to match with Aelin's vanilla gift preferences; however, there are other mods that he is compatible with.
+
+### Gift Tastes
+* Alchemistry
+* Chocolate Valley
+* Stardew Valley Extended
+
+### New NPCs
+* Eugene (two events, dialogue, and quest line)
+* Lucikiel (one event, dialogue)
+* Redeemable Morris (one event, dialogue)
+* Romanceable Rasmodius Revamped Redux (two events, dialogue)
+
+### Others
+* Mobile Phone (immersion; Aelin does not have a phone)
+* Pelican Village Loft (configuration option to allow Aelin to move into an apartment after a certain point; he is housed on Floor 2 in Room B)
