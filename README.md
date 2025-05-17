@@ -31,19 +31,35 @@ By improving your relationship with Aelin and completing some bundles in the Com
 If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be available to buy from Harvey at the clinic.
 
 ## Mod Compatibilities
-This mod contains compatibilities for various mods. Primarily, these compatibilities are for gift tastes to match with Aelin's vanilla gift preferences; however, there are other mods that he is compatible with.
+This mod contains compatibilities for various mods. Primarily, these compatibilities are for gift tastes to match with Aelin's vanilla gift preferences; however, there are other mods that he is compatible with. Gift tastes are included by default.
 
-### Gift Tastes
+If you're a mod author and want me to add gift tastes from your mod, let me know!
+
+### Custom NPC Interactions
+* Eugene - Two events, custom dialogue, and a quest line
+* Lucikiel - One event, custom dialogue
+* Magnus (Romanceable Rasmodius Redux Revamp) - Two events, custom dialogue
+* Sevinae (Alchemistry) - Custom dialogue
+
+### Custom Gift Tastes
 * Alchemistry
+* Animal Husbandry Mod
+* Bees Plus
+* Berry Booster Juice
+* Blue Eggs & Golden Mayo
 * Chocolate Valley
+* Floral Drinks
+* Lucky Clover
 * Stardew Valley Extended
+* Wild Eggs
 
-### New NPCs
-* Eugene (two events, dialogue, and quest line)
-* Lucikiel (one event, dialogue)
-* Redeemable Morris (one event, dialogue)
-* Romanceable Rasmodius Revamped Redux (two events, dialogue)
+### Miscellaneous Mods
+* Mobile Phone - Aelin does not have a phone until a certain point of his story.
+* Pelican Valley Lofts - Aelin can move into an apartment if this mod is installed and the option is set; he will be on Floor 2 in Room B, with a custom room.
 
-### Others
-* Mobile Phone (immersion; Aelin does not have a phone)
-* Pelican Village Loft (configuration option to allow Aelin to move into an apartment after a certain point; he is housed on Floor 2 in Room B)
+## Mod Requirements
+This mod needs the following mods to be installed.
+* Content Patcher
+* Generic Mod Config Menu
+* JSON Assets
+* Mail Framework Mod

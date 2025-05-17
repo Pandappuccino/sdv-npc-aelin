@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_Aelin": {
+          "DisplayName": "Aelin",
+          "CanSocialize": false,
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "PerfectionScore": false
+        }
+      }
+    }
+  ]
+}

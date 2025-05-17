@@ -1,14 +1,31 @@
 {
-  "Name": "Aelin, the Last Nature Spirit (Custom NPC)",
-  "Author": "Pandappuccino",
-  "Version": "1.0.0",
-  "Description": "Adds a new NPC, Aelin, to Stardew Valley.",
-  "UniqueID": "Pandappuccino.AelinNPC",
-  "ContentPackFor": {
-    "UniqueID": "Pathoschild.ContentPatcher"
-  },
-  "Dependencies": [
-    {
+    "Name": "Aelin, the Last Nature Spirit (Custom NPC)",
+    "Author": "Pandappuccino",
+    "Version": "1.0.0",
+    "Description": "Adds a new NPC, Aelin, to Stardew Valley.",
+    "UniqueID": "Pandappuccino.AelinNPC",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
     },
-  ],
+    "Dependencies": [
+        {
+            "UniqueID": "spaechase0.JsonAssets", // required for new items
+            "IsRequired": true
+        },
+        
+        {
+            "UniqueID": "DIGUS.MailFrameworkMod", // required for recipe mail
+            "IsRequired": true
+        },
+        
+        {
+            "UniqueID": "FireRedLily.NPCApartments", // enables adding an apartment for Aelin
+            "IsRequired": false
+        },
+        
+        {
+            "UniqueID": "spacechase0.GenericModConfigMenu",
+            "IsRequired": false
+        },
+    ],
 }
