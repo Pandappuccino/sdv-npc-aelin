@@ -1,0 +1,130 @@
+{
+	"Changes": 
+    [
+		
+		{
+            "LogName": "",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_Aelin",
+			"Entries": {
+				
+				//CONVERSATION TOPICS (CTs) - CTs are not required but they are a great way to add more life to your NPC's dialogue. See the Conversation Topics page for an explanation if you are unfamiliar with them (https://stardewmodding.wiki.gg/wiki/Conversation_Topics)
+				//Vanilla - this is just a small selection, see the list of vanilla CTs for more (https://stardewvalleywiki.com/Modding:Dialogue#Conversation_topics)
+				"Introduction": "I apologize for such a...rough...first impression, @.$2#$b#I promise I'm feeling okay now, though.#$b#Please, feel free to visit sometime. I'll be sure to prepare a cup of tea next time.$1",
+				"cc_Begin": "So, you can see the Junimos too...$1#$b#I had a feeling you were special when we met, @.",
+				"cc_Boulder": "",
+				"cc_Bridge": "",
+				"cc_Bus": "My friends told me about the run-down bus to the desert.#$b#I've never been there before...I would love to visit one day.",
+				"cc_Greenhouse": "%revealtaste:{{ModID}}_Aelin:(0)376Hehe, my friends seem to have given you a special gift.$1#$b#A greenhouse to grow anything you want...you could grow as many poppies as you like.",
+				"cc_Minecart": "",
+				"cc_Complete": "",
+				"movieTheater": "",
+				"willyCrabs": "",
+				"pamHouseUpgrade": "I heard from my friends that someone gave Ms. Pam a new home.#$b#You wouldn't know anything about that, would you, @?$1",
+				"pamHouseUpgradeAnonymous": "I heard from my friends that someone gave Ms. Pam a new home.#$b#You wouldn't know anything about that, would you, @?$1",
+				
+				//CTs from other mods - this is a great way to add interactivity between your NPC and other mods! See the mod-added CTs page for a list of many (but not all) other mods' CTs (https://stardewmodding.wiki.gg/wiki/Conversation_Topics:_List_of_CTs)
+				
+				// Mod: More Conversation Topics
+				"railroadEarthquake": "Did you feel that rumbling last night, @?#$b#It was quite faint here, but it knocked my favorite teacup off of the shelf...$2",
+				"jojaMartStruckByLightning": "I heard an awful crashing sound in the night, as though the skies opened in anger...$2#$b#No one in the village was hurt, right?$2",
+				"babyBoy": "So you're a father^mother^parent now, @! And with a healthy baby boy!$1#$b#May the spirits of nature bless your child with an abundance of good fortune for many years to come!$1",
+				"babyGirl": "So you're a father^mother^parent now, @! And with a healthy baby girl!$1#$b#May the spirits of nature bless your child with an abundance of good fortune for many years to come!$1",
+				"wedding": "",
+				"luauBest": "",
+				"luauShorts": "",
+				"luauPoisoned": "",
+				
+				//Mod: Lucikiel
+				"LucikielArrives": "I felt a most ghastly presence from the village...$2#$b#I've only felt this presence once in the past. That horrible, wicked demon...$3",
+				"ReputationIncreased": "Perhaps I was mistaken...perhaps demons aren't all wicked, after all.$2",
+				
+				// SPECIFIC DIALOGUE
+				"MovieInvite_Invited": "",
+				"DumpsterDiveComment": "@, what are you doing?$2",
+				"SpouseStardrop": "@, my beloved, you've been working so hard nonstop, and you've been nothing but kind to me...$4#$b#I know it isn't much, but...please, accept this token of my love for you.$1",
+				"FlowerDance_Accept_Spouse": "Hehe, is this your way of asking me for a dance?$1#$b#I'd be honored, my beloved.",
+				"FlowerDance_Accept": "It's a rather important tradition for the people here...I'd be glad to participate.$1",
+				"FlowerDance_Decline": "Ah...I'm sorry, I'm not much for dancing.$2",
+				"GreenRain": "", //new event in 1.6
+				"GreenRain_2": "", //new event in 1.6 - year 2 occurrence
+				"GreenRainFinished": "", //new event in 1.6 - used the day after the event
+				"AcceptGift_(O)StardropTea": "Oh, my...! What a pleasant aroma, and the color...$2#$b#Ahh...it's delicious, and so very soothing. My entire body feels as if it's floating...$2", //new gift reaction - if you don't add this your NPC will spit out a bunch of numbers instead of any dialogue when given this
+				
+				// GENERIC DIALOGUE
+				"Mon": "", 
+				"Tue": "",
+				"Wed": "",
+				"Thu": "",
+				"Fri": "",
+				"Sat": "",
+				"Sun": "",
+				
+				"Mon2": "", 
+				"Tue2": "",
+				"Wed2": "",
+				"Thu2": "",
+				"Fri2": "",
+				"Sat2": "",
+				"Sun2": "",
+				
+				"Mon4": "", 
+				"Tue4": "",
+				"Wed4": "",
+				"Thu4": "",
+				"Fri4": "",
+				"Sat4": "",
+				"Sun4": "",
+				
+				"Mon6": "",
+				"Tue6": "",
+				"Wed6": "",
+				"Thu6": "",
+				"Fri6": "",
+				"Sat6": "",
+				"Sun6": "",
+				
+				"Mon8": "",
+				"Tue8": "",
+				"Wed8": "",
+				"Thu8": "",
+				"Fri8": "",
+				"Sat8": "",
+				"Sun8": "",
+				
+				"Mon10": "",
+				"Tue10": "",
+				"Wed10": "",
+				"Thu10": "",
+				"Fri10": "",
+				"Sat10": "",
+				"Sun10": "",   
+				
+				
+				// SPECIFIC DAY DIALOGUE
+				"spring_1": "",
+				"summer_1": "",
+				"fall_1": "",
+				"winter_1": "",
+				"spring_12": "", // Day before the Egg Festival
+				"spring_23": "There's quite a commotion in the forest today...$2#$b#O-oh! The Flower Dance...I'd completely forgotten what day it is.", // Day before the Flower Dance
+				"summer_10": "", // Day before the Luau
+				"summer_27": "", // Day before the Midnight Jellies
+				"fall_15": "", // Day before the Stardew Fair
+				"fall_26": "", // Day before Spirit's Eve
+				"winter_7": "", // Day before the Ice Festival
+				"winter_24": "", // Day before Winter Star
+			}
+		}
+		
+		//Rainy day dialogue 
+		{	
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/rainy",
+			"Entries": {
+				"~NPCNAME~": "{{Random: Hi, @! Wow, you're wet! && Hiya, @. We're staying inside today. I get bad-scrungy when I'm wet. && I'm protecting Jean today! Scary thunder can't get me!$h && Lots of people get sad when it rains. If you have time, maybe visit some people for us?$h && It's dark right now, but I'm sure there will be more sunbeams.$h |inputSeparator=&&}}", //Example of randomized dialogue
+			}
+		},
+		
+	]
+}

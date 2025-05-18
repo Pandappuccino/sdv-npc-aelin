@@ -55,7 +55,7 @@ If you're a mod author and want me to add gift tastes from your mod, let me know
 
 ### Miscellaneous Mods
 * Mobile Phone - Aelin does not have a phone until a certain point of his story.
-* Pelican Valley Lofts - Aelin can move into an apartment if this mod is installed and the option is set; he will be on Floor 2 in Room B, with a custom room.
+* Pelican Valley Lofts - Aelin can move into an apartment if this mod is installed and the option is set; he will be in Room 1D, with a custom room.
 
 ## Mod Requirements
 This mod needs the following mods to be installed.

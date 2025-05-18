@@ -1,0 +1,37 @@
+{
+  "Changes": [
+    {
+	  "LogName": "Patch Woods.tmx to add path to Aelin's house",
+      "Action": "EditMap",
+      "Target": "Maps/Woods",
+      "PatchMode": "Replace",
+	  "FromFile": "assets/data/maps/WoodsEntrance.tmx",
+	  "FromArea": {
+		  "X": 0,
+		  "Y": 0,
+		  "Width": 8,
+		  "Height": 6
+		},
+	  "ToArea": {
+		  "X": 5,
+		  "Y": 0,
+		  "Width": 8,
+		  "Height": 6
+		}
+    },
+	
+	{
+	  "LogName": "Load grove with Aelin's house",
+	  "Action": "Load",
+	  "Target": "Maps/{{ModID}}_AelinGrove",
+	  "FromFile": "assets/maps/AelinGrove.tmx"
+	},
+	
+	{
+	  "LogName": "Load interior of Aelin's house",
+	  "Action": "Load",
+	  "Target": "Maps/{{ModID}}_AelinHouse",
+	  "FromFile": "assets/maps/AelinHouse.tmx"
+	},
+  ]
+}
