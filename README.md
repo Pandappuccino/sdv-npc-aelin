@@ -23,12 +23,12 @@ Visit the Secret Woods at any time between 6AM and 6PM on a sunny day to get a s
 
 ## New Recipes
 By improving your relationship with Aelin and completing some bundles in the Community Center, Aelin will have his Junimo friends deliver recipes for new consumables.
-* 2+ Hearts: Pain-Relief Tonic (3 Poppy and 1 Honey; restores 150 energy)
-* 4+ Hearts and Minecarts repaired: Energizing Tonic (2 Kale, 1 Carrot, 1 Honey; restores 250 energy and grants Speed +2 for 2 in-game hours)
-* 8+ Hearts and Bus Repaired: Sunshine Tonic (3 Strawberry, 3 Summer Spangle, 1 Honey; restores 200 energy and grants Farming and Foraging +3 for 2 in-game hours)
+* 2+ Hearts: Pain-Relief Tonic (3 Poppy and 1 Honey; restores 50 HP and 50 energy)
+* 4+ Hearts and Minecarts repaired: Energizing Tonic (2 Kale, 1 Carrot, 1 Honey; restores 75 energy and grants Speed +2 for 2 in-game hours)
+* 8+ Hearts and Bus Repaired: Sunshine Tonic (3 Strawberry, 3 Summer Spangle, 1 Honey; restores 75 energy and grants Farming and Foraging +3 for 2 in-game hours)
 * 10+ Hearts and Greenhouse Unlocked: Ancient Tonic (3 Ancient Fruit, 3 Sweet Gem Berry, 3 Honey; fully restores HP and energy, grants +1 to all skills for the entire day)
 
-If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be available to buy from Harvey at the clinic.
+If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be available to buy from Harvey at the clinic after purchasing the respective Joja developments.
 
 ## Mod Compatibilities
 This mod contains compatibilities for various mods. Primarily, these compatibilities are for gift tastes to match with Aelin's vanilla gift preferences; however, there are other mods that he is compatible with. Gift tastes are included by default.
