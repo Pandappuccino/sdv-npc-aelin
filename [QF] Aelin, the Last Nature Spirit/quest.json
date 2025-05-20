@@ -1,0 +1,41 @@
+{
+  "Format": "1.0", // this is required
+  "Quests": [
+    {
+      "Name": "{{ModID}}_PoppyFetch",
+      "Type": "ItemDelivery",
+      "Title": "Pain-Relieving Poppies",
+      "Description": "Aelin isn't having any luck growing flowers.",
+      "Objective": "Deliver 3 Poppy to Aelin",
+      "Reward": "Green Tea",
+      "RewardType": "Object",
+      "RewardAmount": 3,
+      "RewardDescription": "Aelin will be pleased.",
+      "Cancelable": false,
+      "ReactionText": "Oh, these are perfect! Thank you so much, @!$1#$b#Here, this is the least I can do to thank you. I brewed it myself for you!$1",
+      "Trigger": "Pandappuccino.AelinNPC_Aelin 376 3"
+      "FriendshipGain": {
+        "Pandappuccino.AelinNPC_Aelin": 100
+      },
+      "ConversationTopic": {
+        "AddWhenQuestCompleted": "PerfectPoppies 3"
+      }
+    },
+  ],
+  "Offers": [
+    {
+      "QuestName": "{{ModID}}_PoppyFetch",
+      "OfferedBy": "Mail",
+      "OfferDetails": {
+        "Topic": "Poppy Problems",
+        "Text": "Hello, @,^I'm terribly sorry to bother you with this, but...well, I'm not having any luck with growing poppies to prepare my medicine, and I'm almost out.^I hate to bother, but, could I trouble you to bring me a few poppies?^- Aelin"
+      },
+      "When": {
+        "Days": 7 14 21 28,
+        "Seasons": "spring",
+        "FriendshipLevel": "Pandappuccino.AelinNPC_Aelin 4",
+        "HasMod": "Pandappuccino.AelinNPC"
+      }
+    },
+  ],
+}
