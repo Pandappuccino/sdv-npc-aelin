@@ -5,7 +5,7 @@
   "Description": "Adds two quest lines for custom NPC Aelin.",
   "UniqueID": "Pandappuccino.AelinQF",
   "MinimumApiVersion": "3.6.0",
-  "UpdateKeys": [],
+  "UpdateKeys": ["Nexus:???"],
   "ContentPackFor": {
     "UniqueID": "PurrplingCat.QuestFramework",
     "MinimumVersion": "1.2.0"
