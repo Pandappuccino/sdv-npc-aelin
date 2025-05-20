@@ -1,20 +1,18 @@
 [
     {
-        "Id": "{{ModID}}.Aelin.PainTonicRecipe", // Letter id. It's important to be an unique string to avoid conflicts. Also it shouldn't have space characters.
-        "GroupId": "{{ModID}}.Aelin.Recipes", // Letter group id. Letters with the same group id are never delivered in the same day. Letters registered first have priority, unless the group id ends with ".Random", in that case, a random letter will be chosen. Default is null.
-        "Title": "A Simple Remedy", // Letter title. Will be shown in the collections menu. Set it null or remove the line if you don't want the letter to appear in the collection. If an translation file is provide, you should put a translation key here, but you can still leave if null for no Title.
-        "Text": "To @-^^Thank you again for visiting me. It...means quite a lot to me, that you took the time to visit.^^It isn't much, but I've attached a medicinal recipe for you. It's a pain reliever that I think you may find useful, working on the farm so much.^^- Aelin", // Text of the letter. You can use @ to put the players name and ^ for line breaks. You can also use the base game commands to add money, items and stuff. If an translation file is provide, you should put a translation key here.
-        "Recipe": "Pandappuccino.AelinJS.PainTonic", // Remove the line if you don't want to attach a recipe to the mail. It will only work if you have no other attachments to the mail. For DGA recipes only use the ID part (leave away the ModID)
-        "AdditionalMailReceived": ["MyMod.AnotherMailId", "VANILLA_FLAG"], // Use this to add additional text to the MailReceived list. Can be useful to add vanilla flags or other MFM letter ids.
-        "MailReceivedToRemove": ["MyMod.AnotherMailThatNeedToBeResent","MyMod.SomeFlagThatWasLockingSomeFeature"], //Text to removed from the MailReceived list. This can be used to trigger new mail, events, vanilla flags, stop other MFM mail from being sent...
-        "LetterBG": "AelinMail.png", // Name of the file in your content pack that has the custom letter background to use. It should follow the same structure of the game LetterBG file . WhichBG will be relative to this file for this letter. If null or removed the mod will use the game LetterBG.
+        "Id": "{{ModID}}.Aelin.PainTonicRecipe",
+        "GroupId": "{{ModID}}.Aelin.Recipes",
+        "Title": "A Simple Remedy",
+        "Text": "To @-^Thank you again for visiting me. It...means quite a lot to me, that you took the time to visit.^It isn't much, but I've attached a medicinal recipe for you. It's a pain reliever that I think you may find useful, working on the farm so much.^- Aelin",
+        "Recipe": "Pandappuccino.AelinJA.PainTonic",
+        "LetterBG": "AelinMail.png",
         "TextColor": -1, //Remove this line to use the default color. Will be ignored if a CustomTextColor is set. -1 = Dark Red, 0 = Black, 1 = Sky Blue, 2 = Red, 3 = Blue Violet, 4 = White, 5 = Orange Red, 6 = Lime Green, 7 = Cyan, 8 = Darkest Gray
         "CustomTextColorName": "White", //The color of the text.[http://www.foszor.com/blog/xna-color-chart/] Default will use the TextColor property.
-        "UpperRightCloseButton": "AelinClose.png", // Name of the file in your content pack that has the custom close button to use. It should be 12 x 12 . If null or removed it will use the default button.
-        "Repeatable": false, // If true the mod won't check it the letter Id has already been delivered. Default is false.
-        "AutoOpen": false, // If true the mod will open the letter at the begin of the day after the conditions are met. The letter id will be marked as read and if there is a recipe set, it will be learned. Since the letter will never show, visual properties like title, text, background... will never be used, as well as the attachments.
-        "MailReceived": ["ccVault"], // Require one of the mails to have been received. The game list also contain others thing that are not mail, like community center flags.
-        "HasMods": [ "Pandappuccino.AelinNPC" ]
-        "KeepValid": false // If this is true, once the conditions are meet, keep the mail valid until read. Default is false.
+        "UpperRightCloseButton": "AelinClose.png",
+        "Repeatable": false,
+        "AutoOpen": false,
+        "MailReceived": ["ccVault"],
+        "HasMods": [ "Pandappuccino.AelinNPC" ],
+        "KeepValid": false
     }
 ]
