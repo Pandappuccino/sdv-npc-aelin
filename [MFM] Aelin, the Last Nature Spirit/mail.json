@@ -6,8 +6,8 @@
         "Text": "To @-^Thank you again for visiting me. It...means quite a lot to me, that you took the time to visit.^It isn't much, but I've attached a medicinal recipe for you. It's a pain reliever that I think you may find useful, working on the farm so much.^- Aelin",
         "Recipe": "Pandappuccino.AelinJA.PainTonic",
         "LetterBG": "AelinMail.png",
-        "TextColor": -1, //Remove this line to use the default color. Will be ignored if a CustomTextColor is set. -1 = Dark Red, 0 = Black, 1 = Sky Blue, 2 = Red, 3 = Blue Violet, 4 = White, 5 = Orange Red, 6 = Lime Green, 7 = Cyan, 8 = Darkest Gray
-        "CustomTextColorName": "White", //The color of the text.[http://www.foszor.com/blog/xna-color-chart/] Default will use the TextColor property.
+        // "TextColor": -1, Remove this line to use the default color. Will be ignored if a CustomTextColor is set. -1 = Dark Red, 0 = Black, 1 = Sky Blue, 2 = Red, 3 = Blue Violet, 4 = White, 5 = Orange Red, 6 = Lime Green, 7 = Cyan, 8 = Darkest Gray
+        "CustomTextColorName": "Brown Coffee", //The color of the text.[http://www.foszor.com/blog/xna-color-chart/] Default will use the TextColor property.
         "UpperRightCloseButton": "AelinClose.png",
         "Repeatable": false,
         "AutoOpen": false,
