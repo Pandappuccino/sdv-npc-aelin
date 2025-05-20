@@ -1,4 +1,4 @@
-# Voice of the Woods: Aelin, the Last Nature Spirit
+# Aelin, the Last Nature Spirit
 *Hundreds of years ago, humans and spirits coexisted in harmony, with the spirits blessing humans with bountiful harvests and crystal-clear water, and the humans offering the spirits the fruits of their labor as thanks. Over time, however, humanity became greedy, demanding more from nature than they would give, and soon the fragile balance between humans and spirits shattered. One by one, the spirits faded away, taking with them their blessings, and humanity was forced to survive without the gifts they so cruelly took for granted.*
 
 *Now, legends of the spirits have all but disappeared from history, save those few records preserved by those who practice the arcane arts--and it is one such practicioner who has seen glimpses and heard whispers of a single spirit, left behind for so many ages, deep in the heart of Cindersap Forest...*
