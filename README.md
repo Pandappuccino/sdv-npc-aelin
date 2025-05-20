@@ -17,7 +17,7 @@ This mod introduces a new custom NPC, **Aelin**, to Stardew Valley! Aelin is a n
 This folder contains both the actual mod to include Aelin in the world (consisting of **manifest.json**, **content.json**, and the **assets** folder containing everything from maps to portraits), as well as three individual folders for **JsonAssets** (labeled **[JA] Aelin, the Last Nature Spirit**, adds new items), **Mail Framework Mod** (labeled **[MFM] Aelin, the Last Nature Spirit**, adds letters containing crafting recipes), and **Quest Framework** (labeled **[QF] Aelin, the Last Nature Spirit**, adds two quest lines).
 
 ## How to Install
-Download the mod either from the Github releases or from NexusMods, then unzip the folder into your game's Mods folder in its installation directory and you're ready to begin!
+Download the mod either from the Github releases or from [NexusMods](https://www.nexusmods.com/stardewvalley/mods/32819), then unzip the folder into your game's Mods folder in its installation directory and you're ready to begin!
 
 ## Meeting Aelin
 So, how do you find Aelin? He's in Cindersap Forest, but there's no new houses (except those other NPCs might be using). That's because he's not in the main forest: he's in the Secret Woods. There are three requirements for the player to meet with Aelin for the first time:
@@ -59,7 +59,7 @@ This mod needs the following mods to be installed.
 * Quest Framework
 
 ## Contact
-You can reach out to me regarding this mod via [email](mailto:pandappuccino.art@gmail.com) or through the mod page on NexusMods. Please outline the reason you're reaching out and I'll do my best to get back to you! You can contact me for the following things:
+You can reach out to me regarding this mod via [email](mailto:pandappuccino.art@gmail.com) or through [the mod page](https://www.nexusmods.com/stardewvalley/mods/32819) on NexusMods. Please outline the reason you're reaching out and I'll do my best to get back to you! You can contact me for the following things:
 * Bug reports (something doesn't look/work correctly)
 * Adding gift tastes from another mod
 * Expanding this mod with custom NPC interactions
