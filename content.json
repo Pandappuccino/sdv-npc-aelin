@@ -1,1 +1,238 @@
+{
+    "Format": "2.5.0",
+  
+    "ConfigSchema": {
+      "Use Seasonal Designs": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "AllowBlank": false,
+        "Description": "Changes Aelin's sprites and portraits to a seasonal design, altering his hair and eye colors, as well as his antlers and clothes. Default true. If false, uses Aelin's summer sprites and portraits."
+      },
 
+      "Alternative Gift Tastes": {
+        "AllowValues": "true, false",
+        "Default": "false",
+        "AllowBlank": false,
+        "Description": "Changes Aelin's gift tastes regarding animal products. Default false. If true, changes gift tastes towards eggs, milk, duck feathers, and honey (and items made with them) to neutral. Does not affect gift tastes towards rabbit feet or towards fish and roe."
+      },
+      
+      "Move Into Apartment": {
+        "AllowValues": "true, false",
+        "Default": "false",
+        "AllowBlank": false,
+        "Description": "If \"Pelican Valley Lofts (NPC Apartments)\" is installed, has Aelin move into an apartment (room 1D) to more easily visit Pelican Town. Default false. Does nothing if \"Pelican Valley Lofts\" is not installed."
+      },
+
+      "Recipe Letter Requirements": {
+        "AllowValues": "Hearts,Bundles",
+        "Default": "Bundles",
+        "AllowBlank": false,
+        "Description": "Determines when Aelin will send letters with his special recipes to the farmer. Default \"Bundles\", which he will send the letters when certain Community Center bundles are completed. Does nothing if the player buys a Joja membership; they will instead receive the recipes from Harvey after purchasing developments."
+      }
+    },
+  
+    "Changes":
+      [
+      {
+        "LogName": "Load Aelin disposition pre-event",
+        "Action": "Include",
+        "FromFile": "assets/data/disposition_default.json"
+      },
+
+      {
+        "LogName": "Load Aelin disposition post-event",
+        "Action": "Include",
+        "FromFile": "assets/data/disposition_event.json",
+        "When": {
+          "HasSeenEvent": "Aelin.EightHearts",
+          "Move Into Apartment": false
+        }
+      },
+
+      {
+        "LogName": "Load Aelin disposition post-event (with Pelican Valley Lofts installed)",
+        "Action": "Include",
+        "FromFile": "assets/data/disposition_event_loft.json",
+        "When": {
+          "HasMod": "",
+          "HasSeenEvent": "Aelin.EightHearts",
+          "Move Into Apartment": true
+        }
+      },
+
+      {
+        "LogName": "Load Aelin standard portraits",
+        "Action": "Load",
+        "Target": "Portraits/{{ModID}}_Aelin",
+        "FromFile": "assets/img/Aelin_Portraits.png",
+        "When": {
+          "Use Seasonal Designs": false
+        }
+      },
+
+      {
+        "LogName": "Load Aelin seasonal portraits",
+        "Action": "Load",
+        "Target": "Portraits/{{ModID}}_Aelin",
+        "FromFile": "assets/img/Aelin_Portraits_{{season}}.png",
+        "When": {
+          "Use Seasonal Designs": true
+        }
+      },
+
+      {
+        "LogName": "Load Aelin standard sprites",
+        "Action": "Load",
+        "Target": "Characters/{{ModID}}_Aelin",
+        "FromFile": "assets/img/Aelin_Sprites.png"
+        "When": {
+          "Use Seasonal Designs": false
+        }
+      },
+
+      {
+        "LogName": "Load Aelin seasonal sprites",
+        "Action": "Load",
+        "Target": "Characters/{{ModID}}_Aelin",
+        "FromFile": "assets/img/Aelin_Sprites_{{season}}.png",
+        "When": {
+          "Use Seasonal Designs": true
+        }
+      },
+
+      {
+        "LogName": "Load Aelin standard dialogue",
+        "Action": "Include",
+        "FromFile": "assets/data/dialogue.json"
+      },
+
+      {
+        "LogName": "Load Aelin marriage dialogue",
+        "Action": "Include",
+        "FromFile": "assets/data/dialogue_spouse.json"
+      },
+
+      {
+        "LogName": "Load Aelin schedule pre-event",
+        "Action": "Include",
+        "FromFile": "assets/data/schedule.json"
+      },
+
+      {
+        "LogName": "Load Aelin schedule post-event",
+        "Action": "Include",
+        "FromFile": "assets/data/schedule_event.json"
+      },
+
+      {
+        "LogName": "Load Aelin schedule post-event (with Pelican Valley Lofts installed)",
+        "Action": "Include",
+        "FromFile": "assets/data/schedule_event_loft.json",
+        "When": {
+          "HasMod": "",
+          "HasSeenEvent": "Aelin.EightHearts",
+          "Move Into Apartment": true
+        }
+      },
+
+      {
+        "LogName": "Load Aelin schedule dialogue pre-event",
+        "Action": "Include",
+        "FromFile": "assets/data/dialogue_schedule.json"
+      },
+
+      {
+        "LogName": "Load Aelin schedule dialogue post-event",
+        "Action": "Include",
+        "FromFile": "assets/data/dialogue_schedule_event.json",
+        "When": {
+          "HasSeenEvent": "Aelin.EightHearts"
+        }
+      },
+
+      {
+        "LogName": "Load Aelin schedule dialogue post-event (with Pelican Valley Lofts installed)",
+        "Action": "Include",
+        "FromFile": "assets/data/dialogue_schedule_event_loft.json",
+        "When": {
+          "HasMod": "",
+          "HasSeenEvent": "Aelin.EightHearts",
+          "MoveIntoApartment": true
+        }
+      },
+
+      {
+        "LogName": "Load Aelin custom animations",
+        "Action": "Include",
+        "FromFile": "assets/data/animations.json"
+      },
+
+      {
+        "LogName": "Load Aelin default gift tastes",
+        "Action": "Include",
+        "FromFile": "assets/data/gifts.json"
+      },
+
+      {
+        "LogName": "Load Aelin alternate gift tastes",
+        "Action": "Include",
+        "FromFile": "assets/data/gifts_alt.json",
+        "When": {
+          "Alternative Gift Tastes": true
+        }
+      },
+
+      {
+        "LogName": "Load Aelin festival data",
+        "Action": "Include",
+        "FromFile": "assets/data/festivals.json",
+        "When": {
+          "HasSeenEvent": "Aelin.EightHearts"
+        }
+      },
+
+      {
+        "LogName": "Load Aelin events",
+        "Action": "Include",
+        "FromFile": "assets/data/events.json"
+      },
+
+      // JOJA ROUTE CHANGES - If the player buys a Joja membership, removes Aelin from the game. RETROACTIVE!
+      {
+        "LogName": "Load Aelin disposition (Joja Route)",
+        "Action": "Include",
+        "FromFile": "assets/data/disposition_joja.json",
+        "When": {
+          "HasFlag": "jojaMember"
+        }
+      },
+
+      {
+        "LogName": "Load Aelin schedule (Joja Route)",
+        "Action": "Include",
+        "FromFile": "assets/data/schedule_joja.json",
+        "When": {
+          "HasFlag": "jojaMember"
+        }
+      },
+
+      {
+        "LogName": "Load Aelin events (Joja Route)",
+        "Action": "Include",
+        "FromFile": "assets/data/events_joja.json",
+        "When": {
+          "HasFlag": "jojaMember"
+        }
+      },
+
+      {
+        "LogName": "Load Aelin festival data (Joja Route)",
+        "Action": "Include",
+        "FromFile": "assets/data/festivals_joja.json",
+        "When": {
+          "HasFlag": "jojaMember"
+        }
+      }
+
+      ]
+}
