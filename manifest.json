@@ -17,6 +17,11 @@
             "UniqueID": "DIGUS.MailFrameworkMod", // required for recipe mail
             "IsRequired": true
         },
+
+        {
+            "UniqueID": "PurrplingCat.QuestFramework", // required for custom quests
+            "IsRequired": true
+        },
         
         {
             "UniqueID": "FireRedLily.NPCApartments", // enables adding an apartment for Aelin
