@@ -13,10 +13,23 @@
     {
       "ResultCount": 1,
       "Ingredients": {
-
+        "Object": "Poppy",
+        "Count": "3"
       },
       "IsDefault": false,
       "EnableWithMod": "Pandappuccino.AelinNPC"
-    }
+    },
+  "GiftTastes": {
+    "Love": ["Pandappuccino.AelinNPC_Aelin", "George"],
+    "Like": ["Evelyn", "Harvey", "Alex", "Shane"],
+    "Hate": ["Vincent", "Jas"]
+  },
+  "ContextTags": [
+    "herbal_medicine_item",
+    "color_orange",
+    "medicine_item",
+    "honey_item",
+    "flower_item"
+  ],
 }
   
