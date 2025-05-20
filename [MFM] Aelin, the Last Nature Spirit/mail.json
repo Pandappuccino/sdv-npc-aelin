@@ -10,7 +10,7 @@
         "LetterBG": "AelinMail.png", // Name of the file in your content pack that has the custom letter background to use. It should follow the same structure of the game LetterBG file . WhichBG will be relative to this file for this letter. If null or removed the mod will use the game LetterBG.
         "TextColor": -1, //Remove this line to use the default color. Will be ignored if a CustomTextColor is set. -1 = Dark Red, 0 = Black, 1 = Sky Blue, 2 = Red, 3 = Blue Violet, 4 = White, 5 = Orange Red, 6 = Lime Green, 7 = Cyan, 8 = Darkest Gray
         "CustomTextColorName": "White", //The color of the text.[http://www.foszor.com/blog/xna-color-chart/] Default will use the TextColor property.
-        "UpperRightCloseButton": "CustomCloseButton.png", // Name of the file in your content pack that has the custom close button to use. It should be 12 x 12 . If null or removed it will use the default button.
+        "UpperRightCloseButton": "AelinClose.png", // Name of the file in your content pack that has the custom close button to use. It should be 12 x 12 . If null or removed it will use the default button.
         "Repeatable": false, // If true the mod won't check it the letter Id has already been delivered. Default is false.
         "AutoOpen": false, // If true the mod will open the letter at the begin of the day after the conditions are met. The letter id will be marked as read and if there is a recipe set, it will be learned. Since the letter will never show, visual properties like title, text, background... will never be used, as well as the attachments.
         "MailReceived": ["ccVault"], // Require one of the mails to have been received. The game list also contain others thing that are not mail, like community center flags.
