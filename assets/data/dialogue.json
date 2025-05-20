@@ -17,7 +17,7 @@
 				"cc_Bus": "My friends told me about the run-down bus to the desert.#$b#I've never been there before...I would love to visit one day.",
 				"cc_Greenhouse": "%revealtaste:{{ModID}}_Aelin:(0)376Hehe, my friends seem to have given you a special gift.$1#$b#A greenhouse to grow anything you want...you could grow as many poppies as you like.",
 				"cc_Minecart": "",
-				"cc_Complete": "",
+				"cc_Complete": "It seems my friends have returned to the world of the spirits.$2#$b#It's a little sad, but at the same time, they were quite happy, @.$1#$b#By vow of all spirits, I thank you for all you've done.$1",
 				"movieTheater": "",
 				"willyCrabs": "",
 				"pamHouseUpgrade": "I heard from my friends that someone gave Ms. Pam a new home.#$b#You wouldn't know anything about that, would you, @?$1",
@@ -30,10 +30,10 @@
 				"jojaMartStruckByLightning": "I heard an awful crashing sound in the night, as though the skies opened in anger...$2#$b#No one in the village was hurt, right?$2",
 				"babyBoy": "So you're a father^mother^parent now, @! And with a healthy baby boy!$1#$b#May the spirits of nature bless your child with an abundance of good fortune for many years to come!$1",
 				"babyGirl": "So you're a father^mother^parent now, @! And with a healthy baby girl!$1#$b#May the spirits of nature bless your child with an abundance of good fortune for many years to come!$1",
-				"wedding": "",
-				"luauBest": "",
-				"luauShorts": "",
-				"luauPoisoned": "",
+				"wedding": "Congratulations, @. May you and yours have a long and healthy life, blessed with great fortune.",
+				"luauBest": "Word has gotten around quite fast that you greatly impressed everyone with your contribution to the Luau.#$b#Perhaps I should take some advice from you on raising good produce...",
+				"luauShorts": "...I heard from my friends that someone put a pair of...erm...shorts, into the Luau soup...#$b#You wouldn't happen to know anything about that, would you, @?",
+				"luauPoisoned": "You look pale, @...are you alright?#$b#...Food poisoning?#$b#...The whole village?!#$b#@...$2",
 				
 				//Mod: Lucikiel
 				"LucikielArrives": "I felt a most ghastly presence from the village...$2#$b#I've only felt this presence once in the past. That horrible, wicked demon...$3",
@@ -41,15 +41,21 @@
 				
 				// SPECIFIC DIALOGUE
 				"MovieInvite_Invited": "",
-				"DumpsterDiveComment": "@, what are you doing?$2",
+				"DumpsterDiveComment": "@, what are you doing...?$2",
 				"SpouseStardrop": "@, my beloved, you've been working so hard nonstop, and you've been nothing but kind to me...$4#$b#I know it isn't much, but...please, accept this token of my love for you.$1",
 				"FlowerDance_Accept_Spouse": "Hehe, is this your way of asking me for a dance?$1#$b#I'd be honored, my beloved.",
 				"FlowerDance_Accept": "It's a rather important tradition for the people here...I'd be glad to participate.$1",
 				"FlowerDance_Decline": "Ah...I'm sorry, I'm not much for dancing.$2",
-				"GreenRain": "", //new event in 1.6
-				"GreenRain_2": "", //new event in 1.6 - year 2 occurrence
-				"GreenRainFinished": "", //new event in 1.6 - used the day after the event
-				"AcceptGift_(O)StardropTea": "Oh, my...! What a pleasant aroma, and the color...$2#$b#Ahh...it's delicious, and so very soothing. My entire body feels as if it's floating...$2", //new gift reaction - if you don't add this your NPC will spit out a bunch of numbers instead of any dialogue when given this
+				"GreenRain": "Ah...the scent of nature is strong in the air today.#$b#The spirits seem to be in a good mood today!$1",
+				"GreenRain_2": "The green rains return, and the cycle of nature continues.#$b#I imagine your crops are quite happy with this!$1",
+				"GreenRainFinished": "Such verdant rains are quite invigorating for spirits like myself.#$b#I think I'll go for a walk today.$1", 
+				
+				// GIFT DIALOGUE
+				"AcceptGift_(O)StardropTea": "Oh, my...! What a pleasant aroma, and the color...$1#$b#Ahh...it's delicious, and so very soothing. My entire body feels as if it's floating...$1",
+				"AcceptGift_(0)376": "Oh, how wonderful!$1#$b#Did you know poppies have incredible medicinal use?#$b#I often use them for a simple painkiller, myself, but I can never quite grow them...",
+				"AcceptGift_(0)417": "This is...!#$b#My fa--er, Old Master Cannoli...had been seeking this out for so long...I tried to cultivate one but couldn't get it right.#$b#I'm sure he would be overjoyed to see this.",
+				"AcceptGift_(0)422": "Erm...@...are you trying to poison me...?",
+				"AcceptGift_(0)260": "*cough cough*#$b#Ah...s-sorry. I don't do well with spicy things...",
 				
 				// GENERIC DIALOGUE
 				"Mon": "", 
@@ -122,7 +128,7 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/rainy",
 			"Entries": {
-				"~NPCNAME~": "{{Random: Hi, @! Wow, you're wet! && Hiya, @. We're staying inside today. I get bad-scrungy when I'm wet. && I'm protecting Jean today! Scary thunder can't get me!$h && Lots of people get sad when it rains. If you have time, maybe visit some people for us?$h && It's dark right now, but I'm sure there will be more sunbeams.$h |inputSeparator=&&}}", //Example of randomized dialogue
+				"{{ModID}}_Aelin": "{{Random: This weather is rather dreary, isn't it?#$b#Try not to catch a cold, @. && Goodness, this rain is dreadful!#$b#I'm not a water spirit, so too much rain isn't good for me at all... && The rain is good for watering crops.#$b#At least you get to take a small break today. && My friends have been splashing about in puddles all day.#$b#I kind of want to join in on the fun...$1 |inputSeparator=&&}}", //Example of randomized dialogue
 			}
 		},
 		
