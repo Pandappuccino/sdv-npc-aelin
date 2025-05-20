@@ -39,16 +39,9 @@ If you're a mod author and want me to add gift tastes from your mod, let me know
 * Eugene - Two events, custom dialogue, and a quest line
 * Lucikiel - One event, custom dialogue
 * Magnus (Romanceable Rasmodius Redux Revamp) - Two events, custom dialogue
-* Sevinae (Alchemistry) - Custom dialogue
 
 ### Custom Gift Tastes
-* Alchemistry
-* Animal Husbandry Mod
-* Bees Plus
-* Berry Booster Juice
 * Blue Eggs & Golden Mayo
-* Chocolate Valley
-* Lucky Clover
 * Stardew Valley Extended
 * Wild Eggs
 
