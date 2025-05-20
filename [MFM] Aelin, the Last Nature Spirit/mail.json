@@ -11,8 +11,22 @@
         "UpperRightCloseButton": "AelinClose.png",
         "Repeatable": false,
         "AutoOpen": false,
-        "MailReceived": ["ccVault"],
+        "EventsSeen": [ "Aelin.Introduction" ]
         "HasMods": [ "Pandappuccino.AelinNPC" ],
         "KeepValid": false
-    }
+    },
+
+    {
+        "Id": "{{ModID}}.Joja.PainTonicRecipe",
+        "GroupId": "{{ModID}}.Joja.Recipes",
+        "Title": "A Simple Remedy",
+        "Text": "Farmer @,^Lately I've been testing out some new medicinal remedies, and I've perfected a new pain tonic that you can make at home!^I'll send you the recipe. Maybe it'll be helpful on the farm!^-Harvey",
+        "Recipe": "Pandappuccino.AelinJA.PainTonic",
+        "Repeatable": false,
+        "AutoOpen": false,
+        "MailReceived": ["jojaMember"],
+        "MailNotReceived": ["{{ModId}}.Aelin.PainTonicRecipe"],
+        "HasMods": [ "Pandappuccino.AelinNPC" ],
+        "KeepValid": false
+    },
 ]
