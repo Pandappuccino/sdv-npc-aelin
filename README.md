@@ -55,3 +55,4 @@ This mod needs the following mods to be installed.
 * Generic Mod Config Menu
 * JSON Assets
 * Mail Framework Mod
+* Quest Framework
