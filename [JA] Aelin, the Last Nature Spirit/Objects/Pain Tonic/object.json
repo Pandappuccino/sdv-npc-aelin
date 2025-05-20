@@ -1,1 +1,22 @@
+{
+  "Name": "Pain Tonic",
+  "Price": "70",
+  "CanSell": true,
+  "Description": "An all-natural pain remedy made from poppies to soothe muscle fatigue.",
+  "Category": "Cooking",
+  "CategoryTextOverride": "Herbal Medicine",
+  "Edibility": 50,
+  "EdibleIsDrink": true,
+  "EdibleBuffs": null,
+  "IsColored": false,
+  "Recipe":
+    {
+      "ResultCount": 1,
+      "Ingredients": {
 
+      },
+      "IsDefault": false,
+      "EnableWithMod": "Pandappuccino.AelinNPC"
+    }
+}
+  
