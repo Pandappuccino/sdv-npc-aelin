@@ -5,7 +5,7 @@
   "Description": "An all-natural pain remedy made from poppies to soothe muscle fatigue.",
   "Category": "Cooking",
   "CategoryTextOverride": "Herbal Medicine",
-  "Edibility": 50,
+  "Edibility": 44,
   "EdibleIsDrink": true,
   "EdibleBuffs": null,
   "IsColored": false,
