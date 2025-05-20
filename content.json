@@ -21,13 +21,6 @@
         "Default": "false",
         "AllowBlank": false,
         "Description": "If \"Pelican Valley Lofts (NPC Apartments)\" is installed, has Aelin move into an apartment (room 1D) to more easily visit Pelican Town. Default false. Does nothing if \"Pelican Valley Lofts\" is not installed."
-      },
-
-      "Recipe Letter Requirements": {
-        "AllowValues": "Hearts,Bundles",
-        "Default": "Bundles",
-        "AllowBlank": false,
-        "Description": "Determines when Aelin will send letters with his special recipes to the farmer. Default \"Bundles\", which he will send the letters when certain Community Center bundles are completed. Does nothing if the player buys a Joja membership; they will instead receive the recipes from Harvey after purchasing developments."
       }
     },
   
@@ -36,7 +29,10 @@
       {
         "LogName": "Load Aelin disposition pre-event",
         "Action": "Include",
-        "FromFile": "assets/data/disposition_default.json"
+        "FromFile": "assets/data/disposition_default.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       {
@@ -103,7 +99,10 @@
       {
         "LogName": "Load Aelin standard dialogue",
         "Action": "Include",
-        "FromFile": "assets/data/dialogue.json"
+        "FromFile": "assets/data/dialogue.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       {
@@ -115,13 +114,19 @@
       {
         "LogName": "Load Aelin schedule pre-event",
         "Action": "Include",
-        "FromFile": "assets/data/schedule.json"
+        "FromFile": "assets/data/schedule.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       {
         "LogName": "Load Aelin schedule post-event",
         "Action": "Include",
-        "FromFile": "assets/data/schedule_event.json"
+        "FromFile": "assets/data/schedule_event.json",
+        "When": {
+            "HasSeenEvent": "Aelin.EightHearts"
+        }
       },
 
       {
@@ -138,7 +143,10 @@
       {
         "LogName": "Load Aelin schedule dialogue pre-event",
         "Action": "Include",
-        "FromFile": "assets/data/dialogue_schedule.json"
+        "FromFile": "assets/data/dialogue_schedule.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       {
@@ -164,13 +172,19 @@
       {
         "LogName": "Load Aelin custom animations",
         "Action": "Include",
-        "FromFile": "assets/data/animations.json"
+        "FromFile": "assets/data/animations.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       {
         "LogName": "Load Aelin default gift tastes",
         "Action": "Include",
-        "FromFile": "assets/data/gifts.json"
+        "FromFile": "assets/data/gifts.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       {
@@ -178,6 +192,7 @@
         "Action": "Include",
         "FromFile": "assets/data/gifts_alt.json",
         "When": {
+          "HasFlag": "canReadJunimoText",
           "Alternative Gift Tastes": true
         }
       },
@@ -194,7 +209,10 @@
       {
         "LogName": "Load Aelin events",
         "Action": "Include",
-        "FromFile": "assets/data/events.json"
+        "FromFile": "assets/data/events.json",
+        "When": {
+            "HasFlag": "canReadJunimoText"
+        }
       },
 
       // JOJA ROUTE CHANGES - If the player buys a Joja membership, removes Aelin from the game. RETROACTIVE!
