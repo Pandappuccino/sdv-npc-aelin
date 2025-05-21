@@ -180,7 +180,7 @@
 	},
 	
 	{
-		"LogName": "Edit individual NPC gift tastes", // 0-1: Love; 2-3: Like; 4-5: Dislike; 6-7:Hate; 8-9: Neutral
+		"LogName": "Edit individual NPC gift tastes", // 1: Love; 3: Like; 5: Dislike; 7:Hate; 9: Neutral
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
 		"TextOperations": [
