@@ -1,0 +1,9 @@
+"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Data/NPCGiftTastes"
+    "Entries": {
+      "{{ModID}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you.
+    }
+  }
+]
