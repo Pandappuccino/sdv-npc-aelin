@@ -22,7 +22,7 @@ So, how do you find Aelin? He's in Cindersap Forest, but there's no new houses (
 * The player must have met the Wizard for the first time, and obtained the ability to communicate with the Junimos.
 * The player ***cannot*** have a Joja Membership. ***This is retroactive!*** If the player buys a Joja Membership at any time, even if they've started to complete bundles at the Community Center, it's over. Aelin will disappear from the game world completely and the path to his home will be gone for the rest of that save file.
 
-Visit the Secret Woods at any time between 6AM and 6PM on a sunny day after getting the ability to speak to the Junimos to get a small cutscene showcasing the entrance to Aelin's home.
+Once the player has spoke to the Wizard for the first time and obtained the ability to talk to the Junimos, they will receive a letter suggesting they go to the Secret Woods, where they'll find the entrance to Aelin's grove--assuming they have not taken the Joja path.
 
 ## New Recipes
 By befriending Aelin and viewing his heart events, he will have his Junimo friends deliver mail containing recipes for new consumables.
