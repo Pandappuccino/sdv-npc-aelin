@@ -1,0 +1,12 @@
+"Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes",
+		"Entries": {
+			"{{ModId}}_PainTonic": "376 3 340 1/25 5/{{ModID}}_PainTonic/null",
+			"{{ModId}}_EnergizingTonic": "250 2 (O)Carrot 1 340 1/25 5/{{ModId}}_EnergizingTonic/null",
+			"{{ModId}}_SunshineTonic": "400 3 593 3 340 1/25 5/{{ModId}}_SunshineTonic/null",
+			"{{ModId}}_AncientTonic": "454 3 417 3 340 3/25 5/{{ModId}}_AncientTonic/null"
+		}
+	}
+]

@@ -1,0 +1,90 @@
+"Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"{{ModID}}_Aelin": {
+				"DisplayName": "Aelin",
+				"Language": "Default",
+				"Gender": "Male",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Shy",
+				"Optimism": "Neutral",
+				"BirthSeason": "fall",
+				"BirthDay": 17,
+				"HomeRegion": "Other",
+				"IsDarkSkinned": false,
+				"CanSocialize": true,
+				"CanBeRomanced": true,
+				"CanReceiveGifts": true,
+				"CanCommentOnPurchasedItems": false,
+				"CanGreetNearbyCharacters": false,
+				"CanVisitIsland": false,
+				"Calendar": "HiddenUntilMet",
+				"SocialTab": "HiddenUntilMet",
+				"SpouseAdopts": true,
+				"SpouseWantsChildren": true,
+				"SpouseGiftJealousy": false,
+				"SpouseRoom": {
+					"MapAsset": null,
+					"MapSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 6,
+						"Height": 9
+					}
+				},
+				"SpousePatio": {
+					"MapAsset": null,
+					"MapSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 4,
+						"Height": 4
+					},
+					"SpriteAnimationFrames": [
+						[16, 500],
+						[17, 500],
+						[18, 500],
+						[19, 100]
+					],
+					"SpriteAnimationPixelOffset": {
+						"X": 0,
+						"Y": 0
+					}
+				},
+				"IntroductionsQuest": false,
+				"ItemDeliveryQuests": false,
+				"PerfectionScore": false,
+				"EndSlideshow": "Hidden",
+				"DumpsterDiveEmote": 8,
+				"DumpsterDiveFriendshipEffect": -5,
+				"FlowerDanceCanDance": false,
+				"WinterStarParticipant": null,
+				"UnlockConditions": "PLAYER_VISITED_LOCATION Current WizardHouse",
+				"SpawnIfMissing": true,
+				"Home": {
+					"Id": "Default",
+					"Location": "{{ModID}}_HouseInterior",
+					"Tile": {
+						"X": 0,
+						"Y": 0
+					},
+					"Direction": "down",
+					"Condition": "PLAYER_VISITED_LOCATION Current WizardHouse"
+				},
+				"Breather": true,
+				"Shadow": "Visible",
+				"ShakePortraits": null,
+				"KissSpriteIndex": 28,
+				"KissSpriteFacingRight": true,
+				"HiddenProfileEmoteSound": "fairy_heal",
+				"HiddenProfileEmoteDuration": 4000,
+				"HiddenProfileEmoteStartFrame": 45,
+				"HiddenProfileEmoteFrameCount": 10,
+				"HiddenProfileEmoteFrameDuration": 200
+			}
+		}
+	}
+]

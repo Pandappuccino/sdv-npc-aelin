@@ -1,0 +1,15 @@
+"Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/Mail",
+		"Entries": {
+			"{{ModId}}.Mail1": "To @ -^^I apologize again for the awkward introduction. No one has come to my grove in a very long time, so I suppose I got overexcited and it made my constitution worse.^As an apology for my unsightly display, I've attached a recipe for a medicine I use quite often, made from dried poppies and fresh honey. It's a rather versatile pain reliever...I hope it'll be useful to you.^^- Aelin%item cookingRecipe {{ModId}}_PainTonic%%[letterbg 5][textcolor white][#]A Gift from Aelin",
+			"{{ModId}}.Mail2": "To @ -^^Thank you again for visiting so often. It's quite nice to have a guest over...I suppose I should start keeping refreshments ready in case you stop by.^This is an herbal recipe I don't get to prepare often, but maybe you'll be able to use it?^^- Aelin%item cookingRecipe {{ModId}}_EnergizingTonic%%[letterbg 5][textcolor white][#]Aelin's Gratitude",
+			"{{ModId}}.Mail3": "Dear @ -^^You coming over so often has me feeling so much more invigorated lately. Perhaps it's just how friendly you are, or perhaps it's how you're so in tune with nature...it feels like I'm getting better just being with you.^I came up with this recipe many years ago, but my lacking green thumb makes it difficult for me to prepare it. Still, I think you might be able to use it.^^- Your friend, Aelin%item cookingRecipe {{ModId}}_SunshineTonic%%[letterbg 5][textcolor white][#]Aelin's Friendship",
+			"{{ModId}}.Mail4": "Dearest @-^^I'm...not quite sure how I can put into words just how much you've helped me since we met. It feels like just a short while ago that I was on the brink of death, yet you've helped me in ways I could never begin to describe, and the village is even comfortable with me. Perhaps meeting you was a blessing...^This is a special, ancient recipe, passed down from the first spirits to bless the valley. I want you to be the one to inherit it, as a cherished companion of the nature spirits.^^- Your dear friend, Aelin%item cookingRecipe {{ModId}}_AncientTonic%%[letterbg 5][textcolor white][#]A Gift from the Nature Spirits",
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	}
+]

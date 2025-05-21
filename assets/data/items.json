@@ -1,0 +1,237 @@
+"Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_PainTonic": {
+				"Name": "{{ModId}}_PainTonic",
+				"DisplayName": "Pain Tonic",
+				"Description": "An herbal remedy made from poppies and honey to soothe muscle pain.",
+				"Type": "Cooking",
+				"Category": -7,
+				"Price": 500,
+				"Texture": "assets/img/Items",
+				"SpriteIndex": 0,
+				"Edibility": 45,
+				"IsDrink": true,
+				"ContextTags": [
+					"color_orange",
+					"flower_item",
+					"medicine_item"
+				],
+				"CanBeGivenAsGift": true,
+				"CanBeTrashed": true,
+				"ExcludeFromRandomSale": true,
+				"ExcludeFromShippingCollection": false
+			},
+			
+			"{{ModId}}_EnergizingTonic": {
+				"Name": "{{ModId}}_EnergizingTonic",
+				"DisplayName": "Energizing Tonic",
+				"Description": "An herbal remedy made with vegetables to greatly boost energy.",
+				"Type": "Cooking",
+				"Category": -7,
+				"Price": 650,
+				"Texture": "assets/img/Items",
+				"SpriteIndex": 1,
+				"Edibility": 55,
+				"IsDrink": true,
+				"Buffs": [
+					{
+						"Id": "{{ModID}}_EnergizingTonicBuff",
+						"BuffId": null,
+						"IconTexture": "assets/img/Buffs",
+						"IconSpriteIndex": 0,
+						"Duration": 120,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 0.0,
+							"FishingLevel": 0.0,
+							"MiningLevel": 0.0,
+							"LuckLevel": 0.0,
+							"ForagingLevel": 0.0,
+							"MaxStamina": 0.0,
+							"MagneticRadius": 0.0,
+							"Speed": 2.0,
+							"Defense": 0.0,
+							"Attack": 0.0
+						},
+						"CustomFields": null
+					}
+				],
+				"ContextTags": [
+					"color_green",
+					"flower_item",
+					"medicine_item"
+				],
+				"CanBeGivenAsGift": true,
+				"CanBeTrashed": true,
+				"ExcludeFromRandomSale": true,
+				"ExcludeFromShippingCollection": false
+			},
+			
+			"{{ModId}}_SunshineTonic": {
+				"Name": "{{ModId}}_SunshineTonic",
+				"DisplayName": "Sunshine Tonic",
+				"Description": "An herbal remedy made with summery harvests to boost a connection to nature.",
+				"Type": "Cooking",
+				"Category": -7,
+				"Price": 650,
+				"Texture": "assets/img/Items",
+				"SpriteIndex": 2,
+				"Edibility": 60,
+				"IsDrink": true,
+				"Buffs": [
+					{
+						"Id": "{{ModID}}_SunshineTonicBuff",
+						"BuffId": null,
+						"IconTexture": "assets/img/Buffs",
+						"IconSpriteIndex": 1,
+						"Duration": 120,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 3.0,
+							"FishingLevel": 0.0,
+							"MiningLevel": 0.0,
+							"LuckLevel": 0.0,
+							"ForagingLevel": 3.0,
+							"MaxStamina": 0.0,
+							"MagneticRadius": 0.0,
+							"Speed": 0.0,
+							"Defense": 0.0,
+							"Attack": 0.0
+						},
+						"CustomFields": null
+					}
+				],
+				"ContextTags": [
+					"color_red",
+					"flower_item",
+					"medicine_item"
+				],
+				"CanBeGivenAsGift": true,
+				"CanBeTrashed": true,
+				"ExcludeFromRandomSale": true,
+				"ExcludeFromShippingCollection": false
+			},
+			
+			"{{ModId}}_AncientTonic": {
+				"Name": "{{ModId}}_AncientTonic",
+				"DisplayName": "Ancient Tonic",
+				"Description": "An ancient herbal remedy made that mends all wounds and greatly energizes anyone who drinks it.",
+				"Type": "Cooking",
+				"Category": -7,
+				"Price": 2500,
+				"Texture": "assets/img/Items",
+				"SpriteIndex": 2,
+				"Edibility": 999,
+				"IsDrink": true,
+				"Buffs": [
+					{
+						"Id": "{{ModID}}_AncientTonicBuff",
+						"BuffId": null,
+						"IconTexture": "assets/img/Buffs",
+						"IconSpriteIndex": 2,
+						"Duration": -2,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 1.0,
+							"FishingLevel": 1.0,
+							"MiningLevel": 1.0,
+							"LuckLevel": 1.0,
+							"ForagingLevel": 1.0,
+							"MaxStamina": 0.0,
+							"MagneticRadius": 0.0,
+							"Speed": 0.0,
+							"Defense": 0.0,
+							"Attack": 0.0
+						},
+						"CustomFields": null
+					}
+				],
+				"ContextTags": [
+					"color_blue",
+					"flower_item",
+					"medicine_item"
+				],
+				"CanBeGivenAsGift": true,
+				"CanBeTrashed": true,
+				"ExcludeFromRandomSale": true,
+				"ExcludeFromShippingCollection": false
+			},
+		}
+	},
+	
+	{
+		"LogName": "Edit universal gift tastes",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Universal_Dislike"],
+				"Value": "{{ModId}}_PainTonic {{ModId}}_EnergizingTonic {{ModId}}_SunshineTonic {{ModId}}_AncientTonic",
+				"Delimiter": " "
+			}
+		]
+	},
+	
+	{
+		"LogName": "Edit individual NPC gift tastes", // 0-1: Love; 2-3: Like; 4-5: Dislike; 6-7:Hate; 8-9: Neutral
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Alex", "3"],
+				"Value": "{{ModId}}_PainTonic",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Clint", "3"],
+				"Value": "{{ModId}}_PainTonic",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "George", "3"],
+				"Value": "{{ModId}}_PainTonic",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Robin", "3"],
+				"Value": "{{ModId}}_PainTonic",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "7"],
+				"Value": "{{ModId}}_PainTonic {{ModId}}_EnergizingTonic {{ModId}}_SunshineTonic {{ModId}}_AncientTonic",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", "7"],
+				"Value": "{{ModId}}_PainTonic {{ModId}}_EnergizingTonic {{ModId}}_SunshineTonic {{ModId}}_AncientTonic",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leo", "7"],
+				"Value": "{{ModId}}_PainTonic {{ModId}}_EnergizingTonic {{ModId}}_SunshineTonic {{ModId}}_AncientTonic",
+				"Delimiter": " "
+			}
+		]
+	}
+]

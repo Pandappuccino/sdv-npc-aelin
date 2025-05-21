@@ -1,0 +1,10 @@
+"Changes":
+[
+	{
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModID}}.Quest01": "ItemDelivery/Painkilling Poppies/Aelin isn't having any luck growing Poppy. He's asked for help procuring them./Deliver 3 Poppy to Aelin./{{ModID}}_Aelin (O)376 3/100/Aelin will be pleased./false/Oh, thank you so much, @! These are perfect!$1#$b#Here, it's not much, but this is for you. I brewed it fresh!$1 $action AddItem (O)614 3 $action AddFriendshipPoints {{ModID}}_Aelin 150"
+		}
+	}
+]

@@ -25,13 +25,17 @@ So, how do you find Aelin? He's in Cindersap Forest, but there's no new houses (
 Visit the Secret Woods at any time between 6AM and 6PM on a sunny day after getting the ability to speak to the Junimos to get a small cutscene showcasing the entrance to Aelin's home.
 
 ## New Recipes
-By completing some bundles in the Community Center, Aelin will have his Junimo friends deliver recipes for new consumables.
-* Met Aelin: Pain-Relief Tonic (3 Poppy and 1 Honey; restores 50 HP and 50 energy)
-* Minecarts repaired: Energizing Tonic (2 Kale, 1 Carrot, 1 Honey; restores 75 energy and grants Speed +2 for 2 in-game hours)
-* Bus Repaired: Sunshine Tonic (3 Strawberry, 3 Summer Spangle, 1 Honey; restores 75 energy and grants Farming and Foraging +3 for 2 in-game hours)
-* Greenhouse Unlocked: Ancient Tonic (3 Ancient Fruit, 3 Sweet Gem Berry, 3 Honey; fully restores HP and energy, grants +1 to all skills for the entire day)
+By befriending Aelin and viewing his heart events, he will have his Junimo friends deliver mail containing recipes for new consumables.
+* Met Aelin (0 Hearts): Pain-Relief Tonic (3 Poppy and 1 Honey; restores 50 HP and 50 energy)
+* Two Hearts: Energizing Tonic (2 Kale, 1 Carrot, 1 Honey; restores 75 energy and grants Speed +2 for 2 in-game hours)
+* Six Hearts: Sunshine Tonic (3 Strawberry, 3 Summer Spangle, 1 Honey; restores 75 energy and grants Farming and Foraging +3 for 2 in-game hours)
+* Eight Hearts: Ancient Tonic (3 Ancient Fruit, 3 Sweet Gem Berry, 3 Honey; fully restores HP and energy, grants +1 to all skills for the entire day)
 
-If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be delivered by Harvey after purchasing the respective Joja developments.
+If the player ends up buying a Joja Membership, thus removing Aelin from the save, these recipes will instead be delivered by Harvey after purchasing the following Joja developments:
+* Pain-Relief Tonic: Buy a Joja membership
+* Energizing Tonic: Repair the minecarts
+* Sunshine Tonic: Repair the bus
+* Ancient Tonic: Unlock the greenhouse
 
 ## Mod Compatibilities
 This mod contains compatibilities for various mods. Primarily, these compatibilities are for gift tastes to match with Aelin's vanilla gift preferences; however, there are other mods that he is compatible with. Gift tastes are included by default.
@@ -51,9 +55,6 @@ If you're a mod author and want me to add gift tastes from your mod, let me know
 This mod needs the following mods to be installed.
 * Content Patcher
 * Generic Mod Config Menu
-* JSON Assets
-* Mail Framework Mod
-* Quest Framework
 
 ## Contact
 You can reach out to me regarding this mod via [email](mailto:pandappuccino.art@gmail.com) or through [the mod page](https://www.nexusmods.com/stardewvalley/mods/32819) on Nexus Mods. Please outline the reason you're reaching out and I'll do my best to get back to you! You can contact me for the following things:
