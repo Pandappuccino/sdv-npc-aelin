@@ -39,5 +39,15 @@
                 "Use Seasonal Designs": true
             }
         },
+
+  {
+    "LogName": "Load Aelin animations",
+    "Action": "EditData",
+    "Target": "Data/AnimationDescriptions",
+    "Entries": {
+      "{{ModId}}_AelinGardening": "",
+      "{{ModId}}_AelinNapping": ""
+    }
+  }
   }
 ]
