@@ -1,5 +1,6 @@
 "Changes": [
 	{
+		"LogName": "Load mail",
 		"Action": "EditData",
 		"Target": "Data/Mail",
 		"Entries": {
@@ -16,6 +17,7 @@
 	},
 
 	{
+		"LogName": "Load mail for obtaining Strawberry Tea recipe",
 		"Action": "EditData",
 		"Target": "Data/Mail",
 		"Entries": {
@@ -23,6 +25,19 @@
 		},
 		"When": {
 			"HasMod": ""
+		}
+	},
+
+	{
+		"LogName": "Load alternate mail for obtaining Strawberry Tea recipe",
+		"Action": "EditData",
+		"Target": "Data/Mail",
+		"Entries": {
+			"{{ModId}}.EugeneTeaRecipeAlt": "Farmer @-^How are you doing? It's been rather quiet in Cindersap Forest lately, and it caused me to start thinking about the past. One such memory was a tea recipe I'd made a long time ago for a dear friend. It was his favorite.^I've attached the recipe for you. Perhaps you might enjoy it as he did. I think I'll brew a cup in his memory...^   -Eugene%item cookingRecipe {{ModId}}_StrawberryTea%%[#]Eugene's Tea Recipe"
+		},
+		"When": {
+			"HasMod": "",
+			"HasFlag": "jojaMember",
 		}
 	}
 ]
