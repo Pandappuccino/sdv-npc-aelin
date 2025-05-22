@@ -38,18 +38,13 @@ If the player ends up buying a Joja Membership, thus removing Aelin from the sav
 * Ancient Tonic: Unlock the greenhouse
 
 ## Mod Compatibilities
-This mod contains compatibilities for various mods. Primarily, these compatibilities are for gift tastes to match with Aelin's vanilla gift preferences; however, there are other mods that he is compatible with. Gift tastes are included by default.
-
-If you're a mod author and want me to add gift tastes from your mod, let me know!
-
-### Custom Gift Tastes
-* Blue Eggs & Golden Mayo
-* Stardew Valley Extended
-* Wild Eggs
-
-### Miscellaneous Mods
 * Mobile Phone - Aelin does not have a phone until a certain point of his story.
 * Pelican Valley Lofts - Aelin can move into an apartment if this mod is installed and the option is set; he will be in Room 1D, with a custom room.
+
+## Custom NPC Interactions
+Aelin has custom interactions with [Eugene](https://www.nexusmods.com/stardewvalley/mods/9222), my favorite custom NPC! He has dialogue keys and events with him, and having Eugene in your game also adds an additional item--Strawberry Tea--and a quest line to obtain the recipe.
+
+If you take the Joja route, you will still get the recipe, but the quest will be absent and the tone rather different.
 
 ## Mod Requirements
 This mod needs the following mods to be installed.
@@ -59,6 +54,6 @@ This mod needs the following mods to be installed.
 ## Contact
 You can reach out to me regarding this mod via [email](mailto:pandappuccino.art@gmail.com) or through [the mod page](https://www.nexusmods.com/stardewvalley/mods/32819) on Nexus Mods. Please outline the reason you're reaching out and I'll do my best to get back to you! You can contact me for the following things:
 * Bug reports (something doesn't look/work correctly)
-* Adding gift tastes from another mod
+* Adding gift tastes from another mod (I'll be happy to add a patch adding items to his gift tastes!)
 * Expanding this mod with custom NPC interactions
 * Translating this mod to other languages
