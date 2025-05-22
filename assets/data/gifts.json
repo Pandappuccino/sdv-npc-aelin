@@ -1,4 +1,5 @@
 "Changes": [
+  // DEFAULT GIFT TASTES (DISLIKES ANIMAL PRODUCTS, HATES FISH AND ROE, NEUTRAL TOWARDS HONEY)
   {
     "LogName": "Load default gift tastes",
     "Action": "EditData",
@@ -11,6 +12,7 @@
     }
   },
 
+  // ALTERNATE GIFT TASTES (NEUTRAL TOWARDS MOST ANIMAL PRODUCTS, LIKES HONEY)
   {
     "LogName": "Load alternate gift tastes",
     "Action": "EditData",
