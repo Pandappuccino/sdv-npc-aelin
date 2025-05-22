@@ -1,5 +1,6 @@
 "Changes":
 [
+	// STANDARD QUESTS
 	{
 		"Action": "EditData",
 		"Target": "Data/Quests",
@@ -9,6 +10,7 @@
 		}
 	},
 
+	// LOAD ONLY IF CUSTOM NPC EUGENE IS IN GAME
 	{
 		"Action": "EditData",
 		"Target": "Data/Quests",
