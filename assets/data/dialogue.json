@@ -1,75 +1,186 @@
 "Changes": [
-	"Action": "EditData",
-	"Target": "Characters/Dialogue/{{ModID}}_Aelin",
-	"Entries": {
-		"breakUp": "...!!$5#$b#I...I see.$2#$b#I...suppose it was too good to be true, after all.",
-		"divorced": "...leave me alone, @...$2#$e#I can't even bear to look at you.$2",
-		"DumpsterDiveComment": "Um...@, what are you doing...?$2",
-		"GreenRain": "Ah...the air smells of grass and nature...#$b#It's making me feel quite a bit better, actually. Perhaps I'll go for a walk.$1",
-		"HitBySlingshot": "Ow!$5#$b#What are you doing, @?! That hurts!$5",
-		"WizardHouse_Entry": "Hello, Magnus, it's good to see you!/Ah, the energy is invigorating today.../Hm, I thought I saw it in here...",
-		"SpouseFarmhouseClutter": "Erm...@, I didn't want to say anything before, but...$2#$b#It's getting very hard to navigate in here...do you need help cleaning up...?$2",
-		"Spouse_MonstersInHouse": "@, help!!$3",
-		"SpouseStardrop": "My beloved, you've been working tirelessly nonstop, and you've done so much for me...$4#$b#It isn't much, but...please, accept this token of my love.$4",
-		"WipedMemory": "Ah...hello...have we met before?$2#$b#...No, I must be imagining it.$2#$b#My name is Aelin. It's a pleasure to meet you.",
-		"AcceptBirthdayGift_Loved": "*gasp!*$1#$b#You remembered my birthday...! Thank you so much, @! I love it!$1",
-		"AcceptBirthdayGift_Liked": "Oh, you remembered my birthday! Thank you!$1",
-		"AcceptBirthdayGift_Neutral": "Ah--for me? Thank you!$1",
-		"AcceptBirthdayGift_Disliked": "O-oh, um...thank you for remembering my birthday.$2",
-		"AcceptBirthdayGift_Hated": "...$2",
-		"AcceptBouquet": "!!#$b#Y-you want to...with me?#$b#I-I...um...goodness, this is so sudden, but...#$b#I accept, @.$4",
-		"AcceptGift_(O)StardropTea": "Oh, this aroma...it feels so nostalgic...$1#$b#Mm...the taste is just how I remember...how wonderful. Thank you, @.$1",
-		"AcceptGift_(O)376": "Ah, thank you, @! I was running quite low.$1#$b#Poppies have great medicinal properties. I can never have too many for my remedies.",
-		"AcceptGift_category_flower": "Ah, I love flowers!$1#$b#Thank you kindly, @. I'll have to find a nice place to display these!",
-		"AcceptGift_[O]417": "By Yoba...! Is this really for me?!#$b#Thank you so much!",
-		"AcceptGift_[O]454": "This fruit...it has endured countless ages to bloom by your hand...#$b#Are you sure I can have this...?",
-		"AcceptGift_(O)260": "A-ah, ahem...I, ah...don't handle spicy things well...thank you, though...",
-		"AcceptGift_(O)420": "Um...are you trying to poison me, @...?$2",
-		"RejectBouquet_AlreadyAccepted_Engaged": "@, silly, we're due to be married soon!$1#$b#Are you nervous, too? Don't worry, I'm not going anywhere.$4",
-		"RejectBouquet_AlreadyAccepted_Married": "Haha, is this your way of saying you'd like to renew our vows?$1",
-		"RejectBouquet_NpcAlreadyMarried": "Um...I'm quite flattered, but...I'm happy in my marriage to {0}.$2",
-		"RejectBouquet_LowHearts": "Erm...I'm sorry, @, but I don't really see you like that.$2",
-		"RejectBouquet_VeryLowHearts": "...I'm sorry, I...can't accept this. I don't see you like that.$2",
-		"RejectBouquet_Divorced": "...is this a cruel joke?$5#$b#Get away from me. Now.$5",
-		"RejectGift_Divorced": "Leave me alone, @. I want nothing to do with you.$5",
-		"RejectMovieTicket": "Um...I'm sorry, I don't think I feel comfortable enough to show myself to the village...$2",
-		"RejectMermaidPendant_AlreadyAccepted_Engaged": "Did you just have another one lying around, @?$1#$b#I'm not going anywhere, I promise.",
-		"RejectMermaidPendant_AlreadyAccepted_Married": "Dearest, I'm already wearing my pendant...",
-		"RejectMermaidPendant_NeedHouseUpgrade": "Oh, um...I would love to, truly, but...doesn't your house seem a tad small...?$2#$b#I don't think there's enough room for me to be there.$2",
-		"RejectMermaidPendant_NpcWithSomeoneElse": "O-oh...um, I'm flattered, @, truly, but...I'm with {0}, you know.$2",
-		"RejectMermaidPendant_PlayerWithSomeoneElse": "Um...aren't you seeing someone?$2",
-		"RejectMermaidPendant_Under8Hearts": "Ah...sorry, I don't think I'm ready for that...$2"
-		"RejectMermaidPendant_Under10Hearts": "Sorry...I don't know if I'm ready.$2",
-		"RejectMermaidPendant_Divorced": "...you're cruel, @.$2#$b#You're horrible and cruel.$5",
-		"Fair_Judging": "Best of luck, @!$2",
-		"Fair_Judged_PlayerLost_PurpleShorts": "Um...why were there a pair of...underpants...in your display?$2",
-		"Fair_Judged_PlayerLost_Skipped": "You didn't put anything in your display...? Were you too nervous?",
-		"Fair_Judged_PlayerLost": "Oh, I thought your display was fantastic, @.#$b#Well, there's always next year!$1",
-		"Fair_Judged_PlayerWon": "You did it! I knew you would win!$1",
-		"FlowerDance_Accept_Spouse": "Hehe, is this your way of asking me to dance with you, my beloved?$4#$b#I would be honored to dance with you.$1",
-		"FlowerDance_Accept": "I'm afraid I have two left feet, but I would be happy to join you.$1",
-		"FlowerDance_Decline": "I'm sorry, I'm afraid I'll have to pass...$2",
-		"WinterStar_GiveGift_Before_Spouse": "Surprise! I'm your secret gift-giver this year.$1#$b#Are you curious about what you got?#$b#Hehe, it's a secret.$1",
-		"WinterStar_GiveGift_Before": "Here--I'm your secret gift-giver this year.#$b#I hope you like it, @.$1",
-		"WinterStar_GiveGift_After_Spouse": "I hope you like it! I've been working so hard to get it right for you.$4",
-		"WinterStar_GiveGift_After": "Well? I hope I guessed your tastes right...it's not easy guessing what humans like.$4",
-		"WinterStar_ReceiveGift_category_flower": "Oh, this is beautiful! Thank you, @!$1#$e#Should I press this to preserve it, or display it in a vase...?$1",
-		"WinterStar_ReceiveGift_category_fish": "What the--?!$5#$b#This is--this is awful!$5",
-		"WinterStar_ReceiveGift": "Thank you, @.",
-		"WizardHouse": "I don't come here very often because the trip back and forth is quite tiring...$2",
-		"WizardHouse2": "Magnus is probably the first person to have sensed my presence here in a long time.",
-		"WizardHouse4": "Did you come here to take in the ambient energies, too? It's quite invigorating to be here.",
-		"WizardHouse6": "The Junimos are the ones who introduced me to Magnus. We go back quite a while.",
-		"WizardHouse8": "%revealtaste:Wizard:(O)422 Don't tell him I told you, but I heard from my friends that Magnus really likes Purple Mushrooms. Something about brewing potions with them...#$e#At least it's not Red Mushrooms...",
-		"{{ModId}}_SecretGrove": "It's not often that people come here. Please make yourself at home.",
-		"{{ModId}}_SecretGrove2": "I'm sure you saw the garden...I'm not very good at growing anything anymore.$2",
-		"{{ModId}}_SecretGrove4": "You visit here quite a lot, @...#$b#Not that I mind, of course. I'm actually starting to look forward to your visits.$4",
-		"{{ModId}}_SecretGrove6": "I thought I'd seen a few of my seedlings starting to sprout the other day...was I imagining it?",
-		"{{ModId}}_SecretGrove8": "Ah, hello, @. Make yourself comfortable, you're always welcome to visit.$1",
-		"{{ModId}}_SecretGrove10_Fri": "Oh, hello, @! I was just about to come find you.$1#$b#I was making some medicine, but I made a few too many. Here, this is for you! [{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic]#$e#I hope it'll be useful for you.$1",
-		"summer_1": "It's getting rather hot out...I don't handle heat well.$2#$q 328191/328192 summerheat_followup#How do you handle the heat, @?#$r 328191 0 summerheat_swim#I go swimming!#$r 328192 5 summerheat_cold#I eat lots of cold foods!",
-		"summerheat_swim": "Ah...I'm not a very strong swimmer, unfortunately.$2",
-		"summerheat_cold": "Hmm...cold foods...I wonder how I could get something like that...",
-		"summerheat_followup": "$p 328191 #Maybe I should learn how to swim soon...but I'm not a water spirit...|Cold food...cold food...maybe I could set a basket in the pond...?",
+	{
+		"LogName": "Load default dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/{{ModID}}_Aelin",
+		"Entries": {
+			// STANDARD SEASONAL DIALOGUE
+	
+			// LOCATION DIALOGUE
+	
+			// GIFT DIALOGUE
+	
+			// FESTIVAL DIALOGUE
+	
+			// MISCELLANEOUS DIALOGUE
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		},
+	},
+
+	{
+		"LogName": "Load default dialogue post-event",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/{{ModID}}_Aelin",
+		"Entries": {
+			// STANDARD SEASONAL DIALOGUE
+	
+			// LOCATION DIALOGUE
+	
+			// GIFT DIALOGUE
+	
+			// FESTIVAL DIALOGUE
+	
+			// MISCELLANEOUS DIALOGUE
+		},
+		"When": {
+			"HasSeenEvent": "Aelin.EightHearts"
+		},
+	},
+
+	{
+		"LogName": "Load default dialogue post-event (apartment)",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/{{ModID}}_Aelin",
+		"Entries": {
+			// STANDARD SEASONAL DIALOGUE
+	
+			// LOCATION DIALOGUE
+	
+			// GIFT DIALOGUE
+	
+			// FESTIVAL DIALOGUE
+	
+			// MISCELLANEOUS DIALOGUE
+		},
+		"When": {
+			"HasSeenEvent": "Aelin.EightHearts",
+			"HasMod": "",
+			"Move Into Apartment": true,
+		},
+	},
+
+	{
+		"LogName": "Load default schedule dialogue",
+		"Action": "EditData",
+		"Target": "Strings/Schedules/{{ModId}}_Aelin",
+		"Entries": {
+
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText",
+			"HasSeenEvent": "Aelin.Intrduction"
+		}
+	},
+
+	{
+		"LogName": "Load schedule dialogue post-event",
+		"Action": "EditData",
+		"Target": "Strings/Schedules/{{ModId}}_Aelin",
+		"Entries": {
+
+		},
+		"When": {
+			"HasSeenEvent": "Aelin.EightHearts"
+		}
+	},
+
+	{
+		"LogName": "Load schedule dialogue post-event (apartment)",
+		"Action": "EditData",
+		"Target": "Strings/Schedules/{{ModId}}_Aelin",
+		"Entries": {
+
+		},
+		"When": {
+			"HasSeenEvent": "Aelin.EightHearts",
+			"HasMod": "",
+			"Move Into Apartment": true
+		}
+	},
+
+	{
+		"LogName": "Load animation dialogue",
+		"Action": "EditData",
+		"Target": "Strings/animationDescriptions",
+		"Entries": {
+
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	{
+		"LogName": "Load rainy day dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Rainy",
+		"Entries": {
+
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	{
+		"LogName": "Load engagement dialogue",
+		"Action": "EditData",
+		"Target": "Data/EngagementDialogue",
+		"Entries": {
+
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	{
+		"LogName": "Load marriage dialogue",
+		"Action": "EditData",
+		"Target": "Characters/MarriageDialogue{{ModId}}_Aelin",
+		"Entries": {
+
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	{
+		"LogName": "Load summit dialogue when married",
+		"Action": "EditData",
+		"Target": "Data/ExtraDialogue",
+		"Entries": {
+			"SummitEvent_Dialogue3_{{ModID}}_Aelin": ""
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	{
+		"LogName": "Load event dialogue",
+		"Action": "EditData",
+		"Target": "Strings/Events",
+		"Entries": {
+			
+		},
+		"When": {
+			"HasSeenEvent": "Aelin.EightHearts"
+		}
+	},
+
+	{
+		"LogName": "Remove Aelin dialogue (Joja path)",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/{{ModID}}_Aelin, Strings/Schedules/{{ModId}}_Aelin, Characters/MarriageDialogue{{ModId}}_Aelin",
+		"Entries": {
+			"": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
 	}
 ]
