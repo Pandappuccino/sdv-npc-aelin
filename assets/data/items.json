@@ -125,7 +125,7 @@
 				"Category": -7,
 				"Price": 2500,
 				"Texture": "assets/img/Items",
-				"SpriteIndex": 2,
+				"SpriteIndex": 3,
 				"Edibility": 999,
 				"IsDrink": true,
 				"Buffs": [
@@ -233,5 +233,59 @@
 				"Delimiter": " "
 			}
 		]
-	}
+	},
+
+	{
+		"LogName": "Add Strawberry Tea item if Eugene NPC is installed",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_StrawberryTea": {
+				"Name": "{{ModId}}_StrawberryTea",
+				"DisplayName": "Strawberry Tea",
+				"Description": "A delicious blend of tea made from strawberries and sweetened with honey.",
+				"Type": "Cooking",
+				"Category": -7,
+				"Price": 500,
+				"Texture": "assets/img/Items",
+				"SpriteIndex": 4,
+				"Edibility": 25,
+				"IsDrink": true,
+				"ContextTags": [
+					"color_red"
+				],
+				"CanBeGivenAsGift": true,
+				"CanBeTrashed": true,
+				"ExcludeFromRandomSale": true,
+				"ExcludeFromShippingCollection": false
+			},
+		},
+		"When": {
+			"HasMod": ""
+		}
+	},
+	
+	{
+		"LogName": "Edit Strawberry Tea gift tastes",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Universal_Like"],
+				"Value": "{{ModId}}_StrawberryTea",
+				"Delimiter": " "
+			},
+
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "{{ModId}}_Aelin", "1"],
+				"Value": "{{ModId}}_StrawberryTea",
+				"Delimiter": " "
+			}
+		],
+		"When": {
+			"HasMod": ""
+		}
+	},
 ]
