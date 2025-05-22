@@ -13,18 +13,6 @@
 		}
 	},
 
-	// REMOVE QUESTS ON JOJA ROUTE
-	{
-		"Action": "EditData",
-		"Target": "Data/Quests",
-		"Entries": {
-			"": ""
-		},
-		"When": {
-			"HasFlag": "jojaMember"
-		}
-	},
-
 	// LOAD ONLY IF CUSTOM NPC EUGENE IS IN GAME
 	{
 		"Action": "EditData",
@@ -39,17 +27,22 @@
 			"HasMod": "", // Eugene NPC mod
 			"HasFlag": "canReadJunimoText"
 		}
-	},
+	},	
 
+	// REMOVE ALL QUESTS ON JOJA ROUTE
 	{
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"": ""
+			"{{ModId}}.Quest01": "",
+			"{{ModId}}.Quest02": "",
+			"{{ModId}}.EugeneQuest01": "",
+			"{{ModId}}.EugeneQuest02": "",
+			"{{ModId}}.EugeneQuest03": "",
+			"{{ModId}}.EugeneQuest04": ""
 		},
 		"When": {
-			"HasMod": "", // Eugene NPC mod
 			"HasFlag": "jojaMember"
 		}
-	}
+	},
 ]
