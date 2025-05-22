@@ -1,5 +1,4 @@
 "Changes": [
-  {
 {
             "LogName": "Load Aelin standard portraits",
             "Action": "Load",
@@ -45,9 +44,8 @@
     "Action": "EditData",
     "Target": "Data/AnimationDescriptions",
     "Entries": {
-      "{{ModId}}_AelinGardening": "",
-      "{{ModId}}_AelinNapping": ""
+      "{{ModId}}_Gardening": "",
+      "{{ModId}}_Napping": ""
     }
-  }
   }
 ]
