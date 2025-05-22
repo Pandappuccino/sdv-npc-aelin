@@ -7,6 +7,21 @@
 		"Entries": {
 			"{{ModId}}.Quest01": "Location/Secret in the Woods/The Wizard mentioned that there's a mysterious presence deep in the woods, and suggested that you check it out.../Locate the secret in the woods./{{ModId}}_SecretGrove/-1/0/-1/false",
 			"{{ModId}}.Quest02": "ItemDelivery/A Request for Poppies/Aelin is having trouble growing the ingredients for his medicine and asked for some help./Deliver 3 Poppy to Aelin./{{ModId}}_Aelin 376 3/-1/150/Aelin will be pleased./false/Oh, these are perfect! Thank you so much, @.$1#$b#Here, I know it isn't much, but I at least wanted to give you something in return.[(O)196]"
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	// REMOVE QUESTS ON JOJA ROUTE
+	{
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
 		}
 	},
 
@@ -21,7 +36,20 @@
 			"{{ModId}}.EugeneQuest04": "Location/A Secret Gift/Eugene wants to prepare a gift for Aelin from both himself and you. Now that the gift is ready, he wants to deliver it in person with you./Visit Aelin at his house between 6:00AM and 9:00PM./{{ModId}}_HouseInterior/-1/0/-1/false"
 		},
 		"When": {
-			"HasMod": "" // Eugene NPC mod
+			"HasMod": "", // Eugene NPC mod
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"": ""
+		},
+		"When": {
+			"HasMod": "", // Eugene NPC mod
+			"HasFlag": "jojaMember"
 		}
 	}
 ]
