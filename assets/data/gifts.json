@@ -5,7 +5,7 @@
     "Action": "EditData",
     "Target": "Data/NPCGiftTastes"
     "Entries": {
-      "{{ModID}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you."
+      "{{ModId}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you."
     },
     "When": {
       "Alternative Gift Tastes": false
@@ -18,12 +18,25 @@
     "Action": "EditData",
     "Target": "Data/NPCGiftTastes"
     "Entries": {
-      "{{ModID}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you."
+      "{{ModId}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you."
     },
     "When": {
       "Alternative Gift Tastes": true
     }
   },
+
+  // REMOVE GIFT TASTES (JOJA ROUTE)
+  {
+		"LogName": "Remove Aelin gift tastes (Joja path)",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"{{ModId}}_Aelin": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	}
 
   // MODDED ITEM GIFT TASTES
 ]
