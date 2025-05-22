@@ -1,4 +1,5 @@
 "Changes": [
+  // STANDARD SCHEDULES
   {
     "LogName": "Load Aelin default schedules",
     "Action": "EditData",
@@ -38,6 +39,7 @@
     }
   },
 
+  // REMOVE SCHEDULES ON JOJA PATH
   {
     "LogName": "Remove Aelin schedules on Joja path",
     "Action": "EditData",
