@@ -1,5 +1,43 @@
 "Changes": [
   {
-
+{
+            "LogName": "Load Aelin standard portraits",
+            "Action": "Load",
+            "Target": "Portraits/{{ModID}}_Aelin",
+            "FromFile": "assets/img/Aelin_Portraits.png",
+            "When": {
+                "Use Seasonal Designs": false
+            }
+        },
+        
+        {
+            "LogName": "Load Aelin seasonal portraits",
+            "Action": "Load",
+            "Target": "Portraits/{{ModID}}_Aelin",
+            "FromFile": "assets/img/Aelin_Portraits_{{season}}.png",
+            "When": {
+                "Use Seasonal Designs": true
+            }
+        },
+        
+        {
+            "LogName": "Load Aelin standard sprites",
+            "Action": "Load",
+            "Target": "Characters/{{ModID}}_Aelin",
+            "FromFile": "assets/img/Aelin_Sprites.png"
+            "When": {
+                "Use Seasonal Designs": false
+            }
+        },
+        
+        {
+            "LogName": "Load Aelin seasonal sprites",
+            "Action": "Load",
+            "Target": "Characters/{{ModID}}_Aelin",
+            "FromFile": "assets/img/Aelin_Sprites_{{season}}.png",
+            "When": {
+                "Use Seasonal Designs": true
+            }
+        },
   }
 ]
