@@ -27,235 +27,34 @@
     "Changes":
     [
         {
-            "LogName": "Load Aelin disposition pre-event",
+            "LogName": "Load disposition data",
             "Action": "Include",
-            "FromFile": "assets/data/disposition_default.json",
+            "FromFile": "assets/data/disposition.json",
             "When": {
                 "HasFlag": "canReadJunimoText"
             }
         },
-        
+
         {
-            "LogName": "Load Aelin disposition post-event",
+            "LogName": "Load map data",
             "Action": "Include",
-            "FromFile": "assets/data/disposition_event.json",
+            "FromFile": "assets/data/maps.json",
             "When": {
-                "HasSeenEvent": "Aelin.EightHearts",
-                "Move Into Apartment": false
+                "HasFlag": "canReadJunimoText"
             }
         },
         
         {
-            "LogName": "Load Aelin disposition post-event (with Pelican Valley Lofts installed)",
+            "LogName": "Load graphics data",
             "Action": "Include",
-            "FromFile": "assets/data/disposition_event_loft.json",
-            "When": {
-                "HasMod": "",
-                "HasSeenEvent": "Aelin.EightHearts",
-                "Move Into Apartment": true
-            }
-        },
-        
-        {
-            "LogName": "Load map patch for Secret Woods",
-            "Action": "EditMap",
-            "Target": "Maps/Woods",
-            "PatchMode": "Replace",
-            "FromFile": "assets/data/maps/GroveEntrance.tmx",
-            "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 0,
-                "Height": 0
-            },
-            "ToArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 0,
-                "Height": 0
-            },
+            "FromFile": "assets/data/graphics.json",
             "When": {
                 "HasFlag": "canReadJunimoText"
             }
         },
         
         {
-            "LogName": "Load Aelin's grove map",
-            "Action": "Load",
-            "Target": "Maps/{{ModID}}_Grove",
-            "FromFile": "assets/data/maps/SecretGrove.tmx",
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin's house map",
-            "Action": "Load",
-            "Target": "Maps/{{ModID}}_HouseInterior",
-            "FromFile": "assets/data/maps/AelinHouse.tmx",
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Load custom locations",
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "{{ModID}}_Grove": {
-                    "DisplayName": "Secret Grove",
-                    "DefaultArrivalTile": {
-                        "X": 0,
-                        "Y": 0
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/{{ModID}}_Grove"
-                    }
-                },
-                
-                "{{ModID}}_HouseInterior": {
-                    "DisplayName": "Aelin's House",
-                    "DefaultArrivalTile": {
-                        "X": 0,
-                        "Y": 0
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/{{ModID}}_HouseInterior"
-                    }
-                }
-            },
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Add warps from Secret Woods to Aelin's grove",
-            "Action": "EditMap",
-            "Target": "Maps/Woods",
-            "MapTiles": [
-                "0 0 {{ModID}}_Grove 0 0",
-            ],
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Add warps from Aelin's grove to Secret Woods",
-            "Action": "EditMap",
-            "Target": "Maps/{{ModID}}_Grove",
-            "MapTiles": [
-                "0 0 Woods 0 0", // X/Y coordinates for tile to step on, map to transfer to, X/Y coordinates for tile to land on
-                "0 0 Woods 0 0"
-            ],
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Add warps from Aelin's grove to Aelin's house",
-            "Action": "EditMap",
-            "Target": "Maps/{{ModID}}_Grove",
-            "MapTiles": [
-                "Position": {
-                    "X": 0,
-                    "Y": 0
-                },
-                "Layer": {
-                    "Buildings"
-                },
-                "SetProperties": {
-                    "Action": "LockedDoorWarp 0 0 {{ModID}}_HouseInterior 600 2400" // LockedDoorWarp, X/Y coordinates of destination, name of destination map, times when player can enter
-                }
-            ],
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Add warps from Aelin's house to Aelin's grove",
-            "Action": "EditMap",
-            "Target": "Maps/{{ModID}}_HouseInterior",
-            "MapTiles": [
-                "0 0 {{ModID}}_Grove 0 0", // X/Y coordinates for tile to step on, map to transfer to, X/Y coordinates for tile to land on
-            ],
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Load map patch for Aelin's apartment",
-            "Action": "EditMap",
-            "Target": "Maps/FRL_NPCApt_Floor1",
-            "PatchMode": "Replace",
-            "FromFile": "assets/data/maps/AelinApartment.tmx",
-            "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 11,
-                "Height": 11
-            },
-            "ToArea": {
-                "X": 38,
-                "Y": 8,
-                "Width": 11,
-                "Height": 11
-            },
-            "When": {
-                "HasSeenEvent": "Aelin.EightHearts",
-                "HasMod": "",
-                "Move Into Apartment": true
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin standard portraits",
-            "Action": "Load",
-            "Target": "Portraits/{{ModID}}_Aelin",
-            "FromFile": "assets/img/Aelin_Portraits.png",
-            "When": {
-                "Use Seasonal Designs": false
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin seasonal portraits",
-            "Action": "Load",
-            "Target": "Portraits/{{ModID}}_Aelin",
-            "FromFile": "assets/img/Aelin_Portraits_{{season}}.png",
-            "When": {
-                "Use Seasonal Designs": true
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin standard sprites",
-            "Action": "Load",
-            "Target": "Characters/{{ModID}}_Aelin",
-            "FromFile": "assets/img/Aelin_Sprites.png"
-            "When": {
-                "Use Seasonal Designs": false
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin seasonal sprites",
-            "Action": "Load",
-            "Target": "Characters/{{ModID}}_Aelin",
-            "FromFile": "assets/img/Aelin_Sprites_{{season}}.png",
-            "When": {
-                "Use Seasonal Designs": true
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin standard dialogue",
+            "LogName": "Load dialogue",
             "Action": "Include",
             "FromFile": "assets/data/dialogue.json",
             "When": {
@@ -264,13 +63,7 @@
         },
         
         {
-            "LogName": "Load Aelin marriage dialogue",
-            "Action": "Include",
-            "FromFile": "assets/data/dialogue_spouse.json"
-        },
-        
-        {
-            "LogName": "Load Aelin schedule pre-event",
+            "LogName": "Load schedule data",
             "Action": "Include",
             "FromFile": "assets/data/schedule.json",
             "When": {
@@ -279,65 +72,7 @@
         },
         
         {
-            "LogName": "Load Aelin schedule post-event",
-            "Action": "Include",
-            "FromFile": "assets/data/schedule_event.json",
-            "When": {
-                "HasSeenEvent": "Aelin.EightHearts"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin schedule post-event (with Pelican Valley Lofts installed)",
-            "Action": "Include",
-            "FromFile": "assets/data/schedule_event_loft.json",
-            "When": {
-                "HasMod": "",
-                "HasSeenEvent": "Aelin.EightHearts",
-                "Move Into Apartment": true
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin schedule dialogue pre-event",
-            "Action": "Include",
-            "FromFile": "assets/data/dialogue_schedule.json",
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin schedule dialogue post-event",
-            "Action": "Include",
-            "FromFile": "assets/data/dialogue_schedule_event.json",
-            "When": {
-                "HasSeenEvent": "Aelin.EightHearts"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin schedule dialogue post-event (with Pelican Valley Lofts installed)",
-            "Action": "Include",
-            "FromFile": "assets/data/dialogue_schedule_event_loft.json",
-            "When": {
-                "HasMod": "",
-                "HasSeenEvent": "Aelin.EightHearts",
-                "MoveIntoApartment": true
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin custom animations",
-            "Action": "Include",
-            "FromFile": "assets/data/animations.json",
-            "When": {
-                "HasFlag": "canReadJunimoText"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin default gift tastes",
+            "LogName": "Load gift tastes",
             "Action": "Include",
             "FromFile": "assets/data/gifts.json",
             "When": {
@@ -346,17 +81,7 @@
         },
         
         {
-            "LogName": "Load Aelin alternate gift tastes",
-            "Action": "Include",
-            "FromFile": "assets/data/gifts_alt.json",
-            "When": {
-                "HasFlag": "canReadJunimoText",
-                "Alternative Gift Tastes": true
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin festival data",
+            "LogName": "Load festival data",
             "Action": "Include",
             "FromFile": "assets/data/festivals.json",
             "When": {
@@ -365,7 +90,7 @@
         },
         
         {
-            "LogName": "Load Aelin events",
+            "LogName": "Load events",
             "Action": "Include",
             "FromFile": "assets/data/events.json",
             "When": {
@@ -374,13 +99,13 @@
         },
         
         {
-            "LogName": "Load new items",
+            "LogName": "Load items",
             "Action": "Include",
             "FromFile": "assets/data/items.json"
         },
         
         {
-            "LogName": "Load new recipes",
+            "LogName": "Load recipes",
             "Action": "Include",
             "FromFile": "assets/data/recipes.json"
         },
@@ -394,13 +119,16 @@
         },
         
         {
-            "LogName": "Load custom mail",
+            "LogName": "Load mail",
             "Action": "Include",
-            "FromFile": "assets/data/mail.json"3
+            "FromFile": "assets/data/mail.json",
+            "When": {
+                "HasFlag": "canReadJunimoText",
+            }
         },
         
         {
-            "LogName": "Load custom quests",
+            "LogName": "Load quests",
             "Action": "Include",
             "FromFile": "assets/data/quests.json",
             "When": {
@@ -408,43 +136,5 @@
                 "HasSeenEvent": "Aelin.Introduction"
             }
         }
-        
-        // JOJA ROUTE CHANGES - If the player buys a Joja membership, removes Aelin from the game. RETROACTIVE!
-        {
-            "LogName": "Load Aelin disposition (Joja Route)",
-            "Action": "Include",
-            "FromFile": "assets/data/disposition_joja.json",
-            "When": {
-                "HasFlag": "jojaMember"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin schedule (Joja Route)",
-            "Action": "Include",
-            "FromFile": "assets/data/schedule_joja.json",
-            "When": {
-                "HasFlag": "jojaMember"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin events (Joja Route)",
-            "Action": "Include",
-            "FromFile": "assets/data/events_joja.json",
-            "When": {
-                "HasFlag": "jojaMember"
-            }
-        },
-        
-        {
-            "LogName": "Load Aelin festival data (Joja Route)",
-            "Action": "Include",
-            "FromFile": "assets/data/festivals_joja.json",
-            "When": {
-                "HasFlag": "jojaMember"
-            }
-        }
-        
     ]
 }
