@@ -1,5 +1,7 @@
 "Changes": [
+	// HERBAL MEDICINE RECIPES
 	{
+		"LogName": "Load herbal medicine recipes"
 		"Action": "EditData",
 		"Target": "Data/CookingRecipes",
 		"Entries": {
@@ -10,7 +12,9 @@
 		}
 	},
 
+	// LOAD ONLY IF CUSTOM NPC EUGENE IS IN GAME
 	{
+		"LogName": "Load Strawberry Tea recipe"
 		"Action": "EditData",
 		"Target": "Data/CookingRecipes",
 		"Entries": {
