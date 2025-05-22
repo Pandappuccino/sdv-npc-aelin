@@ -4,7 +4,22 @@
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModID}}.Quest01": "Location/Secret in the Woods/The Wizard mentioned that there's a mysterious presence deep in the woods, and suggested that you check it out.../Locate the secret in the woods./{{ModId}}_SecretGrove/-1/0/-1/false"
+			"{{ModId}}.Quest01": "Location/Secret in the Woods/The Wizard mentioned that there's a mysterious presence deep in the woods, and suggested that you check it out.../Locate the secret in the woods./{{ModId}}_SecretGrove/-1/0/-1/false",
+			"{{ModId}}.Quest02": "ItemDelivery/A Request for Poppies/Aelin is having trouble growing the ingredients for his medicine and asked for some help./Deliver 3 Poppy to Aelin./{{ModId}}_Aelin 376 3/-1/150/Aelin will be pleased./false/Oh, these are perfect! Thank you so much, @.$1#$b#Here, I know it isn't much, but I at least wanted to give you something in return.[(O)196]"
+		}
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}.EugeneQuest01": "ItemDelivery/A Secret Gift/Eugene wants to prepare a gift for Aelin from both himself and you. Help him gather the ingredients, starting with fresh Tea Leaves./Deliver Tea Leaves to Eugene./{{EUGENE_MODID}}_Eugene 815 1/{{ModId}}.EugeneQuest02/0/-1/false/Ah, you brought them!$1#$b#Mm...they smell fantastic. Perfect for this gift.$1#$b#Next, we'll need some Honey. I think one jar should do.",
+			"{{ModId}}.EugeneQuest02": "ItemDelivery/A Secret Gift/Eugene wants to prepare a gift for Aelin from both himself and you. Help him gather the ingredients. Next on the list is fresh Honey./Deliver Honey to Eugene./{{EUGENE_MODID}}_Eugene 340 1/{{ModId}}.EugeneQuest03/0/-1/false/This looks perfect, @! Fantastic color and aroma...this is going to be a wonderful gift.$1#$b#Okay, I just have one last step. It's a secret ingredient for my tea, so don't tell anyone I told you...",
+			"{{ModId}}.EugeneQuest03": "ItemDelivery/A Secret Gift/Eugene wants to prepare a gift for Aelin from both himself and you. Help him gather ingredients. Lastly is the secret ingredient, a Strawberry./Deliver Strawberry to Eugene./{{EUGENE_MODID}}_Eugene 400 1/{{ModId}}.EugeneQuest04/0/-1/false/Ah, this Strawberry looks amazing...it's almost tempting to eat right now!$1#$b#Thank you, @, I think he'll really love this. Let's go visit him together to deliver it.",
+			"{{ModId}}.EugeneQuest04": "Location/A Secret Gift/Eugene wants to prepare a gift for Aelin from both himself and you. Now that the gift is ready, he wants to deliver it in person with you./Visit Aelin at his house between 6:00AM and 9:00PM./{{ModId}}_HouseInterior/-1/0/-1/false"
+		},
+		"When": {
+			"HasMod": "" // Eugene NPC mod
 		}
 	}
 ]
