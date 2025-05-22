@@ -17,6 +17,19 @@
 		}
 	},
 
+	// ALTERNATE MAIL FOR JOJA ROUTE
+	{
+		"LogName": "Load alternate mail",
+		"Action": "EditData",
+		"Target": "Data/Mail",
+		"Entries": {
+			"": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	},
+
 	// LOAD ONLY IF CUSTOM NPC EUGENE IS IN GAME
 	{
 		"LogName": "Load mail for obtaining Strawberry Tea recipe",
