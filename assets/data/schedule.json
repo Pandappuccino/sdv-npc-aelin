@@ -1,0 +1,52 @@
+"Changes": [
+  {
+    "LogName": "Load Aelin default schedules",
+    "Action": "EditData",
+    "Target": "Characters/Schedules/{{ModId}}_Aelin"
+    "Entries": {
+
+    },
+    "When": {
+      "HasFlag": "canReadJunimoText",
+      "HasSeenEvent": "Aelin.Introduction"
+    }
+  },
+
+  {
+    "LogName": "Load Aelin schedules post-event",
+    "Action": "EditData",
+    "Target": "Characters/Schedules/{{ModId}}_Aelin",
+    "Entries": {
+
+    },
+    "When": {
+      "HasSeenEvent": "Aelin.EightHearts"
+    }
+  },
+
+  {
+    "LogName": "Load Aelin schedules post-event (apartment)",
+    "Action": "EditData",
+    "Target": "Characters/Schedules/{{ModId}}_Aelin",
+    "Entries": {
+
+    },
+    "When": {
+      "HasSeenEvent": "Aelin.EightHearts",
+      "HasMod": "",
+      "Move Into Apartment": true
+    }
+  },
+
+  {
+    "LogName": "Remove Aelin schedules on Joja path",
+    "Action": "EditData",
+    "Target": "Characters/Schedules/{{ModId}}_Aelin",
+    "Entries": {
+
+    },
+    "When": {
+      "HasFlag": "jojaMember"
+    }
+  }
+]
