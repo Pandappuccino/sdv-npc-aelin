@@ -1,5 +1,6 @@
 "Changes": [
 	{
+		"LogName": "Load herbal medicine items",
 		"Action": "EditData",
 		"Target": "Data/Objects",
 		"Entries": {
