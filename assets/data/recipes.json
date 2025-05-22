@@ -8,5 +8,16 @@
 			"{{ModId}}_SunshineTonic": "400 3 593 3 340 1/25 5/{{ModId}}_SunshineTonic/null",
 			"{{ModId}}_AncientTonic": "454 3 417 3 340 3/25 5/{{ModId}}_AncientTonic/null"
 		}
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes",
+		"Entries": {
+			"{{ModId}}_StrawberryTea": "815 5 400 1 341 1/{{ModId}}_StrawberryTea}}/null"
+		},
+		"When": {
+			"HasMod": ""
+		}
 	}
 ]
