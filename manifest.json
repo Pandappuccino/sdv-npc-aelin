@@ -3,7 +3,7 @@
     "Author": "Pandappuccino",
     "Version": "1.0.0",
     "Description": "Adds a new NPC, Aelin, to Stardew Valley.",
-    "UniqueID": "Pandappuccino.AelinNPC",
+    "UniqueID": "Pandappuccino.Aelin",
     "UpdateKeys": ["Nexus:32819","Github:Pandappuccino/sdv-npc-aelin"]
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
