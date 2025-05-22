@@ -25,6 +25,8 @@
     }
   },
 
+  // MODDED ITEM GIFT TASTES,
+
   // REMOVE GIFT TASTES (JOJA ROUTE)
   {
 		"LogName": "Remove Aelin gift tastes (Joja path)",
@@ -36,7 +38,5 @@
 		"When": {
 			"HasFlag": "jojaMember"
 		}
-	}
-
-  // MODDED ITEM GIFT TASTES
+ }
 ]
