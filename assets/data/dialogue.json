@@ -1,4 +1,5 @@
 "Changes": [
+	// NORMAL DIALOGUE KEYS
 	{
 		"LogName": "Load default dialogue",
 		"Action": "EditData",
@@ -62,6 +63,19 @@
 	},
 
 	{
+		"LogName": "Load rainy day dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Rainy",
+		"Entries": {
+			"{{ModId}}_Aelin": "",
+		},
+		"When": {
+			"HasFlag": "canReadJunimoText"
+		}
+	},
+
+	// SCHEDULE DIALOGUE KEYS
+	{
 		"LogName": "Load default schedule dialogue",
 		"Action": "EditData",
 		"Target": "Strings/Schedules/{{ModId}}_Aelin",
@@ -105,31 +119,22 @@
 		"Action": "EditData",
 		"Target": "Strings/animationDescriptions",
 		"Entries": {
-
+			"{{ModId}}_Gardening": "",
+			"{{ModId}}_Napping": ""
 		},
 		"When": {
 			"HasFlag": "canReadJunimoText"
 		}
 	},
 
-	{
-		"LogName": "Load rainy day dialogue",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/Rainy",
-		"Entries": {
-
-		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
-		}
-	},
-
+	// SPOUSE DIALOGUE KEYS
 	{
 		"LogName": "Load engagement dialogue",
 		"Action": "EditData",
 		"Target": "Data/EngagementDialogue",
 		"Entries": {
-
+			"{{ModId}}_Aelin0": "",
+			"{{ModId}}_Aelin1": ""
 		},
 		"When": {
 			"HasFlag": "canReadJunimoText"
@@ -160,6 +165,7 @@
 		}
 	},
 
+	// EVENT DIALOGUE KEYS
 	{
 		"LogName": "Load event dialogue",
 		"Action": "EditData",
@@ -172,6 +178,9 @@
 		}
 	},
 
+	// SPECIAL DIALOGUE KEYS FOR MODS
+
+	// REMOVE AELIN DIALOGUE (JOJA PATH)
 	{
 		"LogName": "Remove Aelin dialogue (Joja path)",
 		"Action": "EditData",
@@ -182,5 +191,55 @@
 		"When": {
 			"HasFlag": "jojaMember"
 		}
-	}
+	},
+
+	{
+		"LogName": "Remove rainy day dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Rainy",
+		"Entries": {
+			"{{ModId}}_Aelin": "",
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	},
+
+	{
+		"LogName": "Remove animation dialogue",
+		"Action": "EditData",
+		"Target": "Strings/animationDescriptions",
+		"Entries": {
+			"{{ModId}}_Gardening": "",
+			"{{ModId}}_Napping": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	},
+
+	{
+		"LogName": "Remove engagement dialogue",
+		"Action": "EditData",
+		"Target": "Data/EngagementDialogue",
+		"Entries": {
+			"{{ModId}}_Aelin0": "",
+			"{{ModId}}_Aelin1": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	},
+	
+	{
+		"LogName": "Remove summit dialogue",
+		"Action": "EditData",
+		"Target": "Data/ExtraDialogue",
+		"Entries": {
+			"SummitEvent_Dialogue3_{{ModID}}_Aelin": ""
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	},
 ]
