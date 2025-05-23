@@ -135,6 +135,16 @@
                 "HasFlag": "canReadJunimoText",
                 "HasSeenEvent": "Aelin.Introduction"
             }
-        }
+        },
+
+        {
+            "LogName": "Load blank JSON to replace contents on Joja path",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModID}}.Aelin, Strings/Schedules/{{ModId}}.Aelin, Characters/MarriageDialogue{{ModId}}.Aelin, Characters/Schedules/{{ModId}}.Aelin",
+            "FromFile": "assets/data/blank.json",
+            "When": {
+                "HasFlag": "jojaMember"
+            }
+        },
     ]
 }
