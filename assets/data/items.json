@@ -263,7 +263,7 @@
 				},
 			},
 			"When": {
-				"HasMod": "SapieEugeneEnglish"
+				"HasMod |contains=EugeneEnglish": true
 			}
 		},
 		
