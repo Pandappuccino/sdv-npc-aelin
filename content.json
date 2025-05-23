@@ -13,7 +13,7 @@
             "AllowValues": "true, false",
             "Default": "false",
             "AllowBlank": false,
-            "Description": "Changes Aelin's gift tastes regarding animal products. Default false. If true, changes gift tastes towards eggs, milk, duck feathers, and honey (and items made with them) to neutral. Does not affect gift tastes towards rabbit feet or towards fish and roe."
+            "Description": "Changes Aelin's gift tastes regarding animal products. Default false. If true, changes gift tastes towards most animal products and food made with them to neutral to make his tastes slightly less picky. Does not change tastes towards fish and roe."
         },
         
         "Move Into Apartment": {
