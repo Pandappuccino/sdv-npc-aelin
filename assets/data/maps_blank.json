@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            {
+                "LogName": "Remove map patch for Secret Woods",
+                "Action": "EditMap",
+                "Target": "Maps/Woods",
+                "PatchMode": "Replace",
+                "FromFile": "assets/data/maps/blank.tmx",
+                "FromArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 0,
+                    "Height": 0
+                },
+                "ToArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 0,
+                    "Height": 0
+                }
+            },
+            
+            {
+                "LogName": "Remove warps",
+                "Action": "EditMap",
+                "Target": "Maps/Woods",
+                "MapTiles": [
+                    "",
+                ]
+            }
+        }
+    ]
+}
