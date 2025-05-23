@@ -212,19 +212,7 @@
 			},
 		},
 		
-		// REMOVE AELIN DIALOGUE (JOJA PATH)
-		{
-			"LogName": "Remove Aelin dialogue (Joja path)",
-			"Action": "EditData",
-			"Target": "Characters/Dialogue/{{ModID}}.Aelin, Strings/Schedules/{{ModId}}.Aelin, Characters/MarriageDialogue{{ModId}}.Aelin",
-			"Entries": {
-				"": ""
-			},
-			"When": {
-				"HasFlag": "jojaMember"
-			}
-		},
-		
+		// REMOVE AELIN DIALOGUE (JOJA PATH)		
 		{
 			"LogName": "Remove rainy day dialogue",
 			"Action": "EditData",
