@@ -48,6 +48,20 @@
                 "{{ModId}}.Gardening": "",
                 "{{ModId}}.Napping": ""
             }
-        }
+        }, 
+        
+        {
+            "LogName": "Remove animations on Joja path",
+            "Action": "EditData",
+            "Target": "Data/AnimationDescriptions",
+            "Entries": {
+                "{{ModId}}.Gardening": "",
+                "{{ModId}}.Napping": ""
+            },
+            "When": {
+                "HasFlag": "jojaMember"
+            }
+        },
+        
     ]
 }
