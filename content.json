@@ -146,5 +146,14 @@
                 "HasFlag": "jojaMember"
             }
         },
+
+        {
+            "LogName": "Load blank JSON to remove maps on Joja path",
+            "Action": "Include",
+            "FromFile": "assets/data/maps_blank.json",
+            "When": {
+                "HasFlag": "jojaMember"
+            }
+        }
     ]
 }
