@@ -99,6 +99,15 @@
         },
         
         {
+            "LogName": "Load event CGs",
+            "Action": "Include",
+            "FromFile": "assets/data/cg.json",
+            "When": {
+                "HasFlag": "canReadJunimoText"
+            }
+        },
+        
+        {
             "LogName": "Load items",
             "Action": "Include",
             "FromFile": "assets/data/items.json"

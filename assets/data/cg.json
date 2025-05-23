@@ -1,0 +1,17 @@
+{
+	"Changes": [
+		// INTRODUCTION CG
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.AelinIntro",
+			"FromFile": "assets/data/cg/CG_Intro.tmx"
+		},
+		
+		// EIGHT-HEARTS CG
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.AelinEightHearts",
+			"FromFile": "assets/data/cg/CG_EightHeart.tmx"
+		}
+	]
+}
