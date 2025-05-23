@@ -45,7 +45,7 @@
 				"{{ModId}}.EugeneTeaRecipe": "Farmer @-^Thank you again for helping me with the gift to my old friend! He doesn't get to enjoy strawberries very often, even though they're his favorite. The way his eyes lit up...I haven't seen it in a very long time.^As thanks, I'd like you to have my secret tea recipe. It's a small way of saying thanks.^   -Eugene%item cookingRecipe {{ModId}}_StrawberryTea%%[#]Eugene's Tea Recipe"
 			},
 			"When": {
-				"HasMod": "SapieEugeneEnglish"
+				"HasMod |contains=EugeneEnglish": true
 			}
 		},
 		
@@ -57,7 +57,7 @@
 				"{{ModId}}.EugeneTeaRecipe": "Farmer @-^How are you doing? It's been rather quiet in Cindersap Forest lately, and it caused me to start thinking about the past. One such memory was a tea recipe I'd made a long time ago for a dear friend. It was his favorite.^I've attached the recipe for you. Perhaps you might enjoy it as he did. I think I'll brew a cup in his memory...^   -Eugene%item cookingRecipe {{ModId}}_StrawberryTea%%[#]Eugene's Tea Recipe"
 			},
 			"When": {
-				"HasMod": "SapieEugeneEnglish",
+				"HasMod |contains=EugeneEnglish": true,
 				"HasFlag": "jojaMember",
 			}
 		}
