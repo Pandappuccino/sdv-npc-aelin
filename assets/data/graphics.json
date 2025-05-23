@@ -1,8 +1,9 @@
-"Changes": [
 {
+    "Changes": [
+        {
             "LogName": "Load Aelin standard portraits",
             "Action": "Load",
-            "Target": "Portraits/{{ModID}}_Aelin",
+            "Target": "Portraits/{{ModID}}.Aelin",
             "FromFile": "assets/img/Aelin_Portraits.png",
             "When": {
                 "Use Seasonal Designs": false
@@ -12,7 +13,7 @@
         {
             "LogName": "Load Aelin seasonal portraits",
             "Action": "Load",
-            "Target": "Portraits/{{ModID}}_Aelin",
+            "Target": "Portraits/{{ModID}}.Aelin",
             "FromFile": "assets/img/Aelin_Portraits_{{season}}.png",
             "When": {
                 "Use Seasonal Designs": true
@@ -22,7 +23,7 @@
         {
             "LogName": "Load Aelin standard sprites",
             "Action": "Load",
-            "Target": "Characters/{{ModID}}_Aelin",
+            "Target": "Characters/{{ModID}}.Aelin",
             "FromFile": "assets/img/Aelin_Sprites.png"
             "When": {
                 "Use Seasonal Designs": false
@@ -32,20 +33,21 @@
         {
             "LogName": "Load Aelin seasonal sprites",
             "Action": "Load",
-            "Target": "Characters/{{ModID}}_Aelin",
+            "Target": "Characters/{{ModID}}.Aelin",
             "FromFile": "assets/img/Aelin_Sprites_{{season}}.png",
             "When": {
                 "Use Seasonal Designs": true
             }
         },
-
-  {
-    "LogName": "Load Aelin animations",
-    "Action": "EditData",
-    "Target": "Data/AnimationDescriptions",
-    "Entries": {
-      "{{ModId}}_Gardening": "",
-      "{{ModId}}_Napping": ""
-    }
-  }
-]
+        
+        {
+            "LogName": "Load Aelin animations",
+            "Action": "EditData",
+            "Target": "Data/AnimationDescriptions",
+            "Entries": {
+                "{{ModId}}.Gardening": "",
+                "{{ModId}}.Napping": ""
+            }
+        }
+    ]
+}

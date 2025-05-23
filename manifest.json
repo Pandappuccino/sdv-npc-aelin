@@ -4,7 +4,7 @@
     "Version": "1.0.0",
     "Description": "Adds a new NPC, Aelin, to Stardew Valley.",
     "UniqueID": "Pandappuccino.Aelin",
-    "UpdateKeys": ["Nexus:32819","Github:Pandappuccino/sdv-npc-aelin"]
+    "UpdateKeys": ["Nexus:32819","Github:Pandappuccino/sdv-npc-aelin"],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     },
@@ -12,11 +12,6 @@
         {
             "UniqueID": "spacechase0.GenericModConfigMenu",
             "IsRequired": true
-        },
-        
-        {
-            "UniqueID": "FireRedLily.NPCApartments", // enables adding an apartment for Aelin
-            "IsRequired": false
         }
     ],
 }

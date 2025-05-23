@@ -1,137 +1,139 @@
-"Changes": [
-  {
 {
-            "LogName": "Load map patch for Secret Woods",
-            "Action": "EditMap",
-            "Target": "Maps/Woods",
-            "PatchMode": "Replace",
-            "FromFile": "assets/data/maps/GroveEntrance.tmx",
-            "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 0,
-                "Height": 0
-            },
-            "ToArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 0,
-                "Height": 0
-            }
-        },
-        
+    "Changes": [
         {
-            "LogName": "Load Aelin's grove map",
-            "Action": "Load",
-            "Target": "Maps/{{ModID}}_Grove",
-            "FromFile": "assets/data/maps/SecretGrove.tmx"
-        },
-        
-        {
-            "LogName": "Load Aelin's house map",
-            "Action": "Load",
-            "Target": "Maps/{{ModID}}_HouseInterior",
-            "FromFile": "assets/data/maps/AelinHouse.tmx"
-        },
-        
-        {
-            "LogName": "Load custom locations",
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "{{ModID}}_Grove": {
-                    "DisplayName": "Secret Grove",
-                    "DefaultArrivalTile": {
-                        "X": 0,
-                        "Y": 0
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/{{ModID}}_Grove"
-                    }
-                },
-                
-                "{{ModID}}_HouseInterior": {
-                    "DisplayName": "Aelin's House",
-                    "DefaultArrivalTile": {
-                        "X": 0,
-                        "Y": 0
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/{{ModID}}_HouseInterior"
-                    }
-                }
-            }
-        },
-        
-        {
-            "LogName": "Add warps from Secret Woods to Aelin's grove",
-            "Action": "EditMap",
-            "Target": "Maps/Woods",
-            "MapTiles": [
-                "0 0 {{ModID}}_Grove 0 0",
-            ]
-        },
-        
-        {
-            "LogName": "Add warps from Aelin's grove to Secret Woods",
-            "Action": "EditMap",
-            "Target": "Maps/{{ModID}}_Grove",
-            "MapTiles": [
-                "0 0 Woods 0 0", // X/Y coordinates for tile to step on, map to transfer to, X/Y coordinates for tile to land on
-                "0 0 Woods 0 0"
-            ]
-        },
-        
-        {
-            "LogName": "Add warps from Aelin's grove to Aelin's house",
-            "Action": "EditMap",
-            "Target": "Maps/{{ModID}}_Grove",
-            "MapTiles": [
-                "Position": {
+            {
+                "LogName": "Load map patch for Secret Woods",
+                "Action": "EditMap",
+                "Target": "Maps/Woods",
+                "PatchMode": "Replace",
+                "FromFile": "assets/data/maps/GroveEntrance.tmx",
+                "FromArea": {
                     "X": 0,
-                    "Y": 0
+                    "Y": 0,
+                    "Width": 0,
+                    "Height": 0
                 },
-                "Layer": {
-                    "Buildings"
-                },
-                "SetProperties": {
-                    "Action": "LockedDoorWarp 0 0 {{ModID}}_HouseInterior 600 2400" // LockedDoorWarp, X/Y coordinates of destination, name of destination map, times when player can enter
+                "ToArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 0,
+                    "Height": 0
                 }
-            ]
-        },
-        
-        {
-            "LogName": "Add warps from Aelin's house to Aelin's grove",
-            "Action": "EditMap",
-            "Target": "Maps/{{ModID}}_HouseInterior",
-            "MapTiles": [
-                "0 0 {{ModID}}_Grove 0 0", // X/Y coordinates for tile to step on, map to transfer to, X/Y coordinates for tile to land on
-            ]
-        },
-        
-        {
-            "LogName": "Load map patch for Aelin's apartment",
-            "Action": "EditMap",
-            "Target": "Maps/FRL_NPCApt_Floor1",
-            "PatchMode": "Replace",
-            "FromFile": "assets/data/maps/AelinApartment.tmx",
-            "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 11,
-                "Height": 11
             },
-            "ToArea": {
-                "X": 38,
-                "Y": 8,
-                "Width": 11,
-                "Height": 11
+            
+            {
+                "LogName": "Load Aelin's grove map",
+                "Action": "Load",
+                "Target": "Maps/{{ModId}}.Grove",
+                "FromFile": "assets/data/maps/SecretGrove.tmx"
             },
-            "When": {
-                "HasSeenEvent": "Aelin.EightHearts",
-                "HasMod": "",
-                "Move Into Apartment": true
+            
+            {
+                "LogName": "Load Aelin's house map",
+                "Action": "Load",
+                "Target": "Maps/{{ModId}}.HouseInterior",
+                "FromFile": "assets/data/maps/AelinHouse.tmx"
+            },
+            
+            {
+                "LogName": "Load custom locations",
+                "Action": "EditData",
+                "Target": "Data/Locations",
+                "Entries": {
+                    "{{ModId}}.Grove": {
+                        "DisplayName": "Secret Grove",
+                        "DefaultArrivalTile": {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModId}}.Grove"
+                        }
+                    },
+                    
+                    "{{ModId}}.HouseInterior": {
+                        "DisplayName": "Aelin's House",
+                        "DefaultArrivalTile": {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModId}}.HouseInterior"
+                        }
+                    }
+                }
+            },
+            
+            {
+                "LogName": "Add warps from Secret Woods to Aelin's grove",
+                "Action": "EditMap",
+                "Target": "Maps/Woods",
+                "MapTiles": [
+                    "0 0 {{ModId}}.Grove 0 0",
+                ]
+            },
+            
+            {
+                "LogName": "Add warps from Aelin's grove to Secret Woods",
+                "Action": "EditMap",
+                "Target": "Maps/{{ModId}}.Grove",
+                "MapTiles": [
+                    "0 0 Woods 0 0", // X/Y coordinates for tile to step on, map to transfer to, X/Y coordinates for tile to land on
+                    "0 0 Woods 0 0"
+                ]
+            },
+            
+            {
+                "LogName": "Add warps from Aelin's grove to Aelin's house",
+                "Action": "EditMap",
+                "Target": "Maps/{{ModId}}.Grove",
+                "MapTiles": [
+                    "Position": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "Layer": {
+                        "Buildings"
+                    },
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 0 0 {{ModId}}.HouseInterior 600 2400" // LockedDoorWarp, X/Y coordinates of destination, name of destination map, times when player can enter
+                    }
+                ]
+            },
+            
+            {
+                "LogName": "Add warps from Aelin's house to Aelin's grove",
+                "Action": "EditMap",
+                "Target": "Maps/{{ModId}}.HouseInterior",
+                "MapTiles": [
+                    "0 0 {{ModId}}.Grove 0 0", // X/Y coordinates for tile to step on, map to transfer to, X/Y coordinates for tile to land on
+                ]
+            },
+            
+            {
+                "LogName": "Load map patch for Aelin's apartment",
+                "Action": "EditMap",
+                "Target": "Maps/FRL_NPCApt_Floor1",
+                "PatchMode": "Replace",
+                "FromFile": "assets/data/maps/AelinApartment.tmx",
+                "FromArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 11,
+                    "Height": 11
+                },
+                "ToArea": {
+                    "X": 38,
+                    "Y": 8,
+                    "Width": 11,
+                    "Height": 11
+                },
+                "When": {
+                    "HasSeenEvent": "Aelin.EightHearts",
+                    "HasMod |contains=NPCApartments": true,
+                    "Move Into Apartment": true
+                }
             }
         }
-  }
-]
+    ]
+}

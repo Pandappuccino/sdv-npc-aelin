@@ -1,0 +1,72 @@
+{
+    "Changes": [
+        {
+			"LogName": "Initialize phone data pre-event",
+            "Action": "EditData",
+            "Target": "JoXW.MobilePhone/npcs",
+            "Entries": {
+                "{{ModId}}.Aelin": {
+                    "minPointsToCall": 2000,
+                    "canCall": false
+				}
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
+		},
+		
+		{
+            "LogName": "Load new phone data post-event",
+			"Action": "EditData",
+            "Target": "JoXW.MobilePhone/npcs",
+            "Entries": {
+                "{{ModId}}.Aelin": {
+                    "reminisces": [
+                        {
+                            "name": "The Secret of the Woods",
+                            "location": "{{ModId}}.HouseInterior",
+                            "eventId": "Aelin.Introduction",
+                            "night": false,
+                            "mail": null
+						}
+					],
+                    "minPointsToCall": 1000,
+                    "canCall": true
+				}
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts"
+			}
+		},
+		
+		{
+			"LogName": "Load custom phatic cues",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Entries":
+			{
+				"MobilePhoneGreeting": "Hello, {0}! How are you?$1",
+				"MobilePhoneReminisce": "Ah, you remember that? Goodness, how long has it been?", 
+				"MobilePhoneGoodBye": "Take care, and talk to you again soon!$1",
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts"
+			}
+		},
+		
+		// REMOVE PHONE DATA ON JOJA ROUTE	
+		{
+            "Action": "EditData",
+            "Target": "JoXW.MobilePhone/npcs",
+            "Entries": {
+                "{{ModId}}.Aelin": {
+                    "minPointsToCall": 9999,
+                    "canCall": false
+				}
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		}
+	]
+}

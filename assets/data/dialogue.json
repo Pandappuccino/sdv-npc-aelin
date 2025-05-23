@@ -1,245 +1,278 @@
-"Changes": [
-	// NORMAL DIALOGUE KEYS
-	{
-		"LogName": "Load default dialogue",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/{{ModID}}_Aelin",
-		"Entries": {
-			// STANDARD SEASONAL DIALOGUE
-	
-			// LOCATION DIALOGUE
-	
-			// GIFT DIALOGUE
-	
-			// FESTIVAL DIALOGUE
-	
-			// MISCELLANEOUS DIALOGUE
+{
+	"Changes": [
+		// NORMAL DIALOGUE KEYS
+		{
+			"LogName": "Load default dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
+			"Entries": {
+				// STANDARD SEASONAL DIALOGUE
+				
+				// LOCATION DIALOGUE
+				
+				// GIFT DIALOGUE
+				"AcceptGift_(O)260": "Ah, thank you, but, um...I don't handle spicy things well.$2#$b#They upset my stomach quite badly.",
+				"AcceptGift_(O)341": "Oh, what lovely craftsmanship! Are you sure I can have this?",
+				"AcceptGift_(O)376": "Oh, thank you so much, @!$1#$b#Poppies make an excellent pain reliever when dried. I like to keep a stock of them.",
+				"AcceptGift_(O)400": "*gasp* Oh, my favorite! How did you know?$1",
+				"AcceptGift_(O)417": "Oh my goodness...#$b#I've never been able to grow one of these...are you really sure I can have this?",
+				"AcceptGift_(O)420": "Um...@?$2#$b#Are you trying to poison me...?$2",
+				"AcceptGift_(O)454": "A-are you really sure I can have this, @? It must have taken so long to grow!#$b#",
+				"AcceptGift_(O)829": "Ah, thank you, @!$1#$b#Ginger is a fantastic stomach remedy. I greatly recommend it for nausea.",
+				"AcceptGift_(O)StardropTea": "Oh my, is this really for me?$1#$b#Ah, this aroma...it's so nostalgic...it's been a long time since I had a cup...$1",
+				"AcceptGift_(O){{ModId}}.PainTonic": "You made some medicine for me?$1#$b#Thank you, @. I can never have too much on hand.",
+				"AcceptGift_(O){{ModId}}.EnergizingTonic": "You made some medicine for me?$1#$b#Thank you, @. I can never have too much on hand.",
+				"AcceptGift_(O){{ModId}}.SunshineTonic": "You made some medicine for me?$1#$b#Thank you, @. I can never have too much on hand.",
+				"AcceptGift_(O){{ModId}}.AncientTonic": "You made some medicine for me?$1#$b#Thank you, @. I can never have too much on hand.",
+				
+				// REJECT QUEST ITEM DIALOGUE
+				"RejectItem_(O)71": "Um...these aren't mine, @.",
+				"RejectItem_(O)789": "Um...these aren't mine, @.",
+				"RejectItem_(O)788": "This isn't mine...",
+				"RejectItem_(O)790": "Ah...sorry, this isn't mine. I can see why you'd think it was, though.",
+				"RejectItem_(O)864": "Sorry, I don't know who this is.",
+				"RejectItem_(O)865": "Oh, goodness, that scent is so strong! A bit too intense for me...",
+				"RejectItem_(O)866": "What a lovely flower...ah, but I can't accept this.",
+				"RejectItem_(O)867": "Huh? What is this thing...?",
+				"RejectItem_(O)868": "What a peculiar item...though, I don't know what you want me to do with it.#$b#Perhaps someone else is looking for it?",
+				"RejectItem_(O)869": "What the--?#$b#Why are you carrying a worm around?",
+				"RejectItem_(O)870": "I'm not sure who this belongs to, but it's not me...",
+				"RejectItem_(O)875": "AUGH!!#$b#I'm not touching that--get it away from me!",
+				"RejectItem_(O)876": "Why do you have that? And why are you trying to give it to me?",
+				"RejectItem_(O)897": "A stocklist...? I don't know why you'd think I need that...",
+				"RejectItem_(O)GoldenBobber": "...That's not mine.",
+				
+				// MISCELLANEOUS DIALOGUE
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			},
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
+		
+		{
+			"LogName": "Load default dialogue post-event",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
+			"Entries": {
+				// LOCATION DIALOGUE
+				
+				// FESTIVAL DIALOGUE
+				
+				// MISCELLANEOUS DIALOGUE
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts"
+			},
 		},
-	},
-
-	{
-		"LogName": "Load default dialogue post-event",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/{{ModID}}_Aelin",
-		"Entries": {
-			// STANDARD SEASONAL DIALOGUE
-	
-			// LOCATION DIALOGUE
-	
-			// GIFT DIALOGUE
-	
-			// FESTIVAL DIALOGUE
-	
-			// MISCELLANEOUS DIALOGUE
+		
+		{
+			"LogName": "Load default dialogue post-event (apartment)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
+			"Entries": {
+				// LOCATION DIALOGUE
+				
+				// FESTIVAL DIALOGUE
+				
+				// MISCELLANEOUS DIALOGUE
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts",
+				"HasMod |contains=NPCApartments": true,
+				"Move Into Apartment": true,
+			},
 		},
-		"When": {
-			"HasSeenEvent": "Aelin.EightHearts"
+		
+		{
+			"LogName": "Load rainy day dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Rainy",
+			"Entries": {
+				"{{ModId}}_Aelin": "{{Random: Goodness, this weather is absolutely dreadful...$2 && This rain has me feeling more drained than usual...$2 && Oh, @, you're soaked!#$b#Here, sit down a moment to dry off. && The rain is rather strong today.#$b#At least you don't have to water your farm, though!$1 |inputSeparator=&&}}",
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
 		},
-	},
-
-	{
-		"LogName": "Load default dialogue post-event (apartment)",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/{{ModID}}_Aelin",
-		"Entries": {
-			// STANDARD SEASONAL DIALOGUE
-	
-			// LOCATION DIALOGUE
-	
-			// GIFT DIALOGUE
-	
-			// FESTIVAL DIALOGUE
-	
-			// MISCELLANEOUS DIALOGUE
+		
+		// SCHEDULE DIALOGUE KEYS
+		{
+			"LogName": "Load default schedule dialogue",
+			"Action": "EditData",
+			"Target": "Strings/Schedules/{{ModId}}.Aelin",
+			"Entries": {
+				
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText",
+				"HasSeenEvent": "Aelin.Intrduction"
+			}
 		},
-		"When": {
-			"HasSeenEvent": "Aelin.EightHearts",
-			"HasMod": "",
-			"Move Into Apartment": true,
+		
+		{
+			"LogName": "Load schedule dialogue post-event",
+			"Action": "EditData",
+			"Target": "Strings/Schedules/{{ModId}}.Aelin",
+			"Entries": {
+				
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts"
+			}
 		},
-	},
-
-	{
-		"LogName": "Load rainy day dialogue",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/Rainy",
-		"Entries": {
-			"{{ModId}}_Aelin": "",
+		
+		{
+			"LogName": "Load schedule dialogue post-event (apartment)",
+			"Action": "EditData",
+			"Target": "Strings/Schedules/{{ModId}}.Aelin",
+			"Entries": {
+				
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts",
+				"HasMod |contains=NPCApartments": true,
+				"Move Into Apartment": true
+			}
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
-		}
-	},
-
-	// SCHEDULE DIALOGUE KEYS
-	{
-		"LogName": "Load default schedule dialogue",
-		"Action": "EditData",
-		"Target": "Strings/Schedules/{{ModId}}_Aelin",
-		"Entries": {
-
+		
+		{
+			"LogName": "Load animation dialogue",
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": {
+				"{{ModId}}_Gardening": "",
+				"{{ModId}}_Napping": ""
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText",
-			"HasSeenEvent": "Aelin.Intrduction"
-		}
-	},
-
-	{
-		"LogName": "Load schedule dialogue post-event",
-		"Action": "EditData",
-		"Target": "Strings/Schedules/{{ModId}}_Aelin",
-		"Entries": {
-
+		
+		// SPOUSE DIALOGUE KEYS
+		{
+			"LogName": "Load engagement dialogue",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"{{ModId}}_Aelin0": "",
+				"{{ModId}}_Aelin1": ""
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
 		},
-		"When": {
-			"HasSeenEvent": "Aelin.EightHearts"
-		}
-	},
-
-	{
-		"LogName": "Load schedule dialogue post-event (apartment)",
-		"Action": "EditData",
-		"Target": "Strings/Schedules/{{ModId}}_Aelin",
-		"Entries": {
-
+		
+		{
+			"LogName": "Load marriage dialogue",
+			"Action": "EditData",
+			"Target": "Characters/MarriageDialogue{{ModId}}.Aelin",
+			"Entries": {
+				
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
 		},
-		"When": {
-			"HasSeenEvent": "Aelin.EightHearts",
-			"HasMod": "",
-			"Move Into Apartment": true
-		}
-	},
-
-	{
-		"LogName": "Load animation dialogue",
-		"Action": "EditData",
-		"Target": "Strings/animationDescriptions",
-		"Entries": {
-			"{{ModId}}_Gardening": "",
-			"{{ModId}}_Napping": ""
+		
+		{
+			"LogName": "Load summit dialogue when married",
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				"SummitEvent_Dialogue3_{{ModID}}_Aelin": ""
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
-		}
-	},
-
-	// SPOUSE DIALOGUE KEYS
-	{
-		"LogName": "Load engagement dialogue",
-		"Action": "EditData",
-		"Target": "Data/EngagementDialogue",
-		"Entries": {
-			"{{ModId}}_Aelin0": "",
-			"{{ModId}}_Aelin1": ""
+		
+		// EVENT DIALOGUE KEYS
+		{
+			"LogName": "Load event dialogue",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": {
+				
+			},
+			"When": {
+				"HasSeenEvent": "Aelin.EightHearts"
+			}
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
-		}
-	},
-
-	{
-		"LogName": "Load marriage dialogue",
-		"Action": "EditData",
-		"Target": "Characters/MarriageDialogue{{ModId}}_Aelin",
-		"Entries": {
-
+		
+		// SPECIAL DIALOGUE KEYS FOR MODS=
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
+			"Entries": {
+				"AcceptGift_(O)651": "How did you know I like these?#$b#Eugene must have told you, didn't he? That little scoundrel!$1",
+				"AcceptGift_(O){{ModId}}.StrawberryTea": "Oh my, this is delicious!$1#$b#Eugene must have given you his recipe. It's absolutely divine, @.$1"
+			},
+			"When": {
+				"HasMod |contains=EugeneEnglish": true
+			},
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
-		}
-	},
-
-	{
-		"LogName": "Load summit dialogue when married",
-		"Action": "EditData",
-		"Target": "Data/ExtraDialogue",
-		"Entries": {
-			"SummitEvent_Dialogue3_{{ModID}}_Aelin": ""
+		
+		// REMOVE AELIN DIALOGUE (JOJA PATH)
+		{
+			"LogName": "Remove Aelin dialogue (Joja path)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/{{ModID}}.Aelin, Strings/Schedules/{{ModId}}.Aelin, Characters/MarriageDialogue{{ModId}}.Aelin",
+			"Entries": {
+				"": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
 		},
-		"When": {
-			"HasFlag": "canReadJunimoText"
-		}
-	},
-
-	// EVENT DIALOGUE KEYS
-	{
-		"LogName": "Load event dialogue",
-		"Action": "EditData",
-		"Target": "Strings/Events",
-		"Entries": {
-			
+		
+		{
+			"LogName": "Remove rainy day dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Rainy",
+			"Entries": {
+				"{{ModId}}_Aelin": "",
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
 		},
-		"When": {
-			"HasSeenEvent": "Aelin.EightHearts"
-		}
-	},
-
-	// SPECIAL DIALOGUE KEYS FOR MODS
-
-	// REMOVE AELIN DIALOGUE (JOJA PATH)
-	{
-		"LogName": "Remove Aelin dialogue (Joja path)",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/{{ModID}}_Aelin, Strings/Schedules/{{ModId}}_Aelin, Characters/MarriageDialogue{{ModId}}_Aelin",
-		"Entries": {
-			"": ""
+		
+		{
+			"LogName": "Remove animation dialogue",
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": {
+				"{{ModId}}_Gardening": "",
+				"{{ModId}}_Napping": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
 		},
-		"When": {
-			"HasFlag": "jojaMember"
-		}
-	},
-
-	{
-		"LogName": "Remove rainy day dialogue",
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/Rainy",
-		"Entries": {
-			"{{ModId}}_Aelin": "",
+		
+		{
+			"LogName": "Remove engagement dialogue",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"{{ModId}}_Aelin0": "",
+				"{{ModId}}_Aelin1": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
 		},
-		"When": {
-			"HasFlag": "jojaMember"
-		}
-	},
-
-	{
-		"LogName": "Remove animation dialogue",
-		"Action": "EditData",
-		"Target": "Strings/animationDescriptions",
-		"Entries": {
-			"{{ModId}}_Gardening": "",
-			"{{ModId}}_Napping": ""
+		
+		{
+			"LogName": "Remove summit dialogue",
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				"SummitEvent_Dialogue3_{{ModID}}_Aelin": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
 		},
-		"When": {
-			"HasFlag": "jojaMember"
-		}
-	},
-
-	{
-		"LogName": "Remove engagement dialogue",
-		"Action": "EditData",
-		"Target": "Data/EngagementDialogue",
-		"Entries": {
-			"{{ModId}}_Aelin0": "",
-			"{{ModId}}_Aelin1": ""
-		},
-		"When": {
-			"HasFlag": "jojaMember"
-		}
-	},
-	
-	{
-		"LogName": "Remove summit dialogue",
-		"Action": "EditData",
-		"Target": "Data/ExtraDialogue",
-		"Entries": {
-			"SummitEvent_Dialogue3_{{ModID}}_Aelin": ""
-		},
-		"When": {
-			"HasFlag": "jojaMember"
-		}
-	},
-]
+	]
+}

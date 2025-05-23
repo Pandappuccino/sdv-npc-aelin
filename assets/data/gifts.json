@@ -1,42 +1,43 @@
-"Changes": [
-  // DEFAULT GIFT TASTES (DISLIKES ANIMAL PRODUCTS, HATES FISH AND ROE, NEUTRAL TOWARDS HONEY)
-  {
-    "LogName": "Load default gift tastes",
-    "Action": "EditData",
-    "Target": "Data/NPCGiftTastes"
-    "Entries": {
-      "{{ModId}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you."
-    },
-    "When": {
-      "Alternative Gift Tastes": false
-    }
-  },
-
-  // ALTERNATE GIFT TASTES (NEUTRAL TOWARDS MOST ANIMAL PRODUCTS, LIKES HONEY)
-  {
-    "LogName": "Load alternate gift tastes",
-    "Action": "EditData",
-    "Target": "Data/NPCGiftTastes"
-    "Entries": {
-      "{{ModId}}_Aelin": "Is this really for me, @? Thank you!$1/ /Thank you, I really appreciate this.$1/ /Erm...I suppose I could hold onto this for you...$2/ /Do you...do you hate me, @...?$2/ /Thank you."
-    },
-    "When": {
-      "Alternative Gift Tastes": true
-    }
-  },
-
-  // MODDED ITEM GIFT TASTES,
-
-  // REMOVE GIFT TASTES (JOJA ROUTE)
-  {
-		"LogName": "Remove Aelin gift tastes (Joja path)",
-		"Action": "EditData",
-		"Target": "Data/NPCGiftTastes",
-		"Entries": {
-			"{{ModId}}_Aelin": ""
+{
+	"Changes": [
+		{
+			"LogName": "Load gift tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes"
+			"Entries": {
+				"{{ModId}}.Aelin": "Is this really for me, @? Thank you!$1/251 376 400 417 454 614 114 235 237 651 773 {{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic/Thank you, I really appreciate this.$1/-74 -75 -79 -81 340 341 342 344 DriedFruit 104 196 200 207 230 607 610 611 903/Erm...I suppose I could hold onto this for you...$2/-2 -5 -6 -12 -15 -16 -25 -27 -103 73 78 166 260 275 303 304 306 307 346 348 392 394 419 424 426 440 444 446 459 797 851 852 872 889 917 FarAwayStone MysteryBox GoldenMysteryBox ButterflyPowder 74 96 97 98 99 101 116 194 195 197 199 201 206 211 215 220 221 223 232 233 234 236 240 241 243 244 253 279 456 457 605 608 648 904 907/Do you...do you hate me, @...?$2/-4 -14 -20 -21 -22 -23 -28 305 393 397 413 437 439 441 445 447 680 803 807 812 820 821 822 823 824 825 826 827 828 857 CalicoEgg SmokedFish 103 107 108 109 119 121 122 124 126 127 579 580 581 582 583 584 585 586 587 588 589 198 202 203 204 209 212 213 214 218 219 225 226 227 228 242 265 727 728 729 730 732 733 772 921 MossSoup/Thank you."
+			},
+			"When": {
+				"Alternative Gift Tastes": false
+			}
 		},
-		"When": {
-			"HasFlag": "jojaMember"
+		
+		// ALTERNATE GIFT TASTES (NEUTRAL TOWARDS MOST ANIMAL PRODUCTS, LIKES HONEY)
+		{
+			"LogName": "Load alternate gift tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes"
+			"Entries": {
+				"{{ModId}}.Aelin": "Is this really for me, @? Thank you!$1/251 376 400 417 454 614 114 235 237 651 773 {{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic/Thank you, I really appreciate this.$1/-74 -75 -79 -81 340 341 342 344 DriedFruit 104 196 200 207 230 607 610 611 903/Erm...I suppose I could hold onto this for you...$2/-2 -12 -15 -16 -25 -27 -103 73 78 166 260 275 303 304 346 348 392 394 419 446 459 797 851 852 872 889 917 FarAwayStone MysteryBox GoldenMysteryBox ButterflyPowder 74 96 97 98 99 101 116 241 243 244 253 279 456 457 907/Do you...do you hate me, @...?$2/-4 -14 -20 -21 -22 -23 -28 305 393 397 413 437 439 441 445 447 680 803 807 812 820 821 822 823 824 825 826 827 828 857 CalicoEgg SmokedFish 103 107 108 109 119 121 122 124 126 127 579 580 581 582 583 584 585 586 587 588 589 198 202 203 204 209 212 213 214 218 219 225 226 227 228 242 265 727 728 729 730 732 733 772  921 MossSoup/Thank you."
+			},
+			"When": {
+				"Alternative Gift Tastes": true
+			}
+		},
+		
+		// MODDED ITEM GIFT TASTES
+		
+		// REMOVE GIFT TASTES (JOJA ROUTE)
+		{
+			"LogName": "Remove Aelin gift tastes (Joja path)",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"{{ModId}}.Aelin": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
 		}
- }
-]
+	]
+}

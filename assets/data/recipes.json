@@ -1,27 +1,29 @@
-"Changes": [
-	// HERBAL MEDICINE RECIPES
-	{
-		"LogName": "Load herbal medicine recipes"
-		"Action": "EditData",
-		"Target": "Data/CookingRecipes",
-		"Entries": {
-			"{{ModId}}_PainTonic": "376 3 340 1/25 5/{{ModID}}_PainTonic/null",
-			"{{ModId}}_EnergizingTonic": "250 2 (O)Carrot 1 340 1/25 5/{{ModId}}_EnergizingTonic/null",
-			"{{ModId}}_SunshineTonic": "400 3 593 3 340 1/25 5/{{ModId}}_SunshineTonic/null",
-			"{{ModId}}_AncientTonic": "454 3 417 3 340 3/25 5/{{ModId}}_AncientTonic/null"
-		}
-	},
-
-	// LOAD ONLY IF CUSTOM NPC EUGENE IS IN GAME
-	{
-		"LogName": "Load Strawberry Tea recipe"
-		"Action": "EditData",
-		"Target": "Data/CookingRecipes",
-		"Entries": {
-			"{{ModId}}_StrawberryTea": "815 5 400 1 341 1/{{ModId}}_StrawberryTea}}/null"
+{
+	"Changes": [
+		// HERBAL MEDICINE RECIPES
+		{
+			"LogName": "Load herbal medicine recipes"
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}.PainTonic": "376 3 340 1/25 5/{{ModId}}.PainTonic/null",
+				"{{ModId}}.EnergizingTonic": "250 2 (O)Carrot 1 340 1/25 5/{{ModId}}.EnergizingTonic/null",
+				"{{ModId}}.SunshineTonic": "400 3 593 3 340 1/25 5/{{ModId}}.SunshineTonic/null",
+				"{{ModId}}.AncientTonic": "454 3 417 3 340 3/25 5/{{ModId}}.AncientTonic/null"
+			}
 		},
-		"When": {
-			"HasMod": ""
+		
+		// LOAD ONLY IF CUSTOM NPC EUGENE IS IN GAME
+		{
+			"LogName": "Load Strawberry Tea recipe"
+			"Action": "EditData",
+			"Target": "Data/CookingRecipes",
+			"Entries": {
+				"{{ModId}}.StrawberryTea": "815 5 400 1 341 1/{{ModId}}.StrawberryTea}}/null"
+			},
+			"When": {
+				"HasMod |contains=EugeneEnglish": true
+			}
 		}
-	}
-]
+	]
+}
