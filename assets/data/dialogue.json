@@ -50,7 +50,7 @@
 		},
 		
 		{
-			"LogName": "Load default dialogue post-event",
+			"LogName": "Load new dialogue post-event",
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
 			"Entries": {
@@ -66,7 +66,7 @@
 		},
 		
 		{
-			"LogName": "Load default dialogue post-event (apartment)",
+			"LogName": "Load new dialogue post-event (apartment)",
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
 			"Entries": {
@@ -88,7 +88,7 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Rainy",
 			"Entries": {
-				"{{ModId}}_Aelin": "{{Random: Goodness, this weather is absolutely dreadful...$2 && This rain has me feeling more drained than usual...$2 && Oh, @, you're soaked!#$b#Here, sit down a moment to dry off. && The rain is rather strong today.#$b#At least you don't have to water your farm, though!$1 |inputSeparator=&&}}",
+				"{{ModId}}_Aelin": "{{Random: Goodness, this weather is absolutely dreadful...$2 && This rain has me feeling more drained than usual...$2 && Oh, @, you're soaked!#$b#Here, sit down a moment to dry off. && The rain is rather strong today.#$b#At least you don't have to water your farm, though!$1 && Ah--you came all this way in this weather, @?#$b#Here, have something warm to drink. It's the least I could do.[(O)614]|inputSeparator=&&}}",
 			},
 			"When": {
 				"HasFlag": "canReadJunimoText"
@@ -141,7 +141,7 @@
 			"Target": "Strings/animationDescriptions",
 			"Entries": {
 				"{{ModId}}_Gardening": "",
-				"{{ModId}}_Napping": ""
+				"{{ModId}}_Napping": "%Aelin is sleeping soundly. Best not to wake him right now."
 			},
 			"When": {
 				"HasFlag": "canReadJunimoText"
@@ -204,7 +204,7 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/{{ModID}}.Aelin",
 			"Entries": {
-				"AcceptGift_(O)651": "How did you know I like these?#$b#Eugene must have told you, didn't he? That little scoundrel!$1",
+				"AcceptGift_(O)651": "How did you know I like these?$1#$b#Eugene must have told you, didn't he? That little scoundrel!$1",
 				"AcceptGift_(O){{ModId}}.StrawberryTea": "Oh my, this is delicious!$1#$b#Eugene must have given you his recipe. It's absolutely divine, @.$1"
 			},
 			"When": {
@@ -212,7 +212,7 @@
 			},
 		},
 		
-		// REMOVE AELIN DIALOGUE (JOJA PATH)		
+		// REMOVE AELIN DIALOGUE (JOJA PATH)
 		{
 			"LogName": "Remove rainy day dialogue",
 			"Action": "EditData",
