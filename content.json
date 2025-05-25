@@ -1,0 +1,128 @@
+{
+	"Format": "2.6.0",
+	
+	"ConfigSchema": {
+		"Seasonal Designs": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Changes Aelin's appearance with each season. True by default."
+		},
+		
+		"Default Design": {
+			"AllowValues": "Spring, Summer, Fall, Winter, null",
+			"Default": "null",
+			"Description": "If \"Seasonal Designs\" is disabled, defines which appearance Aelin uses."
+		},
+		
+		"Alternate Gift Tastes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Changes Aelin's gift tastes to make befriending him slightly easier."
+		},
+		
+		"Move Into Apartment": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "If \"Pelican Valley Lofts\" is installed, enables Aelin to move into an apartment room (room 1D) after a certain point."
+		}
+	},
+	
+	"Changes": [
+		{
+			"LogName": "Initialize mod",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}.Aelin, Characters/Schedules/{{ModId}}.Aelin, Strings/Schedules/{{ModId}}.Aelin",
+			"FromFile": "assets/data/blank.json"
+		},
+		
+		{
+			"LogName": "Load disposition files",
+			"Action": "Include",
+			"FromFile": "assets/data/disposition.json"
+		},
+		
+		{
+			"LogName": "Load graphics",
+			"Action": "Include",
+			"FromFile": "assets/data/graphics.json"
+		},
+		
+		{
+			"LogName": "Load maps and patches",
+			"Action": "Include",
+			"FromFile": "assets/data/maps.json"
+		},
+		
+		{
+			"LogName": "Load dialogue",
+			"Action": "Include",
+			"FromFile": "assets/data/dialogue.json"
+		},
+		
+		{
+			"LogName": "Load animations",
+			"Action": "Include",
+			"FromFile": "assets/data/animations.json"
+		},
+		
+		{
+			"LogName": "Load schedule",
+			"Action": "Include",
+			"FromFile": "assets/data/schedules.json"
+		},
+		
+		{
+			"LogName": "Load strings",
+			"Action": "Include",
+			"FromFile": "assets/data/strings.json"
+		},
+		
+		{
+			"LogName": "Load new items",
+			"Action": "Include",
+			"FromFile": "assets/data/items.json"
+		},
+		
+		{
+			"LogName": "Load new recipes",
+			"Action": "Include",
+			"FromFile": "assets/data/recipes.json"
+		},
+		
+		{
+			"LogName": "Load gift tastes",
+			"Action": "Include",
+			"FromFile": "assets/data/gifts.json"
+		},
+		
+		{
+			"LogName": "Load event data",
+			"Action": "Include",
+			"FromFile": "assets/data/events.json"
+		},
+		
+		{
+			"LogName": "Load festival data",
+			"Action": "Include",
+			"FromFile": "assets/data/festivals.json"
+		},
+		
+		{
+			"LogName": "Load movie tastes",
+			"Action": "Include",
+			"FromFile": "assets/data/movies.json"
+		},
+		
+		{
+			"LogName": "Load mail data",
+			"Action": "Include",
+			"FromFile": "assets/data/mail.json"
+		},
+		
+		{
+			"LogName": "Load quest data",
+			"Action": "Include",
+			"FromFile": "assets/data/quests.json"
+		},
+	]
+}

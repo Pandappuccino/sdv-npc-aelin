@@ -1,0 +1,64 @@
+{
+	"Name": "[CP] Aelin, the Last Nature Spirit - New NPC",
+	"Author": "Pandappuccino",
+	"Version": "1.0.0",
+	"Description": "Adds a new NPC to Stardew Valley: Aelin, a frail nature spirit.",
+	"UniqueID": "Pandappuccino.Aelin",
+	"UpdateKeys": ["Nexus:32819","Github:Pandappuccino/sdv-npc-aelin"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"Required": false
+		},
+		
+		// GAMEPLAY ADDITIONS AND NPCS
+		{
+			"UniqueID": "JoXW.MobilePhone",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "FireRedLily.NPCApartments",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "SapieEugeneEnglish",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "Jellonip.RRRR",
+			"Required": false
+		},
+		
+		// ITEM TASTES
+		{
+			"UniqueID": "6480.blueegg",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "yourdorkbrains.cp.wildeggsforage",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "bb.beesPlus",
+			"Required": false
+		},
+		
+		{
+			"UniqueID": "Aimon111.CharityDSA",
+			"Required": false
+		},
+	]
+}
