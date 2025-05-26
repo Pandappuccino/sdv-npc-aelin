@@ -1,5 +1,86 @@
 {
 	"Changes": [
+		// DEFAULT DIALOGUE
+		{
+			"Actions": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Entries": {
+				
+			}
+		},
 		
+		{
+			"Actions": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogue{{ModId}}.Aelin",
+			"Entries": {
+				
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Rainy",
+			"Entries": {
+				"{{ModId}}.Aelin": ""
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"{{ModId}}.Aelin0": "",
+				"{{ModId}}.Aelin1": ""
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": {
+				
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"MovieInvite_Spouse_{{ModId}}.Aelin": "",
+				"MovieInvite_Invited_{{ModId}}.Aelin": ""
+			}
+		},
+		
+		// MOD DIALOGUE
+		{
+			"Actions": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Entries": {
+				
+			},
+			"When": {
+				"HasMod |contains=Eugene": true
+			}
+		},
+		
+		{
+			"Actions": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Entries": {
+				"LucikielArrives": "",
+				"ReputationIncreased": ""
+			},
+			"When": {
+				"HasMod |contains=Lucikiel": true
+			}
+		}
 	]
 }

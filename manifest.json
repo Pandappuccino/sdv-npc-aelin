@@ -21,11 +21,6 @@
 		},
 		
 		{
-			"UniqueID": "FireRedLily.NPCApartments",
-			"Required": false
-		},
-		
-		{
 			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
 			"Required": false
 		},

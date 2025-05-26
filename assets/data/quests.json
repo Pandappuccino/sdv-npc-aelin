@@ -1,5 +1,56 @@
 {
 	"Changes": [
+		// LOAD QUESTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"Entries": {
+				"{{ModId}}.IntroQuest": "Location/{{i18n:q01.name}}/{{i18n:q01.desc}}/{{i18n:q01.hint}}/{{ModId}}.SecretGrove/-1/0/-1/false",
+				"{{ModId}}.PoppyQuest": ""
+			}
+		},
 		
+		// REMOVE QUESTS ON JOJA ROUTE
+		{
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"Entries": {
+				"{{ModId}}.IntroQuest": "",
+				"{{ModId}}.PoppyQuest": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		// LOAD EUGENE QUESTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"Entries": {
+				"{{ModId}}.SecretGift1": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc1}}/{{i18n:q.e.hint1}}/Eugene (O)815 3/{{ModId}}.SecretGift2/0/-1/false/{{i18n:q.e.text1a}}$1#$b#{{i18n:q.e.text1b}}",
+				"{{ModId}}.SecretGift2": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc2}}/{{i18n:q.e.hint2}}/Eugene (O)340 1/{{ModId}}.SecretGift3/0/-1/false/{{i18n:q.e.text2a}}$1#$b#{{i18n:q.e.text2b}}",
+				"{{ModId}}.SecretGift3": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc3}}/{{i18n:q.e.hint3}}/Eugene (O)400 3/{{ModId}}.SecretGift4/0/-1/false/%revealtaste:{{ModId}}.Aelin:(O)400{{i18n:q.e.text3a}}$1#$b#{{i18n:q.e.text3b}}#$b#{{i18n:q.e.text3c}}",
+				"{{ModId}}.SecretGift4": "Location/{{i18n:q.e.name}}/{{i18n:q.e.desc4}}/{{i18n:q.e.hint4}}/{{ModId}}.HouseInterior/-1/0/-1/false"
+			},
+			"When": {
+				"HasMod |contains=Eugene": true
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"Entries": {
+				"{{ModId}}.SecretGift1": "",
+				"{{ModId}}.SecretGift2": "",
+				"{{ModId}}.SecretGift3": "",
+				"{{ModId}}.SecretGift4": ""
+			},
+			"When": {
+				"HasMod |contains=Eugene": true,
+				"HasFlag": "jojaMember"
+			}
+		}
 	]
 }

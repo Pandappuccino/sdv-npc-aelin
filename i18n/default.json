@@ -1,3 +1,72 @@
 {
+	// DIALOGUE
 	
+	// GIFTS
+	"gifts.love": "A-are you sure I can have this, @? Thank you so much!",
+	"gifts.like": "Oh, thank you! I really appreciate this.",
+	"gifts.dislike": "Um...I suppose I could hold onto this for you...",
+	"gifts.hate": "@...? Do...do you hate me...?",
+	"gifts.neutral": "Oh, thank you.",
+	
+	// MAIL
+	"mail.wizard.text": "Now that you have become one with nature, perhaps you would be interested to know the secret of Cindersap Forest: a presence known only to a very scant few, ephemeral and fleeting.^^Travel west of the forest, deep into the heart of the woods. There, you may find something of interest.^^   -M. Rasmodius, Wizard",
+	"mail.wizard.name": "The Secret in the Woods",
+	"mail.aelin1.text": "To @-^I apologize again for the...rather unseemly display when we met. I suppose I got too worked up seeing a human so far in the woods...no one seems to know my grove exists.^^As an apology, I've attached a simple medicine recipe that I use regularly. It's a potent painkiller that may be of good use to you in working the fields.^^   -Aelin",
+	"mail.aelin2.text": "To @-^Thank you for visiting me yesterday. It's...rather nice, having company over. I suppose I should start preparing refreshments in case you come by again?^^I was digging through my old books and found this recipe. I don't get to make much use of it, since I don't go out enough to warrant using it. But, maybe you can use it.^^   -Aelin",
+	"mail.aelin3.text": "Dear @,^You know, you coming over so frequently has been quite a blessing. Perhaps I'm imagining things, but I feel like I've got more energy than usual lately. Could it be because of your connection to the forest? Or perhaps it's just your sunny personality? I can't even guess.^^As thanks, I'd like to share this recipe with you. It's an old tonic rumored to foster a connection to nature. Unfortunately, I don't get to make it much...I can't grow strawberries to save my life.^^   -Aelin",
+	"mail.aelin4.text": "Dearest @,^Since our first meeting, you've shown me nothing but kindness, and you've been so patient with me in spite of my weakness. I was terribly rude to you when you brought me to the clinic...if you hadn't, I may not be here now, and I'm truly sorry for how I treated you.^^You are a true friend of nature, and I want to give you a gift. This recipe is an ancient one, passed down from nature spirits to humanity as a gift of trust, and I wish for you to have it.^^May the blessings of nature follow you always.^^   -Your Friend, Aelin",
+	"mail.aelin1.name": "A Gift from Aelin",
+	"mail.aelin2.name": "Aelin's Appreciation",
+	"mail.aelin3.name": "Aelin's Gratitude",
+	"mail.aelin4.name": "A Friend of Nature",
+	"mail.joja1.text": "",
+	"mail.joja2.text": "",
+	"mail.joja3.text": "",
+	"mail.joja4.text": "",
+	"mail.joja1.name": "A Tonic for Pain",
+	"mail.joja2.name": "A Tonic for Energy",
+	"mail.joja3.name": "A Tonic for Nature",
+	"mail.joja4.name": "A Miracle Medicine",
+	"mail.eq.text": "Farmer @,^How have you been? Aelin can't seem to stop talking about you and how often you visit him. I haven't seen him full of this much energy in a very long time!^^I want to surprise him with a little gift, if you would like to help. I'll need some tea leaves to start, if you could bring some. Don't tell him--it'll be our secret!^^   -Eugene",
+	"mail.eq.name": "A Secret Gift",
+	"mail.er.text": "Farmer @,^Thank you again for helping me prepare a gift for my old friend. The way his eyes lit up...he looked so happy, didn't he? He doesn't get to enjoy strawberries very often, even though they're his favorite.^^Here, I've attached the recipe for the tea we made for him as thanks, both for helping me and for being his friend.^^   -Eugene",
+	"mail.eralt.text": "Farmer @,^How have you been lately? Things have been rather quiet in the forest...it's become rather lonely.^^I was thinking about the past, and I remembered an old tea recipe that I made for a friend, many years ago. I've attached it for you--perhaps you'll enjoy it as much as he did. I think I'll brew a cup in his memory...   -Eugene",
+	"mail.er.name": "Strawberry Tea",
+	
+	// QUESTS
+	"q01.name": "The Secret in the Woods",
+	"q01.desc": "The Wizard mentioned that there's a hidden presence deep in the heart of Cindersap Forest...",
+	"q01.hint": "Enter the Secret Grove.",
+	"q.e.name": "A Secret Gift",
+	"q.e.desc1": "Eugene wants to prepare a gift for Aelin with your help. First, he needs some Tea Leaves.",
+	"q.e.desc2": "Eugene wants to prepare a gift for Aelin with your help. Next, he needs some Honey.",
+	"q.e.desc3": "Eugene wants to prepare a gift for Aelin with your help. The secret ingredient seems to be a Strawberry...",
+	"q.e.desc4": "Eugene wants to prepare a gift for Aelin with your help. He's got the gift ready, now it's time to deliver it!",
+	"q.e.hint1": "Deliver 3 Tea Leaves to Eugene.",
+	"q.e.hint2": "Deliver Honey to Eugene.",
+	"q.e.hint3": "Deliver Strawberry to Eugene.",
+	"q.e.hint4": "Enter Aelin's House between 6:00AM and 9:00PM.",
+	"q.e.text1a": "Oh, these look perfect, @! Fresh, tender, and the aroma is just right!",
+	"q.e.text1b": "Next, we'll need some Honey. One jar should be enough, I think.",
+	"q.e.text2a": "Ah, perfect! Nice golden honey, just what we need.",
+	"q.e.text2b": "Now for the secret ingredient...I need a nice ripe Strawberry. They're his favorite, after all.",
+	"q.e.text3a": "Mmm, I'm almost tempted to just give him this Strawberry right now! It looks amazing!",
+	"q.e.text3b": "Alright, I'll get started on the tea. It won't take very long.",
+	"q.e.text3c": "Why don't you go on ahead to Aelin's house? I'll catch up, and we can deliver it together.",
+	
+	// ITEMS
+	"pain.name": "Pain Tonic",
+	"pain.desc": "A potent painkiller made from poppies.",
+	"energizing.name": "Energizing Tonic",
+	"energizing.desc": "An all-natural energy drink made from fresh vegetables.",
+	"sunshine.name": "Sunshine Tonic",
+	"sunshine.desc": "A mysterious tonic that enhances connections with nature.",
+	"ancient.name": "Ancient Tonic",
+	"ancient.name": "A powerful, miraculous medicine that treats all wounds and heightens natural ability.",
+	"sbtea.name": "Strawberry Tea",
+	"sbtea.desc": "A sweet, soothing tea blended with strawberries and honey.",
+	
+	// MOVIE DATA
+	
+	// STRINGS
 }

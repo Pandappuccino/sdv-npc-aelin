@@ -1,5 +1,304 @@
 {
 	"Changes": [
+		// LOAD NEW ITEMS AND ADJUST GIFT TASTES
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.PainTonic": {
+					"Name": "{{ModId}}.PainTonic",
+					"DisplayName": "{{i18n:pain.name}}",
+					"Description": "{{i18n:pain.desc}}",
+					"Type": "Basic",
+					"Category": -7,
+					"Price": "450",
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 0,
+					"Edibility": 20,
+					"IsDrink": true,
+					"Buffs": [
+						"Id": "Drink",
+						"BuffId": null,
+						"IconTexture": null,
+						"IconSpriteIndex": 10,
+						"Duration": 120,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 0.0,
+							"FishingLevel": 0.0,
+							"MiningLevel": 0.0,
+							"LuckLevel": 0.0,
+							"ForagingLevel": 0.0,
+							"MaxStamina": 0.0,
+							"MagneticRadius": 0.0,
+							"Speed": 0.0,
+							"Defense": 3.0,
+							"Attack": 0.0
+						}
+					]
+				},
+				
+				"{{ModId}}.EnergizingTonic": {
+					"Name": "{{ModId}}.EnergizingTonic",
+					"DisplayName": "{{i18n:energizing.name}}",
+					"Description": "{{i18n:energizing.desc}}",
+					"Type": "Basic",
+					"Category": -7,
+					"Price": "450",
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 1,
+					"Edibility": 75,
+					"IsDrink": true,
+					"Buffs": [
+						"Id": "Drink",
+						"BuffId": null,
+						"IconTexture": null,
+						"IconSpriteIndex": 9,
+						"Duration": 120,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 0.0,
+							"FishingLevel": 0.0,
+							"MiningLevel": 0.0,
+							"LuckLevel": 0.0,
+							"ForagingLevel": 0.0,
+							"MaxStamina": 25.0,
+							"MagneticRadius": 0.0,
+							"Speed": 2.0,
+							"Defense": 0.0,
+							"Attack": 0.0
+						}
+					]
+				},
+				
+				"{{ModId}}.SunshineTonic": {
+					"Name": "{{ModId}}.SunshineTonic",
+					"DisplayName": "{{i18n:sunshine.name}}",
+					"Description": "{{i18n:sunshine.desc}}",
+					"Type": "Basic",
+					"Category": -7,
+					"Price": "450",
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 2,
+					"Edibility": 15,
+					"IsDrink": true,
+					"Buffs": [
+						"Id": "Drink",
+						"BuffId": null,
+						"IconTexture": null,
+						"IconSpriteIndex": 5,
+						"Duration": 60,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 3.0,
+							"FishingLevel": 0.0,
+							"MiningLevel": 0.0,
+							"LuckLevel": 0.0,
+							"ForagingLevel": 3.0,
+							"MaxStamina": 0.0,
+							"MagneticRadius": 0.0,
+							"Speed": 0.0,
+							"Defense": 0.0,
+							"Attack": 0.0
+						}
+					]
+				},
+				
+				"{{ModId}}.AncientTonic": {
+					"Name": "{{ModId}}.AncientTonic",
+					"DisplayName": "{{i18n:ancient.name}}",
+					"Description": "{{i18n:ancient.desc}}",
+					"Type": "Basic",
+					"Category": -7,
+					"Price": "450",
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 3,
+					"Edibility": 999,
+					"IsDrink": true,
+					"Buffs": [
+						"Id": "Drink",
+						"BuffId": null,
+						"IconTexture": null,
+						"IconSpriteIndex": 10,
+						"Duration": -2,
+						"IsDebuff": false,
+						"GlowColor": null,
+						"CustomAttributes": {
+							"FarmingLevel": 1.0,
+							"FishingLevel": 1.0,
+							"MiningLevel": 1.0,
+							"LuckLevel": 1.0,
+							"ForagingLevel": 1.0,
+							"MaxStamina": 0.0,
+							"MagneticRadius": 0.0,
+							"Speed": 0.0,
+							"Defense": 0.0,
+							"Attack": 0.0
+						}
+					]
+				},
+			}
+		},
 		
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Universal_Dislikes"],
+					"Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
+					"Delimiter": " "
+				},
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Alex", "3"],
+                    "Value": "{{ModId}}.PainTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Clive", "3"],
+                    "Value": "{{ModId}}.PainTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Evelyn", "3"],
+                    "Value": "{{ModId}}.PainTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "George", "3"],
+                    "Value": "{{ModId}}.PainTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Robin", "3"],
+                    "Value": "{{ModId}}.PainTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Willy", "3"],
+                    "Value": "{{ModId}}.PainTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jas", "7"],
+                    "Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Leo", "7"],
+                    "Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "7"],
+                    "Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
+                    "Delimiter": " "
+                },
+			]
+		},
+		
+		// LOAD STRAWBERRY TEA IF EUGENE IS INSTALLED
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.StrawberryTea": {
+					"Name": "{{ModId}}.StrawberryTea",
+					"DisplayName": "{{i18n:sbtea.name}}",
+					"Description": "{{i18n:sbtea.desc}}",
+					"Type": "Basic",
+					"Category": -7,
+					"Price": "250",
+					"Texture": "Mods/{{ModId}}/Objects",
+					"SpriteIndex": 4,
+					"Edibility": 10,
+					"IsDrink": true
+					]
+				}
+			},
+			"When": {
+				"HasMod |contains=Eugene": true
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Universal_Likes"],
+					"Value": "{{ModId}}.StrawberryTea",
+					"Delimiter": " "
+				},
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "{{ModId}}.Aelin", "1"],
+                    "Value": "{{ModId}}.StrawberryTea",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Emily", "1"],
+                    "Value": "{{ModId}}.StrawberryTea",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Eugene", "1"],
+                    "Value": "{{ModId}}.StrawberryTea",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Evelyn", "1"],
+                    "Value": "{{ModId}}.StrawberryTea",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Leah", "1"],
+                    "Value": "{{ModId}}.StrawberryTea",
+                    "Delimiter": " "
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sandy", "1"],
+                    "Value": "{{ModId}}.StrawberryTea",
+                    "Delimiter": " "
+                },
+			],
+			"When": {
+				"HasMod |contains=Eugene": true
+			}
+		}
 	]
 }

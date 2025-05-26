@@ -1,5 +1,76 @@
 {
 	"Changes": [
+		// SPRITES
+		{
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}.Aelin",
+			"FromFile": "assets/img/Aelin_{{season}}.png",
+			"When": {
+				"Seasonal Designs": true
+			}
+		},
 		
+		{
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}.Aelin",
+			"FromFile": "assets/img/Aelin_{{Default Design}}.png",
+			"When": {
+				"Seasonal Designs": false
+			}
+		},
+		
+		{
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}.Aelin",
+			"FromFile": "assets/img/Aelin_Spring.png",
+			"When": {
+				"Seasonal Designs": false,
+				"Default Design": "null"
+			}
+		},
+		
+		// PORTRAITS
+		{
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}.Aelin",
+			"FromFile": "assets/img/Aelin_{{season}}_Portrait.png",
+			"When": {
+				"Seasonal Designs": true
+			}
+		},
+		
+		{
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}.Aelin",
+			"FromFile": "assets/img/Aelin_{{Default Design}}_Portrait.png",
+			"When": {
+				"Seasonal Designs": false
+			}
+		},
+		
+		{
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}.Aelin",
+			"FromFile": "assets/img/Aelin_Spring_Portrait.png",
+			"When": {
+				"Seasonal Designs": false,
+				"Default Design": "null"
+			}
+		},
+		
+		// ITEM ICONS
+		{
+			"Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/img/items.png"
+		},
+		
+		// CUSTOM MAIL BG
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/LetterBG",
+			"FromFile": "assets/img/customLetter.png",
+			"PatchMode": "Overlay"
+		}
 	]
 }

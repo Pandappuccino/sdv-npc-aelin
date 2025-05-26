@@ -14,12 +14,14 @@ This is the largest mod I've made so far and one I'm excited to share with every
 ## Installation
 Download the mod either here on Github, or via [Nexus Mods](https://www.nexusmods.com/stardewvalley/mods/32819). Unzip the folder and place it into your Mods folder, and you're all set!
 
+## Translations
+The mod contains i18n keys for ease of translation! By default the mod is in English.
+
 ## Configuration Options
 There are a handful of configuration options that you can use to make befriending Aelin easier, change his appearance, and more. The configuration options available are:
 - **Seasonal Designs:** By default, Aelin has seasonal designs and his appearance changes with the seasons. However, you can disable this if you prefer.
 - **Default Design:** If Seasonal Designs is disabled, you can specify which appearance he uses--Spring, Summer, Fall, or Winter.
 - **Alternate Gift Tastes:** By default, Aelin has *very* particular gift tastes. This toggle loads a different set of gift tastes, making it slightly easier to befriend him.
-- **Move Into Apartment:** Aelin has built-in compatibility with [Pelican Valley Lofts](https://www.nexusmods.com/stardewvalley/mods/30295)﻿! If the mod is installed and this is turned on, after a certain point, he will move into an apartment (specifically, Room 1D) to make it easier for him to travel to Pelican Town.
 
 
 ## Mod Compatibility
@@ -64,7 +66,7 @@ The four "Tonic" items are a universal dislike, with some exceptions: Vincent, J
 If the player buys a Joja membership, the first four recipes will instead be delivered by Harvey upon purchasing certain developments, and the Strawberry Tea recipe will be delivered once the player reaches six hearts with Eugene.
 
 ## Contact Me
-Is there something not quite right with the mod? Want me to add a compatibility patch? You can contact me either on Nexus Mods through the posts tab, or through social media on [Bluesky](http://bsky.app/profile/pandappuccino.itch.io) or [Tumblr](http://pandappuccino.tumblr.com)!
+Is there something not quite right with the mod? Want me to add a compatibility patch? Do you want to translate the mod to other languages or add something new? You can contact me either on Nexus Mods through the posts tab, or through social media on [Bluesky](http://bsky.app/profile/pandappuccino.itch.io) or [Tumblr](http://pandappuccino.tumblr.com)!
 
 ## Support Me
 This mod has been a *massive* undertaking for me and I really hope everyone enjoys it. This mod is free for everyone, but if you liked it and want to support me a bit in turn, you can do so through my [Ko-Fi](https://ko-fi.com/pandappuccino) or [Patreon](https://www.patreon.com/c/pandappuccino)!

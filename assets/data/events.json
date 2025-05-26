@@ -1,5 +1,211 @@
 {
 	"Changes": [
+		// QUEUE MAIL FROM WIZARD AFTER GETTING ABILITY TO READ JUNIMO TEXT
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"Entries": {
+				"{{ModId}}.01/SawEvent 112/x {{ModId}}.WizardMail": "null"
+			}
+		},
 		
+		// QUEUE MAIL ON JOJA ROUTE
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"{{ModId}}.joja.01/x {{ModId}}.Mail1": "null"
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"{{ModId}}.joja.02/x {{ModId}}.Mail2": "null"
+			},
+			"When": {
+				"HasFlag": "jojaBoilerRoom"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"{{ModId}}.joja.03/x {{ModId}}.Mail3": "null"
+			},
+			"When": {
+				"HasFlag": "jojaVault"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"{{ModId}}.joja.04/x {{ModId}}.Mail4": "null"
+			},
+			"When": {
+				"HasFlag": "jojaPantry"
+			}
+		},
+		
+		// LOAD AELIN HEART EVENTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.SecretGrove",
+			"Entries": {
+				"{{ModId}}.AelinIntro": "",
+				"{{ModId}}.AelinSixHearts": "",
+				"{{ModId}}.AelinTenHearts": "",
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.HouseInterior",
+			"Entries": {
+				"{{ModId}}.AelinTwoHearts": "",
+				"{{ModId}}.AelinFourHearts": ""
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+				"{{ModId}}.AelinEightHearts": ""
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Beach",
+			"Entries": {
+				"{{ModId}}.AelinFourteenHearts": ""
+			}
+		},
+		
+		// REMOVE AELIN HEART EVENTS ON JOJA PATH
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.SecretGrove",
+			"Entries": {
+				"{{ModId}}.AelinIntro": "",
+				"{{ModId}}.AelinSixHearts": "",
+				"{{ModId}}.AelinTenHearts": "",
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.HouseInterior",
+			"Entries": {
+				"{{ModId}}.AelinTwoHearts": "",
+				"{{ModId}}.AelinFourHearts": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+				"{{ModId}}.AelinEightHearts": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Beach",
+			"Entries": {
+				"{{ModId}}.AelinFourteenHearts": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		// LOAD EUGENE EVENTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_NPCEugene_House",
+			"Entries": {
+				"{{ModId}}.OldFriends": ""
+			},
+			"When": {
+				"HasMod |contains=Eugene": true
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.HouseInterior",
+			"Entries": {
+				"{{ModId}}.SecretGift": ""
+			},
+			"When": {
+				"HasMod |contains=Eugene": true
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_NPCEugene_House",
+			"Entries": {
+				"{{ModId}}.OldFriends": ""
+			},
+			"When": {
+				"HasMod |contains=Eugene": true,
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.HouseInterior",
+			"Entries": {
+				"{{ModId}}.SecretGift": ""
+			},
+			"When": {
+				"HasMod |contains=Eugene": true,
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.SecretGrove",
+			"Entries": {
+				"{{ModId}}.Farewell": ""
+			},
+			"When": {
+				"HasMod |contains=Eugene": true,
+				"HasFlag": "jojaMember"
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"{{ModId}}.SB.R/x {{ModId}}.EugeneRecipeMail": "null"
+			},
+			"When": {
+				"Hearts:Eugene": 6
+			}
+		},
 	]
 }

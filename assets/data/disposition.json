@@ -1,5 +1,304 @@
 {
 	"Changes": [
+		// DEFAULT DISPOSITION
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"{{ModId}}.Aelin": {
+					"DisplayName": "Aelin",
+					"BirthSeason": "Summer",
+					"BirthDay": "22",
+					"HomeRegion": "Other",
+					"Language": "Default",
+					"Age": "Adult",
+					"Gender": "Male",
+					"Manner": "Polite",
+					"SocialAnxiety": "Shy",
+					"Optimism": "Neutral",
+					"IsDarkSkinned": false,
+					"CanSocialize": true,
+					"CanBeRomanced": true,
+					"LoveInterest": null,
+					"Calendar": "HiddenUntilMet",
+					"SocialTab": "HiddenUntilMet",
+					"CanReceiveGifts": true,
+					"CanGreetNearbyCharacters": false,
+					"CanCommentOnPurchasedShopItems": false,
+					"CanVisitIsland": false,
+					"IntroductionsQuest": false,
+					"ItemDeliveryQuests": false,
+					"PerfectionScore": false,
+					"EndSlideShow": "Hidden",
+					"SpouseAdopts": true,
+					"SpouseWantsChildren": true,
+					"SpouseGiftJealousy": false,
+					"SpouseRoom": {
+						"MapAsset": null,
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 6,
+							"Height": 9
+						}
+					},
+					"SpousePatio": {
+						"MapAsset": null,
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[ 16, 500 ], // frame, duration (ms)
+						]
+					},
+					"SpouseFloors": [],
+					"SpouseWallpapers": [],
+					"DumpsterDiveFriendshipEffect": -15,
+					"DumpsterDiveEmote": null,
+					"FriendsAndFamily": [
+						
+					],
+					"FlowerDanceCanDance": false,
+					"WinterStarGifts": [],
+					"WinterStarParticipant": false,
+					"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 112",
+					"SpawnIfMissing": true,
+					"Home": [
+						"Id": "Default",
+						"Condition": null,
+						"Location": "{{ModId}}.HouseInterior",
+						"Tile": {
+							"X": 0,
+							"Y": 0
+						},
+						"Direction": "left"
+					],
+					"Breather": true,
+					"ShakePortraits": [
+						5
+					],
+					"KissSpriteIndex": 28,
+					"KissSpriteFacingRight": true,
+					"HiddenProfileEmoteSound": "fairy_heal",
+					"HiddenProfileEmoteDuration": null,
+					"HiddenProfileEmoteStartFrame": 16,
+					"HiddenProfileEmoteFrameCount": 5,
+					"HiddenProfileEmoteFrameDuration": 200.0
+				}
+			},
+			"When": {
+				"HasFlag": "canReadJunimoText"
+			}
+		},
 		
+		// DISPOSITION POST-EVENT
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"{{ModId}}.Aelin": {
+					"DisplayName": "Aelin",
+					"BirthSeason": "Summer",
+					"BirthDay": "22",
+					"HomeRegion": "Other",
+					"Language": "Default",
+					"Age": "Adult",
+					"Gender": "Male",
+					"Manner": "Polite",
+					"SocialAnxiety": "Shy",
+					"Optimism": "Neutral",
+					"IsDarkSkinned": false,
+					"CanSocialize": true,
+					"CanBeRomanced": true,
+					"LoveInterest": null,
+					"Calendar": "HiddenUntilMet",
+					"SocialTab": "HiddenUntilMet",
+					"CanReceiveGifts": true,
+					"CanGreetNearbyCharacters": true,
+					"CanCommentOnPurchasedShopItems": true,
+					"CanVisitIsland": true,
+					"IntroductionsQuest": true,
+					"ItemDeliveryQuests": true,
+					"PerfectionScore": false,
+					"EndSlideShow": "Hidden",
+					"SpouseAdopts": true,
+					"SpouseWantsChildren": true,
+					"SpouseGiftJealousy": false,
+					"SpouseRoom": {
+						"MapAsset": null,
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 6,
+							"Height": 9
+						}
+					},
+					"SpousePatio": {
+						"MapAsset": null,
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[ 16, 500 ], // frame, duration (ms)
+						]
+					},
+					"SpouseFloors": [],
+					"SpouseWallpapers": [],
+					"DumpsterDiveFriendshipEffect": -15,
+					"DumpsterDiveEmote": null,
+					"FriendsAndFamily": [
+						
+					],
+					"FlowerDanceCanDance": true,
+					"WinterStarGifts": [
+						{
+							"Condition": null,
+							"Id": "Strawberry",
+							"ItemId": "(O)400",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 10,
+							"MaxStack": 10,
+							"Quality": 3,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Condition": null,
+							"Id": "RareSeed",
+							"ItemId": "(O)347",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Condition": null,
+							"Id": "TeaLeaves",
+							"ItemId": "(O)815",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 10,
+							"MaxStack": 10,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Condition": null,
+							"Id": "GreenTea",
+							"ItemId": "(O)614",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Condition": null,
+							"Id": "TeaSet",
+							"ItemId": "(O)341",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": 1,
+							"MaxStack": 1,
+							"Quality": 3,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+					],
+					"WinterStarParticipant": true,
+					"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 112",
+					"SpawnIfMissing": true,
+					"Home": [
+						"Id": "Default",
+						"Condition": null,
+						"Location": "{{ModId}}.HouseInterior",
+						"Tile": {
+							"X": 0,
+							"Y": 0
+						},
+						"Direction": "left"
+					],
+					"Breather": true,
+					"ShakePortraits": [
+						5
+					],
+					"KissSpriteIndex": 28,
+					"KissSpriteFacingRight": true,
+					"HiddenProfileEmoteSound": "fairy_heal",
+					"HiddenProfileEmoteDuration": null,
+					"HiddenProfileEmoteStartFrame": 16,
+					"HiddenProfileEmoteFrameCount": 5,
+					"HiddenProfileEmoteFrameDuration": 200.0
+				}
+			},
+			"When": {
+				"HasSeenEvent": "{{ModId}}.AelinEightHearts"
+			}
+		},
+		
+		// NULL DISPOSITION (REMOVE AELIN ON JOJA ROUTE)
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"{{ModId}}.Aelin": {	}
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
 	]
 }

@@ -1,5 +1,62 @@
 {
 	"Changes": [
+		// LOAD DEFAULT GIFT TASTES
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"{{ModId}}.Aelin": "{{i18n:gifts.love}}$1/ /{{i18n:gifts.like}}$1/ /{{i18n:gifts.dislike}}$2/ /{{i18n:gifts.hate}}$2/ /{{i18n:gifts.neutral}}"
+			}
+		},
 		
+		// MODDED GIFT TASTES
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "1"],
+					"Value": " ",
+					"Delimiter": " "
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "3"],
+					"Value": " ",
+					"Delimiter": " "
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "5"],
+					"Value": " ",
+					"Delimiter": " "
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "7"],
+					"Value": " ",
+					"Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains=XXX": true
+			}
+		},
+		
+		// REMOVE GIFT TASTES ON JOJA ROUTE
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"{{ModId}}.Aelin": ""
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		}
 	]
 }
