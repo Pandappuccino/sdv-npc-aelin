@@ -59,7 +59,7 @@ There are a handful of new cooking items to make and profit off of included with
 - **Pain Tonic (Meet Aelin):** Requires 3 Poppy and 1 Honey. Restores a modest amount of HP and energy, and grants +3 Defense for two hours (simulating a numbness to pain).
 - **Energizing Tonic (Two Hearts):** Requires 2 Kale, 1 Carrot, and 1 Honey. Restores a decent amount of HP and Energy, and grants +2 Speed for two hours.
 - **Sunshine Tonic (Four Hearts):** Requires 3 Strawberry, 3 Summer Spangle, and 1 Honey. Restores a modest amount of HP and Energy, and grants +3 Farming and Foraging for an hour.
-- **Ancient Tonic (Eight Hearts):** Requires 3 Ancient Fruit, 3 Sweet Gem Berry, and 3 Honey. Fully restores HP and Energy, and grants +1 to all stats for the rest of the day.
+- **Ancient Tonic (Eight Hearts):** Requires 3 Ancient Fruit, 3 Sweet Gem Berry, 3 Mystic Syrup, and 3 Honey. Fully restores HP and Energy, and grants +3 to all stats for the rest of the day.
 - **Strawberry Tea (Complete "A Secret Gift", exclusive to Eugene):** Requires 3 Tea Leaves, 1 Strawberry, and 1 Honey. A universally-liked gift that is also loved by Aelin, Evelyn, Leah, Sandy, and Emily.
 
 The four "Tonic" items are a universal dislike, with some exceptions: Vincent, Jas, and Leo hate all four items, while Alex, George, Robin, and Clint like Pain Tonic.
