@@ -34,7 +34,7 @@ I've been working my butt off to make sure this mod is compatible with various m
 ## NPC Interactions
 Aelin has built-in custom interactions with some other custom NPCs I like to use! If you have the same NPCs installed, there are additional patches built into the mod that include some additional content:
 - [Eugene](https://www.nexusmods.com/stardewvalley/mods/9222)﻿: Adds two events, custom dialogue, a quest line, and an extra item and recipe; also adjusts a line in Aelin's gift dialogue.
-- [Romanceable Rasmodius Redux Revamped](https://www.nexusmods.com/stardewvalley/mods/16893)﻿: Adds an event, custom dialogue, and a quest line; also adjusts Aelin's schedule after a certain point.
+- [Romanceable Rasmodius Redux Revamped](https://www.nexusmods.com/stardewvalley/mods/16893)﻿: Adds two events, custom dialogue, and a quest line; also adjusts Aelin's schedule after a certain point.
 
 
 ## Custom Gift Tastes
