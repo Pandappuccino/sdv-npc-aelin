@@ -1,12 +1,14 @@
 {
 	// DIALOGUE
+
+	// EVENTS
 	
 	// GIFTS
 	"gifts.love": "A-are you sure I can have this, @? Thank you so much!",
 	"gifts.like": "Oh, thank you! I really appreciate this.",
 	"gifts.dislike": "Um...I suppose I could hold onto this for you...",
 	"gifts.hate": "@...? Do...do you hate me...?",
-	"gifts.neutral": "Oh, thank you.",
+	"gifts.neutral": "Thank you.",
 	
 	// MAIL
 	"mail.wizard.text": "Now that you have become one with nature, perhaps you would be interested to know the secret of Cindersap Forest: a presence known only to a very scant few, ephemeral and fleeting.^^Travel west of the forest, deep into the heart of the woods. There, you may find something of interest.^^   -M. Rasmodius, Wizard",
