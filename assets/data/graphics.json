@@ -61,8 +61,8 @@
 		// ITEM ICONS
 		{
 			"Action": "Load",
-            "Target": "Mods/{{ModId}}/Objects",
-            "FromFile": "assets/img/items.png"
+            		"Target": "Mods/{{ModId}}/Objects",
+            		"FromFile": "assets/img/items.png"
 		},
 		
 		// CUSTOM MAIL BG
