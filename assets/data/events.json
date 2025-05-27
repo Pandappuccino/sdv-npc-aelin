@@ -102,25 +102,9 @@
 		
 		// REMOVE AELIN HEART EVENTS ON JOJA PATH
 		{
-			"Action": "EditData",
-			"Target": "Data/Events/{{ModId}}.HiddenGrove",
-			"Entries": {
-				"{{ModId}}.AelinIntro": "null",
-				"{{ModId}}.AelinSixHearts": "null",
-				"{{ModId}}.AelinTenHearts": "null",
-			},
-			"When": {
-				"HasFlag": "jojaMember"
-			}
-		},
-		
-		{
-			"Action": "EditData",
-			"Target": "Data/Events/{{ModId}}.HouseInterior",
-			"Entries": {
-				"{{ModId}}.AelinTwoHearts": "null",
-				"{{ModId}}.AelinFourHearts": "null"
-			},
+			"Action": "Load",
+			"Target": "Data/Events/{{ModId}}.HiddenGrove, Data/Events/{{ModId}}.HouseInterior",
+			"FromFile": "assets/data/blank.json",
 			"When": {
 				"HasFlag": "jojaMember"
 			}
@@ -187,18 +171,6 @@
 		
 		{
 			"Action": "EditData",
-			"Target": "Data/Events/{{ModId}}.HouseInterior",
-			"Entries": {
-				"{{ModId}}.SecretGift": "null"
-			},
-			"When": {
-				"HasMod |contains=Eugene": true,
-				"HasFlag": "jojaMember"
-			}
-		},
-		
-		{
-			"Action": "EditData",
 			"Target": "Data/Events/{{ModId}}.HiddenGrove",
 			"Entries": {
 				// FAREWELL: Enter the Hidden Grove on a sunny day before 4PM after reaching two hearts with Eugene
@@ -221,5 +193,28 @@
 				"HasFlag": "jojaMember"
 			}
 		},
+
+		// LOAD RRRR EVENTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/{{ModId}}.HouseInterior",
+			"Entries": {
+
+			},
+			"When": {
+				"HasMod |contains=RRRR": true
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/WizardHouse",
+			"Entries": {
+
+			},
+			"When": {
+				"HasMod |contains=RRRR": true
+			}
+		}
 	]
 }
