@@ -2,6 +2,7 @@
 *Hundreds of years ago, humans and spirits coexisted in harmony, with the spirits blessing humans with bountiful harvests and crystal-clear water, and the humans offering the spirits the fruits of their labor as thanks. Over time, however, humanity became greedy, demanding more from nature than they would give, and soon the fragile balance between humans and spirits shattered. One by one, the spirits faded away, taking with them their blessings, and humanity was forced to survive without the gifts they so cruelly took for granted.*
 
 *Now, legends of the spirits have all but disappeared from history, save those few records preserved by those who practice the arcane arts--and it is one such practitioner who has seen glimpses and heard whispers of a single spirit, left behind for so many ages, deep inthe heart of Cindersap Forest...*
+
 ---
 This is the largest mod I've made so far and one I'm excited to share with everyone--my custom NPC, **Aelin**! Aelin is a nature spirit, a personification of the energy of nature itself, who has grown weak due to the many, many ages and the connection between humans and nature weakening so much. That said, he is a potential bachelor for your farmer to meet, befriend, and possibly even marry...but this mod also includes a point of no return that you must be aware of.
 
