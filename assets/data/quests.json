@@ -5,7 +5,7 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.IntroQuest": "Location/{{i18n:q01.name}}/{{i18n:q01.desc}}/{{i18n:q01.hint}}/{{ModId}}.SecretGrove/-1/0/-1/false",
+				"{{ModId}}.IntroQuest": "Location/{{i18n:q01.name}}/{{i18n:q01.desc}}/{{i18n:q01.hint}}/{{ModId}}.HiddenGrove/-1/0/-1/false",
 				"{{ModId}}.PoppyQuest": ""
 			}
 		},
