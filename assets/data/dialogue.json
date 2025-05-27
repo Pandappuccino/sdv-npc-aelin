@@ -8,6 +8,17 @@
 				
 			}
 		},
+
+		{
+			"Actions": "EditData",
+			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Entries": {
+
+			},
+			"When": {
+				"HasSeenEvent": "{{ModId}}.AelinEightHearts"
+			}
+		},
 		
 		{
 			"Actions": "EditData",
