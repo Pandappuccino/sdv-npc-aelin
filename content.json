@@ -18,12 +18,6 @@
 			"AllowValues": "true, false",
 			"Default": "false",
 			"Description": "Changes Aelin's gift tastes to make befriending him slightly easier."
-		},
-		
-		"Move Into Apartment": {
-			"AllowValues": "true, false",
-			"Default": "false",
-			"Description": "If \"Pelican Valley Lofts\" is installed, enables Aelin to move into an apartment room (room 1D) after a certain point."
 		}
 	},
 	
