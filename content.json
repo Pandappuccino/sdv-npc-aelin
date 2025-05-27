@@ -10,7 +10,7 @@
 		
 		"Default Design": {
 			"AllowValues": "Spring, Summer, Fall, Winter, null",
-			"Default": "null",
+			"Default": "Summer",
 			"Description": "If \"Seasonal Designs\" is disabled, defines which appearance Aelin uses."
 		},
 		
