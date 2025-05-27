@@ -201,7 +201,8 @@
 			"Action": "EditData",
 			"Target": "Data/Events/{{ModId}}.HiddenGrove",
 			"Entries": {
-				"{{ModId}}.Farewell/Time 600 1600/Friendship Eugene 500": ""
+				// FAREWELL: Enter the Hidden Grove on a sunny day before 4PM after reaching two hearts with Eugene
+				"{{ModId}}.Farewell/Time 600 1600/Weather sunny/Friendship Eugene 500": ""
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
