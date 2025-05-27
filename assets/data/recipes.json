@@ -8,7 +8,7 @@
 				"{{ModId}}.PainTonic": "376 3 340 1/25 5/1/l 100",
 				"{{ModId}}.EnergizingTonic": "250 2 Carrot 1 340 1/25 5/1/l 100",
 				"{{ModId}}.SunshineTonic": "400 3 593 1 340 1/25 5/1/l 100",
-				"{{ModId}}.AncientTonic": "454 3 417 3 340 3/25 5/1/l 100"
+				"{{ModId}}.AncientTonic": "454 3 417 3 MysticSyrup 3 340 3/25 5/1/l 100"
 			}
 		},
 		
