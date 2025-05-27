@@ -19,16 +19,6 @@
 			}
 		},
 		
-		{
-			"Action": "Load",
-			"Target": "Characters/{{ModId}}.Aelin",
-			"FromFile": "assets/img/Aelin_Spring.png",
-			"When": {
-				"Seasonal Designs": false,
-				"Default Design": "null"
-			}
-		},
-		
 		// PORTRAITS
 		{
 			"Action": "Load",
@@ -45,16 +35,6 @@
 			"FromFile": "assets/img/Aelin_{{Default Design}}_Portrait.png",
 			"When": {
 				"Seasonal Designs": false
-			}
-		},
-		
-		{
-			"Action": "Load",
-			"Target": "Portraits/{{ModId}}.Aelin",
-			"FromFile": "assets/img/Aelin_Spring_Portrait.png",
-			"When": {
-				"Seasonal Designs": false,
-				"Default Design": "null"
 			}
 		},
 		
