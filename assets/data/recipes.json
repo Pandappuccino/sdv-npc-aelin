@@ -22,18 +22,6 @@
 			"When": {
 				"HasMod |contains=Eugene": true
 			}
-		},
-		
-		{
-			"Action": "EditData",
-			"Target": "Data/CookingRecipes",
-			"Entries": {
-				"{{ModId}}.StrawberryTea": "815 3 400 1 340 1/25 5/1/f Eugene 6"
-			},
-			"When": {
-				"HasMod |contains=Eugene": true,
-				"HasFlag": "jojaMember"
-			}
 		}
 	]
 }
