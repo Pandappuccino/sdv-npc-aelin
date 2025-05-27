@@ -204,7 +204,8 @@
 				"{{ModId}}.SB.R/x {{ModId}}.EugeneRecipeMail": "null"
 			},
 			"When": {
-				"Hearts:Eugene": 6
+				"Hearts:Eugene": 6,
+				"HasFlag": "jojaMember"
 			}
 		},
 	]
