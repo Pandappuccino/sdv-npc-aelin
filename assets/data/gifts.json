@@ -20,7 +20,7 @@
 			}
 		},
 		
-		// MODDED GIFT TASTES
+		// MODDED GIFT TASTES (USE TWO SEPARATE ACTIONS FOR ALTERNATE TASTES)
 		{
 			"Action": "EditData",
 			"Target": "Data/NPCGiftTastes",
@@ -55,6 +55,44 @@
 			],
 			"When": {
 				"HasMod |contains=XXX": true
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "1"],
+					"Value": " ",
+					"Delimiter": " "
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "3"],
+					"Value": " ",
+					"Delimiter": " "
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "5"],
+					"Value": " ",
+					"Delimiter": " "
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "{{ModId}}.Aelin", "7"],
+					"Value": " ",
+					"Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains=XXX": true,
+				"Alternate Gift Tastes" true
 			}
 		},
 		
