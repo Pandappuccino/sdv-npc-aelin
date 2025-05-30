@@ -48,13 +48,9 @@
 	"q.e.hint2": "Deliver Honey to Eugene.",
 	"q.e.hint3": "Deliver Strawberry to Eugene.",
 	"q.e.hint4": "Enter Aelin's House between 6:00AM and 9:00PM.",
-	"q.e.text1a": "Oh, these look perfect, @! Fresh, tender, and the aroma is just right!",
-	"q.e.text1b": "Next, we'll need some Honey. One jar should be enough, I think.",
-	"q.e.text2a": "Ah, perfect! Nice golden honey, just what we need.",
-	"q.e.text2b": "Now for the secret ingredient...I need a nice ripe Strawberry. They're his favorite, after all.",
-	"q.e.text3a": "Mmm, I'm almost tempted to just give him this Strawberry right now! It looks amazing!",
-	"q.e.text3b": "Alright, I'll get started on the tea. It won't take very long.",
-	"q.e.text3c": "Why don't you go on ahead to Aelin's house? I'll catch up, and we can deliver it together.",
+	"q.e.text1": "Oh, these look perfect, @! Fresh, tender, and the aroma is just right!$1#$b#Next, we'll need some Honey. One jar should be enough, I think.",
+	"q.e.text2": "Ah, perfect! Nice golden honey, just what we need.$1#$b#Now for the secret ingredient...I need a nice ripe Strawberry. They're his favorite, after all.",
+	"q.e.text3": "Mmm, I'm almost tempted to just give him this Strawberry right now! It looks amazing--he'd love it!$1#$b#Alright, I'll get started on the tea. It won't take very long.#$b#Why don't you go on ahead to Aelin's house? I'll catch up, and we can deliver it together.",
 	
 	// ITEMS
 	"pain.name": "Pain Tonic",
