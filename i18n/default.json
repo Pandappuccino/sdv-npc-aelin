@@ -1,5 +1,14 @@
 {
 	// DIALOGUE
+	
+	// MODDED CTS
+	"dialogue.lucikiel1": "I felt a truly horrible darkness within the valley recently...$2#$b#Are you alright, @?$2",
+	"dialogue.lucikiel2": "For much of my life, I have considered demons to be a blight upon the world.#$b#But...perhaps this one isn't so bad.",
+	"dialogue.keahi": "Um...@...$2#$b#I didn't want to say it earlier, but...$2#$b#You smell quite awful.$2#$e#Please go take a bath.$2",
+	"dialogue.cats1": "The cutest little cats came to visit me today, but...$2#$b#I found them because there was a dreadful amount of yelling.#$b#The orange one...Jorts? Somehow his head wound up stuck in my watering can.$2",
+	"dialogue.cakewalk": "My little friends told me about a \"cake walk\" in town.#$b#It isn't much, but I had them slip a small honey cake into the offerings.$1",
+	"dialogue.bride": "Did you hear the scream last night, @?$2#$b#It sent a terrible chill down my spine...$2",
+	"dialogue.morris": "That greedy man who operated that selfish store is back, it seems.#$b#...The less I say about him, the better.",
 
 	// EVENTS
 	
@@ -67,4 +76,6 @@
 	// MOVIE DATA
 	
 	// STRINGS
+	"engagement0": "I still can't believe it...it's like a dream...$4",
+	"engagement1": "I'm so nervous...this feeling, it's called \"butterflies\", yes?$4#$b#I can hardly wait...$4",
 }

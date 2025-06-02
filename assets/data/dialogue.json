@@ -5,7 +5,14 @@
 			"Actions": "EditData",
 			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
 			"Entries": {
-				
+				"LucikielArrives": "{{dialogue.lucikiel1}}",
+				"ReputationIncreased": "{{dialogue.lucikiel2}}",
+				"keahi_prank": "{{dialogue.keahi}}",
+				"MeetTheCats": "{{dialogue.cats1}}",
+				"ButteredJorts": "{{dialogue.cats2}}",
+				"HaleysCakeWalk": "{{dialogue.cakewalk}}",
+				"AbandonedBride": "{{dialogue.bride}}",
+				"SiMorrisReturns": "{{dialogue.morris}}",
 			}
 		},
 
@@ -40,8 +47,8 @@
 			"Action": "EditData",
 			"Target": "Data/EngagementDialogue",
 			"Entries": {
-				"{{ModId}}.Aelin0": "",
-				"{{ModId}}.Aelin1": ""
+				"{{ModId}}.Aelin0": "{{engagement0}}",
+				"{{ModId}}.Aelin1": "{{engagement1}}"
 			}
 		},
 		
@@ -67,30 +74,6 @@
 			"Entries": {
 				"MovieInvite_Spouse_{{ModId}}.Aelin": "",
 				"MovieInvite_Invited_{{ModId}}.Aelin": ""
-			}
-		},
-		
-		// MOD DIALOGUE
-		{
-			"Actions": "EditData",
-			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
-			"Entries": {
-				
-			},
-			"When": {
-				"HasMod |contains=Eugene": true
-			}
-		},
-		
-		{
-			"Actions": "EditData",
-			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
-			"Entries": {
-				"LucikielArrives": "",
-				"ReputationIncreased": ""
-			},
-			"When": {
-				"HasMod |contains=Lucikiel": true
 			}
 		}
 	]

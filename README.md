@@ -66,6 +66,8 @@ The four "Tonic" items are a universal dislike, with some exceptions: Vincent, J
 
 If the player buys a Joja membership, the first four recipes will instead be delivered by Harvey upon purchasing certain developments, and the Strawberry Tea recipe will be delivered once the player reaches six hearts with Eugene.
 
+Icons for the tonics are by [Merchant-Shade](https://merchant-shade.itch.io/)!
+
 ## Contact Me
 Is there something not quite right with the mod? Want me to add a compatibility patch? Do you want to translate the mod to other languages or add something new? You can contact me either on Nexus Mods through the posts tab, or through social media on [Bluesky](http://bsky.app/profile/pandappuccino.itch.io) or [Tumblr](http://pandappuccino.tumblr.com)!
 
