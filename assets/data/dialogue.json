@@ -18,6 +18,7 @@
 				"pamHouseUpgradeAnonymous": "{{i18n:dialogue.upgradeAnon}}",
 				"railroadEarthquake": "{{i18n:dialogue.earthquake}}",
 				"jojaMartStruckByLightning": "{{i18n:dialogue.jojaLightning}}",
+				"leoValleyArrival": "{{i18n:dialogue.leo}}",
 				"babyBoy": "{{i18n:dialogue.babyBoy}}",
 				"babyGirl": "{{i18n:dialogue.babyGirl}}",
 				"wedding": "{{i18n:dialogue.wedding}}",
@@ -29,6 +30,9 @@
 				"keahi_prank": "{{i18n:dialogue.keahi}}",
 				"MeetTheCats": "{{i18n:dialogue.cats1}}",
 				"ButteredJorts": "{{i18n:dialogue.cats2}}",
+				"AbandonedBride": "{{i18n:dialogue.bride}}",
+				"SiMorrisReturns": "{{i18n:dialogue.morris}}",
+				"CreepyCatsSpawn": "{{i18n:dialogue.creepyCats}}",
 				"DumpsterDiveComment": "{{i18n:dialogue.trash}}",
 				"GreenRain": "{{i18n:dialogue.greenRain1}}",
 				"GreenRain_2": "{{i18n:dialogue.greenRain2}}",
@@ -125,6 +129,9 @@
 				"luauBest": "{{i18n:dialogue.luauBest}}",
 				"luauShorts": "{{i18n:dialogue.luauShorts}}",
 				"luauPoisoned": "{{i18n:dialogue.luauPoisoned}}",
+				"TrickorTreatEvent_CT": "{{i18n:dialogue.trickOrTreat}}",
+				"ItTakesAVillage_End": "{{i18n:dialogue.itTakesAVillage}}",
+				"ToshinorisDeathScene": "{{i18n:dialogue.toshinori}}",
 				"DumpsterDiveComment": "{{i18n:dialogue.trash}}",
 				"SpouseStardrop": "{{i18n:dialogue.stardrop}}",
 				"SpouseFarmhouseClutter": "{{i18n:dialogue.clutter}}",
@@ -136,10 +143,6 @@
 				"WipedMemory": "{{i18n:dialogue.wipedMemory}}",
 				
 				// GIFTS
-				"AcceptGift_(O)StardropTea": "{{i18n:dialogue.stardropTea}}",
-				"AcceptBirthdayGift_Positive": "{{i18n:dialogue.birthdayPositive}}",
-				"AcceptBirthdayGift_Negative": "{{i18n:dialogue.birthdayNegative}}",
-				"AcceptBirthdayGift": "{{i18n:dialogue.birthday}}",
 				"AcceptBouquet": "{{i18n:dialogue.bouquet}}",
 				"RejectBouquet_NpcAlreadyMarried": "{{i18n:dialogue.bouquet.reject.npcMarried}}",
 				"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:dialogue.bouquet.reject.engaged}}",
@@ -163,6 +166,7 @@
 				"RejectGift_Divorced": "{{i18n:dialogue.rejectGift.divorced}}",
 				
 				// EVENT DIALOGUE
+				"wonEggHunt": "{{i18n:dialogue.eggHunt.win}}",
 				"Fair_Judging": "{{i18n:dialogue.fair.judging}}",
 				"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:dialogue.fair.shorts}}",
 				"Fair_Judged_PlayerLost_Skipped": "{{i18n:dialogue.fair.skipped}}",
