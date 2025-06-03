@@ -7,9 +7,25 @@
 	"dialogue.rain.3": "Ah! @, you're soaked!#$b#Here--have a seat and warm up a bit. You can head back out when you feel better.",
 	
 	// MARRIAGE DIALOGUE
+	"dialogue.afterWedding": "It still doesn't quite feel real...but it is.$4#$b#We're married now...my beloved @ is now my ${husband^wife^spouse}$.$4#$b#I hope that we can enjoy many happy years together.$4",
+	"dialogue.stardrop": "@, my dearest...#$b#You've been working incredibly hard, haven't you?$#b#But, despite that, you still went out of your way to help someone like me.#$b#It isn't much, compared to what you've done for me...but I want you to have this.$4#$b#May our love endure even the stars fading from the skies.$1",
+	"dialogue.clutter": "Ah...@?$2#$b#I didn't want to say anything, but...the house is becoming a bit...stifling.$2#$b#Do you need me to help clean...?$2",
+	"dialogue.monsters": "AUGH!!#$b#@, what's going on?! Why are there monsters--#$b#*cough cough!* *cough!*$3#$b#H-help!$3",
 	
 	// CONVERSATION TOPICS
 	"dialogue.intro": "Sorry for that rather unseemly first impression...$2#$b#I suppose I got too excited to see someone in my grove. It's been a long time.#$b#I hope that you aren't too frightened by it.",
+	"dialogue.cc.boulder": "I saw some glimmering stones drifting through the stream this morning.#$b#I wonder where they're coming from...",
+	"dialogue.cc.bridge": "My friends tell me that they repaired the bridge in the mountains.#$b#Do be careful, though...the caves there can be a bit dangerous.",
+	"dialogue.cc.bus": "My friends tell me that they repaired the bus. Wasn't there someone in the village who used to drive it?#$e#I wonder what the desert is like...",
+	"dialogue.cc.greenhouse": "My friends tell me that they gave you a small gift last night.$1#$b#A greenhouse of your own...you could grow whatever you wanted there.",
+	"dialogue.cc.minecart": "It's been rather noisy lately, and there's a strange smell in the air...",
+	"dialogue.cc.complete": "So...my friends have departed, it seems.$2#$b#Ah...no, I shouldn't be so saddened. You did a wonderful thing for them, @.#$b#I'm glad that they can return home.#$e#%Aelin looks a bit sad. Best to leave him be for now.",
+	"dialogue.theater": "A \"movie theater\"...I can't say I'm too familiar with the concept, but if the village likes it...",
+	"dialogue.upgrade": "I heard that someone helped to build a house for Miss Pam and Miss Penny.#$b#I wonder who that could be...$1",
+	"dialogue.upgradeAnon": "I heard that someone helped to build a house for Miss Pam and Miss Penny.",
+	"dialogue.greenRain1": "Ah...the rain feels filled with the essence of nature.#$b#Perhaps I'll go for a small walk today...",
+	"dialogue.greenRain2": "Mm, the air smells like the grandest forest one can imagine today. The rain is full of life.",
+	"dialogue.greenRainFinish": "I feel surprisingly full of energy today. Perhaps it was that strange weather yesterday?",
 	
 	// MODDED CTS
 	"dialogue.lucikiel1": "I felt a truly horrible darkness within the valley recently...$2#$b#Are you alright, @?$2",
@@ -19,6 +35,19 @@
 	"dialogue.cakewalk": "My little friends told me about a \"cake walk\" in town.#$b#It isn't much, but I had them slip a small honey cake into the offerings.$1",
 	"dialogue.bride": "Did you hear the scream last night, @?$2#$b#It sent a terrible chill down my spine...$2",
 	"dialogue.morris": "That greedy man who operated that selfish store is back, it seems.#$b#...The less I say about him, the better.",
+	"dialogue.earthquake": "Ugh...that earthquake last night was horrible.$2#$b#Is your farm okay, @? Nothing was damaged, right?",
+	"dialogue.jojaLightning": "That sound...as if the heavens had opened up and unleashed nature's fury...$2#$b#What in Yoba's name happened...?",
+	"dialogue.leo": "I heard there is a new arrival in the village. I hope their time here will be pleasant.",
+	"dialogue.babyBoy": "Congratulations, @! I hear you're going to be a ${father^mother^parent}$!$1#$b#May your child know always the blessings of nature, and live a long and happy life!$1",
+	"dialogue.babyGirl": "Congratulations, @! I hear you're going to be a ${father^mother^parent}$!$1#$b#May your child know always the blessings of nature, and live a long and happy life!$1",
+	"dialogue.wedding": "Congratulations, @. May you and %spouse enjoy many years together.$1",
+	"dialogue.luauBest": "It seems everyone really loved the soup! I'm sure your contribution was the most important.$1#$b#Me? Ah...I didn't have any, in case there was fish.",
+	"dialogue.luauShorts": "Um...@?#$b#You...wouldn't know anything about the shorts in the soup, would you...?",
+	"dialogue.luauPoisoned": "I'm a bit glad I didn't partake in the soup...$2#$b#It seems everyone got quite sick. What in the world was in it, anyway?",
+	"dialogue.trickOrTreat": "Jas and Vincent came to my cottage to deliver some sweets to me.$1#$b#I'm a bit worried that they traveled here alone, but it was quite a nice surprise.",
+	"dialogue.itTakesAVillage": "Miss Penny and the others have worked so hard to ensure Jas and Vincent receive a proper education.#$b#They truly are unsung heroes in the village.$1",
+	"dialogue.toshinori": "Toshinori...he was a good man.$2#$b#I'll offer a prayer to the spirits for him. May he rest peacefully.$2",
+	"dialogue.creepyCats": "Perhaps it was my imagination, but I saw a shadow in the woods last night...$2#$b#It looked like a cat, but...$2",
 	
 	// SPECIAL DIALOGUE
 	"dialogue.breakup": "W...what?#$b#%firstnameletter...@...#$b#I...I understand.$2#$b#Even if it was just a fleeting dream...that joy I felt was real.$2#$b#I hope that whatever comes in your future, you'll be happy.$2#$e#%Aelin avoids your gaze.",
@@ -33,6 +62,46 @@
 	"gifts.dislike": "Um...I suppose I could hold onto this for you...",
 	"gifts.hate": "@...? Do...do you hate me...?",
 	"gifts.neutral": "Thank you.",
+	"gifts.birthday": "You remembered my birthday? Thank you.$1",
+	"gifts.birthday.positive": "Oh, my! You remembered! Thank you so much, @.$1",
+	"gifts.birthday.negative": "This is...certainly a gift...$2",
+	"gifts.stardropTea": "What a nostalgic aroma...ah, it's been quite some time since I enjoyed this.$1",
+	"gifts.spicy": "Ah...spicy things tend to disagree with me...$2",
+	"gifts.booze": "...this brings up some unpleasant memories of a very bad party, many centuries back...$2#$b#The less said about what happened that night, the better.$2",
+	"gifts.honey": "Oh, this looks amazing...! The quality looks incredible. It almost feels a shame to take it...$1",
+	"gifts.teaSet": "What beautiful craftsmanship! Would you like to have some tea with me to test the quality?$1",
+	"gifts.poppy": "Poppies have fantastic medical use. I can never have too many of them.$1#$b#Now, if I could just grow them myself...$2",
+	"gifts.sweetGemBerry": "I've tried for so long to cultivate one of these...are you sure I can have it?",
+	"gifts.strawberry": "How did you know this was my favorite?$1",
+	"gifts.redMushroom": "Um...@? Are you trying to poison me...?$2",
+	"gifts.ancientFruit": "This little fruit has endured countless eons, and you managed to help it grow...#$b#Are you truly sure I can have this?",
+	"gifts.greenTea": "Mm, such a soothing scent...I should have brought something to eat with this.$1",
+	"gifts.pineapple": "Urf...mm...$2#$b#I don't think my mouth is supposed to feel like this, is it...?$3",
+	"gifts.strawberryTea": "Thank you so much! Eugene must have taught you the recipe, didn't he? That little scamp!$1",
+	"gifts.medicine": "Ah, you made some medicine for me?#$b#Thank you. It never hurts to have extra, just in case.",
+	"gifts.flowers": "Oh, these flowers are beautiful...thank you, @.$1",
+	"gifts.seeds": "Ah! You brought me some seeds! Hopefully I can get them to grow...$1",
+	"dialogue.rejectGift.divorced": "Is this some kind of joke, @?$5#$b#You played with my heart and made me believe in happiness, and now you think you can buy it back?$5",
+
+	// BOUQUET AND MERMAID PENDANT
+	"dialogue.bouquet": "T-this...!#$b#A-are you sure, @...? You see me like that...?#$b#Well...okay...!$1#$b#I've wanted to ask you the same, but I've been too nervous.$4",
+	"dialogue.bouquet.reject": "Erm...sorry, but I don't see you like that...$2",
+	"dialogue.bouquet.reject.npcMarried": "O-oh, um...I'm flattered, @, truly, but...I'm already seeing {0}.$2",
+	"dialogue.bouquet.reject.engaged": "@, did you hit your head in the mines...?#$b#We're due to marry already, silly.$4",
+	"dialogue.bouquet.reject.married": "Is this your way of asking to renew our vows?$4#$b#Hehe. You're so silly.$1",
+	"dialogue.bouquet.reject.divorced": "...$5#$b#%Aelin swats away the bouquet.#$e#You're unbelievable, @. Toying with my heart like that...$5",
+	"dialogue.bouquet.reject.veryLow": "Erm...sorry, but I don't see you like that...$2",
+	"dialogue.bouquet.reject.low": "Ah...#$b#...not right now. Maybe in the future, but...not right now.$2",
+	"dialogue.pendant": "A...a mermaid pendant...#$b#These are exchanged as gifts between the villagers to ask for their hand in marriage...#$b#W-wait, does that mean, you...?#$b#Oh, @...! I accept...!$4",
+	"dialogue.pendant.reject.engaged": "Ah? Another pendant...?#$b#Did you find another one in case I lost this one? Don't worry, it's not going anywhere.$4",
+	"dialogue.pendant.reject.married": "Is this your way of asking to renew our vows?$4#$b#Hehe. You're so silly.$1",
+	"dialogue.pendant.reject.divorced": "...$5#$b#%Aelin swats away the pendant.#$e#You're unbelievable, @. Toying with my heart like that...$5",
+	"dialogue.pendant.reject.houseUpgrade": "O-oh!#$b#Um...I would love to, but...$2#$b#Well...the farmhouse seems a bit...small, doesn't it?#$b#It'd be a little too cramped for both of us...$2",
+	"dialogue.pendant.reject.npcDating": "O-oh, um...I'm flattered, @, truly, but...I'm already seeing {0}.$2",
+	"dialogue.pendant.reject.playerDating": "What the...?#$b#@, that's...that's cruel. You're already with someone.$2#$b#You'd break their heart like that...?$2",
+	"dialogue.pendant.reject.eightHearts": "Ah...sorry, but...I don't think I'm ready yet.$2",
+	"dialogue.pendant.reject.tenHearts": "Ah...sorry, but...I don't think I'm ready yet.$2#$b#It's all too scary.$2",
+	"dialogue.pendant.reject.tenHearts2": "@, I already said...$2",
 	
 	// MAIL
 	"mail.wizard.text": "Now that you have become one with nature, perhaps you would be interested to know the secret of Cindersap Forest: a presence known only to a very scant few, ephemeral and fleeting.^^Travel west of the forest, deep into the heart of the woods. There, you may find something of interest.^^   -M. Rasmodius, Wizard",
@@ -88,7 +157,11 @@
 	"sbtea.name": "Strawberry Tea",
 	"sbtea.desc": "A sweet, soothing tea blended with strawberries and honey.",
 	
-	// MOVIE DATA
+	// MOVIES
+	"dialogue.ticket.reject.invited": "O-oh, um...sorry, but {0} asked me to go already.#$b#Maybe next time?",
+	"dialogue.ticket.reject.watched": "Ah...I think once is enough for me right now.#$b#We can go another time, though!",
+	"dialogue.ticket.reject.dontWatch": "Mm...that doesn't sound too enjoyable.$2#$b#Sorry, maybe another time?",
+	"dialogue.ticket.reject.divorced": "Leave me alone.$5#$b#I already can barely stand the sight of you.$5",
 	
 	// STRINGS
 	"engagement0": "I still can't believe it...it's like a dream...$4",
