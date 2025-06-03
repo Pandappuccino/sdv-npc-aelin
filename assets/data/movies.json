@@ -14,17 +14,17 @@
 								"BeforeMovie": {
 									"ResponsePoint": null,
 									"Script": null,
-									"Text": "{{movie.before}}"
+									"Text": "{{i18n:movie.before}}"
 								},
 								"DuringMovie": {
 									"ResponsePoint": null,
-									"Script": "{{movie.during}}",
+									"Script": "{{i18n:movie.during}}",
 									"Text": null
 								},
 								"AfterMovie": {
 									"ResponsePoint": null,
 									"Script": null,
-									"Text": "{{movie.after}}"
+									"Text": "{{i18n:movie.after}}"
 								}
 							},
 							"Id": "reaction_0"

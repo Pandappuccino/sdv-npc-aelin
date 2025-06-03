@@ -118,5 +118,11 @@
 			"Action": "Include",
 			"FromFile": "assets/data/quests.json"
 		},
+		
+		{
+			"LogName": "Load additional mod data",
+			"Action": "Include",
+			"FromFile": "assets/data/mods.json"
+		}
 	]
 }

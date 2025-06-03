@@ -63,7 +63,7 @@
 				"{{ModId}}.AelinIntro/Time 900 1800/Season spring/Weather sunny/SawEvent 112": "",
 
 				// SIX HEARTS: Enter Hidden Grove between 3PM and 9PM in the summer, after fixing the Boiler Room
-				"{{ModId}}.AelinSixHearts/Time 1500 2100/Season summer/Weather sunny/SawEvent {{ModId}}.AelinFourHearts/SawEvent xxx/Friendship {{ModId}}.Aelin 1500": "",
+				"{{ModId}}.AelinSixHearts/Time 1500 2100/Season summer/Weather sunny/SawEvent {{ModId}}.AelinFourHearts/Hn ccBoilerRoom/Friendship {{ModId}}.Aelin 1500": "",
 
 				// TEN HEARTS: Enter Hidden Grove between 9AM and 9PM in the winter
 				"{{ModId}}.AelinTenHearts/Time 900 2100/Season winter/Weather sunny/SawEvent {{ModId}}.AelinEightHearts/Friendship {{ModId}}.Aelin 2500": "",
@@ -87,7 +87,7 @@
 			"Target": "Data/Events/Town",
 			"Entries": {
 				// EIGHT HEARTS: Enter town between 12PM and 4PM in the fall after fixing the Vault
-				"{{ModId}}.AelinEightHearts/Time 1200 1600/Season fall/Weather sunny/SawEvent {{ModId}}.AelinSixHearts/SawEvent xxx/Friendship {{ModId}}.Aelin 2000": ""
+				"{{ModId}}.AelinEightHearts/Time 1200 1600/Season fall/Weather sunny/SawEvent {{ModId}}.AelinSixHearts/Hn ccVault/Friendship {{ModId}}.Aelin 2000": ""
 			}
 		},
 		

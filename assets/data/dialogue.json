@@ -5,22 +5,222 @@
 			"Actions": "EditData",
 			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
 			"Entries": {
-				"LucikielArrives": "{{dialogue.lucikiel1}}",
-				"ReputationIncreased": "{{dialogue.lucikiel2}}",
-				"keahi_prank": "{{dialogue.keahi}}",
-				"MeetTheCats": "{{dialogue.cats1}}",
-				"ButteredJorts": "{{dialogue.cats2}}",
-				"HaleysCakeWalk": "{{dialogue.cakewalk}}",
-				"AbandonedBride": "{{dialogue.bride}}",
-				"SiMorrisReturns": "{{dialogue.morris}}",
+				// CONVERSATION TOPICS
+				"Introduction": "{{i18n:dialogue.intro}}",
+				"cc_Boulder": "{{i18n:dialogue.cc.boulder}}",
+				"cc_Bridge": "{{i18n:dialogue.cc.bridge}}",
+				"cc_Bus": "{{i18n:dialogue.cc.bus}}",
+				"cc_Greenhouse": "{{i18n:dialogue.cc.greenhouse}}",
+				"cc_Minecart": "{{i18n:dialogue.cc.minecart}}",
+				"cc_Complete": "{{i18n:dialogue.cc.complete}}",
+				"movieTheater": "{{i18n:dialogue.theater}}",
+				"pamHouseUpgrade": "{{i18n:dialogue.upgrade}}",
+				"pamHouseUpgradeAnonymous": "{{i18n:dialogue.upgradeAnon}}",
+				"railroadEarthquake": "{{i18n:dialogue.earthquake}}",
+				"jojaMartStruckByLightning": "{{i18n:dialogue.jojaLightning}}",
+				"babyBoy": "{{i18n:dialogue.babyBoy}}",
+				"babyGirl": "{{i18n:dialogue.babyGirl}}",
+				"wedding": "{{i18n:dialogue.wedding}}",
+				"luauBest": "{{i18n:dialogue.luauBest}}",
+				"luauShorts": "{{i18n:dialogue.luauShorts}}",
+				"luauPoisoned": "{{i18n:dialogue.luauPoisoned}}",
+				"LucikielArrives": "{{i18n:dialogue.lucikiel1}}",
+				"ReputationIncreased": "{{i18n:dialogue.lucikiel2}}",
+				"keahi_prank": "{{i18n:dialogue.keahi}}",
+				"MeetTheCats": "{{i18n:dialogue.cats1}}",
+				"ButteredJorts": "{{i18n:dialogue.cats2}}",
+				"DumpsterDiveComment": "{{i18n:dialogue.trash}}",
+				"GreenRain": "{{i18n:dialogue.greenRain1}}",
+				"GreenRain_2": "{{i18n:dialogue.greenRain2}}",
+				"GreenRainFinished": "{{i18n:dialogue.greenRainFinish}}",
+				
+				// GIFTS
+				"AcceptGift_(O)StardropTea": "{{i18n:dialogue.stardropTea}}",
+				"AcceptBirthdayGift_Positive": "{{i18n:dialogue.birthdayPositive}}",
+				"AcceptBirthdayGift_Negative": "{{i18n:dialogue.birthdayNegative}}",
+				"AcceptBirthdayGift": "{{i18n:dialogue.birthday}}",
+				"RejectBouquet": "{{i18n:dialogue.bouquet.reject}}",
+				
+				// GENERIC DIALOGUE
+				"Mon": "{{i18n:dialogue.mon.noHearts}}", 
+				"Tue": "{{i18n:dialogue.tue.noHearts}}",
+				"Wed": "{{i18n:dialogue.wed.noHearts}}",
+				"Thu": "{{i18n:dialogue.thu.noHearts}}",
+				"Fri": "{{i18n:dialogue.fri.noHearts}}",
+				"Sat": "{{i18n:dialogue.sat.noHearts}}",
+				"Sun": "{{i18n:dialogue.sun.noHearts}}",
+				
+				"Mon2": "{{i18n:dialogue.mon.twoHearts}}", 
+				"Tue2": "{{i18n:dialogue.tue.twoHearts}}",
+				"Wed2": "{{i18n:dialogue.wed.twoHearts}}",
+				"Thu2": "{{i18n:dialogue.thu.twoHearts}}",
+				"Fri2": "{{i18n:dialogue.fri.twoHearts}}",
+				"Sat2": "{{i18n:dialogue.sat.twoHearts}}",
+				"Sun2": "{{i18n:dialogue.sun.twoHearts}}",
+				
+				"Mon4": "{{i18n:dialogue.mon.fourHearts}}", 
+				"Tue4": "{{i18n:dialogue.tue.fourHearts}}",
+				"Wed4": "{{i18n:dialogue.wed.fourHearts}}",
+				"Thu4": "{{i18n:dialogue.thu.fourHearts}}",
+				"Fri4": "{{i18n:dialogue.fri.fourHearts}}",
+				"Sat4": "{{i18n:dialogue.sat.fourHearts}}",
+				"Sun4": "{{i18n:dialogue.sun.fourHearts}}",
+				
+				"Mon6": "{{i18n:dialogue.mon.sixHearts}}",
+				"Tue6": "{{i18n:dialogue.tue.sixHearts}}",
+				"Wed6": "{{i18n:dialogue.wed.sixHearts}}",
+				"Thu6": "{{i18n:dialogue.thu.sixHearts}}",
+				"Fri6": "{{i18n:dialogue.fri.sixHearts}}",
+				"Sat6": "{{i18n:dialogue.sat.sixHearts}}",
+				"Sun6": "{{i18n:dialogue.sun.sixHearts}}",
+				
+				// SPECIFIC DATES
+				"spring_1": "",
+				"summer_1": "",
+				"fall_1": "",
+				"winter_1": "",
+				"spring_12": "", // Day before the Egg Festival
+				"spring_23": "", // Day before the Flower Dance
+				"summer_10": "", // Day before the Luau
+				"summer_27": "", // Day before the Midnight Jellies
+				"fall_15": "", // Day before the Stardew Fair
+				"fall_26": "", // Day before Spirit's Eve
+				"winter_7": "", // Day before the Ice Festival
+				"winter_24": "", // Day before Winter Star
+				
+				"spring_1_2": "",
+				"summer_1_2": "",
+				"fall_1_2": "",
+				"winter_1_2": "",
+				"spring_12_2": "", // Day before the Egg Festival
+				"spring_23_2": "", // Day before the Flower Dance
+				"summer_10_2": "", // Day before the Luau
+				"summer_27_2": "", // Day before the Midnight Jellies
+				"fall_15_2": "", // Day before the Stardew Fair
+				"fall_26_2": "", // Day before Spirit's Eve
+				"winter_7_2": "", // Day before the Ice Festival
+				"winter_24_2": "" // Day before Winter Star
 			}
 		},
-
+		
 		{
 			"Actions": "EditData",
 			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
 			"Entries": {
-
+				// CONVERSATION TOPICS
+				"cc_Boulder": "{{i18n:dialogue.cc.boulder}}",
+				"cc_Bridge": "{{i18n:dialogue.cc.bridge}}",
+				"cc_Bus": "{{i18n:dialogue.cc.bus}}",
+				"cc_Greenhouse": "{{i18n:dialogue.cc.greenhouse}}",
+				"cc_Minecart": "{{i18n:dialogue.cc.minecart}}",
+				"cc_Complete": "{{i18n:dialogue.cc.complete}}",
+				"movieTheater": "{{i18n:dialogue.theater}}",
+				"pamHouseUpgrade": "{{i18n:dialogue.upgrade}}",
+				"pamHouseUpgradeAnonymous": "{{i18n:dialogue.upgradeAnon}}",
+				"railroadEarthquake": "{{i18n:dialogue.earthquake}}",
+				"jojaMartStruckByLightning": "{{i18n:dialogue.jojaLightning}}",
+				"babyBoy": "{{i18n:dialogue.babyBoy}}",
+				"babyGirl": "{{i18n:dialogue.babyGirl}}",
+				"wedding": "{{i18n:dialogue.wedding}}",
+				"luauBest": "{{i18n:dialogue.luauBest}}",
+				"luauShorts": "{{i18n:dialogue.luauShorts}}",
+				"luauPoisoned": "{{i18n:dialogue.luauPoisoned}}",
+				"DumpsterDiveComment": "{{i18n:dialogue.trash}}",
+				"SpouseStardrop": "{{i18n:dialogue.stardrop}}",
+				"SpouseFarmhouseClutter": "{{i18n:dialogue.clutter}}",
+				"Spouse_MonstersInHouse": "{{i18n:dialogue.monsters}}",
+				"breakUp": "{{i18n:dialogue.breakup}}",
+				"dumped_Boys": "{{i18n:dialogue.dumped}}",
+				"secondchance_Boys": "{{i18n:dialogue.secondChance}}",
+				"divorced": "{{i18n:dialogue.divorce}}",
+				"WipedMemory": "{{i18n:dialogue.wipedMemory}}",
+				
+				// GIFTS
+				"AcceptGift_(O)StardropTea": "{{i18n:dialogue.stardropTea}}",
+				"AcceptBirthdayGift_Positive": "{{i18n:dialogue.birthdayPositive}}",
+				"AcceptBirthdayGift_Negative": "{{i18n:dialogue.birthdayNegative}}",
+				"AcceptBirthdayGift": "{{i18n:dialogue.birthday}}",
+				"AcceptBouquet": "{{i18n:dialogue.bouquet}}",
+				"RejectBouquet_NpcAlreadyMarried": "{{i18n:dialogue.bouquet.reject.npcMarried}}",
+				"RejectBouquet_AlreadyAccepted_Engaged": "{{i18n:dialogue.bouquet.reject.engaged}}",
+				"RejectBouquet_AlreadyAccepted_Married": "{{i18n:dialogue.bouquet.reject.married}}",
+				"RejectBouquet_Divorced": "{{i18n:dialogue.bouquet.reject.divorced}}",
+				"RejectBouquet_VeryLowHearts": "{{i18n:dialogue.bouquet.reject.veryLow}}",
+				"RejectBouquet_LowHearts": "{{i18n:dialogue.bouquet.reject.low}}",
+				"RejectMermaidPendant_AlreadyAccepted_Engaged": "{{i18n:dialogue.pendant.reject.engaged}}",
+				"RejectMermaidPendant_AlreadyAccepted_Married": "{{i18n:dialogue.pendant.reject.married}}",
+				"RejectMermaidPendant_Divorced": "{{i18n:dialogue.pendant.reject.divorced}}",
+				"RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:dialogue.pendant.reject.houseUpgrade}}",
+				"RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:dialogue.pendant.reject.npcDating}}",
+				"RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:dialogue.pendant.reject.playerDating}}",
+				"RejectMermaidPendant_Under8Hearts": "{{i18n:dialogue.pendant.reject.eightHearts}}",
+				"RejectMermaidPendant_Under10Hearts": "{{i18n:dialogue.pendant.reject.tenHearts}}",
+				"RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:dialogue.pendant.reject.tenHearts2}}",
+				"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:dialogue.ticket.reject.invited}}",
+				"RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:dialogue.ticket.reject.watched}}",
+				"RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:dialogue.ticket.reject.dontWatch}}",
+				"RejectMovieTicket_Divorced": "{{i18n:dialogue.ticket.reject.divorced}}",
+				"RejectGift_Divorced": "{{i18n:dialogue.rejectGift.divorced}}",
+				
+				// EVENT DIALOGUE
+				"Fair_Judging": "{{i18n:dialogue.fair.judging}}",
+				"Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:dialogue.fair.shorts}}",
+				"Fair_Judged_PlayerLost_Skipped": "{{i18n:dialogue.fair.skipped}}",
+				"Fair_Judged_PlayerLost": "{{i18n:dialogue.fair.lost}}",
+				"Fair_Judged_PlayerWon": "{{i18n:dialogue.fair.won}}",
+				"FlowerDance_Accept_Spouse": "{{i18n:dialogue.flowerDance.spouse}}",
+				"FlowerDance_Accept": "{{i18n:dialogue.flowerDance}}",
+				"FlowerDance_Decline": "{{i18n:dialogue.flowerDance.decline}}",
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:dialogue.winterStar.giftBefore.spouse}}",
+				"WinterStar_GiveGift_Before": "{{i18n:dialogue.winterStar.giftBefore}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:dialogue.winterStar.giftAfter.spouse}}",
+				"WinterStar_GiveGift_After": "{{i18n:dialogue.winterStar.giftAfter}}",
+				"WinterStar_ReceiveGift_category_fish": "{{i18n:dialogue.winterStar.receiveGift.fish}}",
+				"WinterStar_ReceiveGift": "{{i18n:dialogue.winterStar.receiveGift}}",
+				
+				// GENERIC DIALOGUE				
+				"Mon8": "{{i18n:dialogue.mon.eightHearts}}",
+				"Tue8": "{{i18n:dialogue.tue.eightHearts}}",
+				"Wed8": "{{i18n:dialogue.wed.eightHearts}}",
+				"Thu8": "{{i18n:dialogue.thu.eightHearts}}",
+				"Fri8": "{{i18n:dialogue.fri.eightHearts}}",
+				"Sat8": "{{i18n:dialogue.sat.eightHearts}}",
+				"Sun8": "{{i18n:dialogue.sun.eightHearts}}",
+				
+				"Mon10": "{{i18n:dialogue.mon.tenHearts}}",
+				"Tue10": "{{i18n:dialogue.tue.tenHearts}}",
+				"Wed10": "{{i18n:dialogue.wed.tenHearts}}",
+				"Thu10": "{{i18n:dialogue.thu.tenHearts}}",
+				"Fri10": "{{i18n:dialogue.fri.tenHearts}}",
+				"Sat10": "{{i18n:dialogue.sat.tenHearts}}",
+				"Sun10": "{{i18n:dialogue.sun.tenHearts}}", 
+				
+				// SPECIFIC DATES
+				"spring_1": "{{i18n:dialogue.spring1}}",
+				"summer_1": "{{i18n:dialogue.summer1}}",
+				"fall_1": "{{i18n:dialogue.fall1}}",
+				"winter_1": "{{i18n:dialogue.winter1}}",
+				"spring_12": "{{i18n:dialogue.spring12}}", // Day before the Egg Festival
+				"spring_23": "{{i18n:dialogue.spring23}}", // Day before the Flower Dance
+				"summer_10": "{{i18n:dialogue.summer10}}", // Day before the Luau
+				"summer_27": "{{i18n:dialogue.summer27}}", // Day before the Midnight Jellies
+				"fall_15": "{{i18n:dialogue.fall15}}", // Day before the Stardew Fair
+				"fall_26": "{{i18n:dialogue.fall26}}", // Day before Spirit's Eve
+				"winter_7": "{{i18n:dialogue.winter7}}", // Day before the Ice Festival
+				"winter_24": "{{i18n:dialogue.winter24}}", // Day before Winter Star
+				
+				"spring_1_2": "{{i18n:dialogue.spring1.year2}}",
+				"summer_1_2": "{{i18n:dialogue.summer1.year2}}",
+				"fall_1_2": "{{i18n:dialogue.fall1.year2}}",
+				"winter_1_2": "{{i18n:dialogue.winter1.year2}}",
+				"spring_12_2": "{{i18n:dialogue.spring12.year2}}", // Day before the Egg Festival
+				"spring_23_2": "{{i18n:dialogue.spring23.year2}}", // Day before the Flower Dance
+				"summer_10_2": "{{i18n:dialogue.summer10.year2}}", // Day before the Luau
+				"summer_27_2": "{{i18n:dialogue.summer27.year2}}", // Day before the Midnight Jellies
+				"fall_15_2": "{{i18n:dialogue.fall15.year2}}", // Day before the Stardew Fair
+				"fall_26_2": "{{i18n:dialogue.fall26.year2}}", // Day before Spirit's Eve
+				"winter_7_2": "{{i18n:dialogue.winter7.year2}}", // Day before the Ice Festival
+				"winter_24_2": "{{i18n:dialogue.winter24.year2}}", // Day before Winter Star
 			},
 			"When": {
 				"HasSeenEvent": "{{ModId}}.AelinEightHearts"
@@ -31,7 +231,91 @@
 			"Actions": "EditData",
 			"Target": "Characters/Dialogue/MarriageDialogue{{ModId}}.Aelin",
 			"Entries": {
+				// STANDARD DIALOGUE
+				"patio_{{ModId}}.Aelin": "{{i18n:dialogue.patio.{{Random: 1, 2, 3}}}}",
+				"spouseRoom_{{ModId}}.Aelin": "{{i18n:dialogue.room}}",
+				"funLeave_{{ModId}}.Aelin": "{{i18n:dialogue.funLeave}}",
+				"funReturn_{{ModId}}.Aelin": "{{i18n:dialogue.funReturn}}",
+				"OneKid_0": "{{i18n:dialogue.oneKid.0}}",
+				"OneKid_1": "{{i18n:dialogue.oneKid.1}}",
+				"OneKid_2": "{{i18n:dialogue.oneKid.2}}",
+				"OneKid_3": "{{i18n:dialogue.oneKid.3}}",
+				"OneKid_4": "{{i18n:dialogue.oneKid.4}}",
+				"TwoKids_0": "{{i18n:dialogue.twoKids.0}}",
+				"TwoKids_1": "{{i18n:dialogue.twoKids.1}}",
+				"TwoKids_2": "{{i18n:dialogue.twoKids.2}}",
+				"TwoKids_3": "{{i18n:dialogue.twoKids.3}}",
+				"TwoKids_4": "{{i18n:dialogue.twoKids.4}}",
+				"Indoor_Day_0": "{{i18n:dialogue.indoorDay.0}}",
+				"Indoor_Day_1": "{{i18n:dialogue.indoorDay.1}}",
+				"Indoor_Day_2": "{{i18n:dialogue.indoorDay.2}}",
+				"Indoor_Day_3": "{{i18n:dialogue.indoorDay.3}}",
+				"Indoor_Day_4": "{{i18n:dialogue.indoorDay.4}}",
+				"Indoor_Night_0": "{{i18n:dialogue.indoorNight.0}}",
+				"Indoor_Night_1": "{{i18n:dialogue.indoorNight.1}}",
+				"Indoor_Night_2": "{{i18n:dialogue.indoorNight.2}}",
+				"Indoor_Night_3": "{{i18n:dialogue.indoorNight.3}}",
+				"Indoor_Night_4": "{{i18n:dialogue.indoorNight.4}}",
+				"Rainy_Day_0": "{{i18n:dialogue.rain.marriage.0}}",
+				"Rainy_Day_1": "{{i18n:dialogue.rain.marriage.1}}",
+				"Rainy_Day_2": "{{i18n:dialogue.rain.marriage.2}}",
+				"Rainy_Day_3": "{{i18n:dialogue.rain.marriage.3}}",
+				"Rainy_Day_4": "{{i18n:dialogue.rain.marriage.4}}",
+				"Rainy_Night_0": "{{i18n:dialogue.rainNight.marriage.0}}",
+				"Rainy_Night_1": "{{i18n:dialogue.rainNight.marriage.1}}",
+				"Rainy_Night_2": "{{i18n:dialogue.rainNight.marriage.2}}",
+				"Rainy_Night_3": "{{i18n:dialogue.rainNight.marriage.3}}",
+				"Rainy_Night_4": "{{i18n:dialogue.rainNight.marriage.4}}",
+				"Outdoor_{{ModId}}.Aelin": "{{i18n:dialogue.outdoorDefault}}",
+				"Outdoor_0": "{{i18n:dialogue.outdoor.0}}",
+				"Outdoor_1": "{{i18n:dialogue.outdoor.1}}",
+				"Outdoor_2": "{{i18n:dialogue.outdoor.2}}",
+				"Outdoor_3": "{{i18n:dialogue.outdoor.3}}",
+				"Outdoor_4": "{{i18n:dialogue.outdoor.4}}",
+				"Bad_0": "{{i18n:dialogue.affectionBad.0}}",
+				"Bad_1": "{{i18n:dialogue.affectionBad.1}}",
+				"Bad_2": "{{i18n:dialogue.affectionBad.2}}",
+				"Bad_3": "{{i18n:dialogue.affectionBad.3}}",
+				"Bad_4": "{{i18n:dialogue.affectionBad.4}}",
+				"Bad_5": "{{i18n:dialogue.affectionBad.5}}",
+				"Bad_6": "{{i18n:dialogue.affectionBad.6}}",
+				"Bad_7": "{{i18n:dialogue.affectionBad.7}}",
+				"Bad_8": "{{i18n:dialogue.affectionBad.8}}",
+				"Bad_9": "{{i18n:dialogue.affectionBad.9}}",
+				"Neutral_0": "{{i18n:dialogue.affectionNeutral.0}}",
+				"Neutral_1": "{{i18n:dialogue.affectionNeutral.1}}",
+				"Neutral_2": "{{i18n:dialogue.affectionNeutral.2}}",
+				"Neutral_3": "{{i18n:dialogue.affectionNeutral.3}}",
+				"Neutral_4": "{{i18n:dialogue.affectionNeutral.4}}",
+				"Neutral_5": "{{i18n:dialogue.affectionNeutral.5}}",
+				"Neutral_6": "{{i18n:dialogue.affectionNeutral.6}}",
+				"Neutral_7": "{{i18n:dialogue.affectionNeutral.7}}",
+				"Neutral_8": "{{i18n:dialogue.affectionNeutral.8}}",
+				"Neutral_9": "{{i18n:dialogue.affectionNeutral.9}}",
+				"Good_0": "{{i18n:dialogue.affectionGood.0}}",
+				"Good_1": "{{i18n:dialogue.affectionGood.1}}",
+				"Good_2": "{{i18n:dialogue.affectionGood.2}}",
+				"Good_3": "{{i18n:dialogue.affectionGood.3}}",
+				"Good_4": "{{i18n:dialogue.affectionGood.4}}",
+				"Good_5": "{{i18n:dialogue.affectionGood.5}}",
+				"Good_6": "{{i18n:dialogue.affectionGood.6}}",
+				"Good_7": "{{i18n:dialogue.affectionGood.7}}",
+				"Good_8": "{{i18n:dialogue.affectionGood.8}}",
+				"Good_9": "{{i18n:dialogue.affectionGood.9}}",
 				
+				// SPECIFIC DATES
+				"spring_1": "{{i18n:dialogue.spring1.married}}",
+				"summer_1": "{{i18n:dialogue.summer1.married}}",
+				"fall_1": "{{i18n:dialogue.fall1.married}}",
+				"winter_1": "{{i18n:dialogue.winter1.married}}",
+				"spring_12": "{{i18n:dialogue.spring12.married}}", // Day before the Egg Festival
+				"spring_23": "{{i18n:dialogue.spring23.married}}", // Day before the Flower Dance
+				"summer_10": "{{i18n:dialogue.summer10.married}}", // Day before the Luau
+				"summer_27": "{{i18n:dialogue.summer27.married}}", // Day before the Midnight Jellies
+				"fall_15": "{{i18n:dialogue.fall15.married}}", // Day before the Stardew Fair
+				"fall_26": "{{i18n:dialogue.fall26.married}}", // Day before Spirit's Eve
+				"winter_7": "{{i18n:dialogue.winter7.married}}", // Day before the Ice Festival
+				"winter_24": "{{i18n:dialogue.winter24.married}}" // Day before Winter Star
 			}
 		},
 		
@@ -39,7 +323,7 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Rainy",
 			"Entries": {
-				"{{ModId}}.Aelin": ""
+				"{{ModId}}.Aelin": "{{i18n:dialogue.rain.{{Random: 1, 1, 1, 2, 2, 3}}}}"
 			}
 		},
 		
@@ -47,8 +331,8 @@
 			"Action": "EditData",
 			"Target": "Data/EngagementDialogue",
 			"Entries": {
-				"{{ModId}}.Aelin0": "{{engagement0}}",
-				"{{ModId}}.Aelin1": "{{engagement1}}"
+				"{{ModId}}.Aelin0": "{{i18n:engagement0}}",
+				"{{ModId}}.Aelin1": "{{i18n:engagement1}}"
 			}
 		},
 		
@@ -56,7 +340,7 @@
 			"Action": "EditData",
 			"Target": "Data/ExtraDialogue",
 			"Entries": {
-				
+				"SummitEvent_Dialogue3_{{ModId}}.Aelin": "{{i18n:dialogue.summit}}"
 			}
 		},
 		
@@ -72,8 +356,8 @@
 			"Action": "EditData",
 			"Target": "Strings/Characters",
 			"Entries": {
-				"MovieInvite_Spouse_{{ModId}}.Aelin": "",
-				"MovieInvite_Invited_{{ModId}}.Aelin": ""
+				"MovieInvite_Spouse_{{ModId}}.Aelin": "{{i18n:dialogue.movieInvite.spouse}}",
+				"MovieInvite_Invited_{{ModId}}.Aelin": "{{i18n:dialogue.movieInvite}}",
 			}
 		}
 	]

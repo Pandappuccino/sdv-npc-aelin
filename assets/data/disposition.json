@@ -18,7 +18,7 @@
 					"Optimism": "Neutral",
 					"IsDarkSkinned": false,
 					"CanSocialize": true,
-					"CanBeRomanced": true,
+					"CanBeRomanced": false,
 					"LoveInterest": null,
 					"Calendar": "HiddenUntilMet",
 					"SocialTab": "HiddenUntilMet",
@@ -30,32 +30,6 @@
 					"ItemDeliveryQuests": false,
 					"PerfectionScore": false,
 					"EndSlideShow": "Hidden",
-					"SpouseAdopts": true,
-					"SpouseWantsChildren": true,
-					"SpouseGiftJealousy": false,
-					"SpouseRoom": {
-						"MapAsset": null,
-						"MapSourceRect": {
-							"X": 0,
-							"Y": 0,
-							"Width": 6,
-							"Height": 9
-						}
-					},
-					"SpousePatio": {
-						"MapAsset": null,
-						"MapSourceRect": {
-							"X": 0,
-							"Y": 0,
-							"Width": 4,
-							"Height": 4
-						},
-						"SpriteAnimationFrames": [
-							[ 16, 500 ], // frame, duration (ms)
-						]
-					},
-					"SpouseFloors": [],
-					"SpouseWallpapers": [],
 					"DumpsterDiveFriendshipEffect": -15,
 					"DumpsterDiveEmote": null,
 					"FriendsAndFamily": [
