@@ -79,31 +79,31 @@
 				"Sun6": "{{i18n:dialogue.sun.sixHearts}}",
 				
 				// SPECIFIC DATES
-				"spring_1": "",
-				"summer_1": "",
-				"fall_1": "",
-				"winter_1": "",
-				"spring_12": "", // Day before the Egg Festival
-				"spring_23": "", // Day before the Flower Dance
-				"summer_10": "", // Day before the Luau
-				"summer_27": "", // Day before the Midnight Jellies
-				"fall_15": "", // Day before the Stardew Fair
-				"fall_26": "", // Day before Spirit's Eve
-				"winter_7": "", // Day before the Ice Festival
-				"winter_24": "", // Day before Winter Star
+				"spring_1": "{{i18n:dialogue.spring1}}",
+				"summer_1": "{{i18n:dialogue.summer1}}",
+				"fall_1": "{{i18n:dialogue.fall1}}",
+				"winter_1": "{{i18n:dialogue.winter1}}",
+				"spring_12": "{{i18n:dialogue.spring12}}", // Day before the Egg Festival
+				"spring_23": "{{i18n:dialogue.spring23}}", // Day before the Flower Dance
+				"summer_10": "{{i18n:dialogue.summer10}}", // Day before the Luau
+				"summer_27": "{{i18n:dialogue.summer27}}", // Day before the Midnight Jellies
+				"fall_15": "{{i18n:dialogue.fall15}}", // Day before the Stardew Fair
+				"fall_26": "{{i18n:dialogue.fall26}}", // Day before Spirit's Eve
+				"winter_7": "{{i18n:dialogue.winter7}}", // Day before the Ice Festival
+				"winter_24": "{{i18n:dialogue.winter24}}", // Day before Winter Star
 				
-				"spring_1_2": "",
-				"summer_1_2": "",
-				"fall_1_2": "",
-				"winter_1_2": "",
-				"spring_12_2": "", // Day before the Egg Festival
-				"spring_23_2": "", // Day before the Flower Dance
-				"summer_10_2": "", // Day before the Luau
-				"summer_27_2": "", // Day before the Midnight Jellies
-				"fall_15_2": "", // Day before the Stardew Fair
-				"fall_26_2": "", // Day before Spirit's Eve
-				"winter_7_2": "", // Day before the Ice Festival
-				"winter_24_2": "" // Day before Winter Star
+				"spring_1_2": "{{i18n:dialogue.spring1.year2}}",
+				"summer_1_2": "{{i18n:dialogue.summer1.year2}}",
+				"fall_1_2": "{{i18n:dialogue.fall1.year2}}",
+				"winter_1_2": "{{i18n:dialogue.winter1.year2}}",
+				"spring_12_2": "{{i18n:dialogue.spring12.year2}}", // Day before the Egg Festival
+				"spring_23_2": "{{i18n:dialogue.spring23.year2}}", // Day before the Flower Dance
+				"summer_10_2": "{{i18n:dialogue.summer10.year2}}", // Day before the Luau
+				"summer_27_2": "{{i18n:dialogue.summer27.year2}}", // Day before the Midnight Jellies
+				"fall_15_2": "{{i18n:dialogue.fall15.year2}}", // Day before the Stardew Fair
+				"fall_26_2": "{{i18n:dialogue.fall26.year2}}", // Day before Spirit's Eve
+				"winter_7_2": "{{i18n:dialogue.winter7.year2}}", // Day before the Ice Festival
+				"winter_24_2": "{{i18n:dialogue.winter24.year2}}", // Day before Winter Star
 			}
 		},
 		
@@ -198,33 +198,6 @@
 				"Fri10": "{{i18n:dialogue.fri.tenHearts}}",
 				"Sat10": "{{i18n:dialogue.sat.tenHearts}}",
 				"Sun10": "{{i18n:dialogue.sun.tenHearts}}", 
-				
-				// SPECIFIC DATES
-				"spring_1": "{{i18n:dialogue.spring1}}",
-				"summer_1": "{{i18n:dialogue.summer1}}",
-				"fall_1": "{{i18n:dialogue.fall1}}",
-				"winter_1": "{{i18n:dialogue.winter1}}",
-				"spring_12": "{{i18n:dialogue.spring12}}", // Day before the Egg Festival
-				"spring_23": "{{i18n:dialogue.spring23}}", // Day before the Flower Dance
-				"summer_10": "{{i18n:dialogue.summer10}}", // Day before the Luau
-				"summer_27": "{{i18n:dialogue.summer27}}", // Day before the Midnight Jellies
-				"fall_15": "{{i18n:dialogue.fall15}}", // Day before the Stardew Fair
-				"fall_26": "{{i18n:dialogue.fall26}}", // Day before Spirit's Eve
-				"winter_7": "{{i18n:dialogue.winter7}}", // Day before the Ice Festival
-				"winter_24": "{{i18n:dialogue.winter24}}", // Day before Winter Star
-				
-				"spring_1_2": "{{i18n:dialogue.spring1.year2}}",
-				"summer_1_2": "{{i18n:dialogue.summer1.year2}}",
-				"fall_1_2": "{{i18n:dialogue.fall1.year2}}",
-				"winter_1_2": "{{i18n:dialogue.winter1.year2}}",
-				"spring_12_2": "{{i18n:dialogue.spring12.year2}}", // Day before the Egg Festival
-				"spring_23_2": "{{i18n:dialogue.spring23.year2}}", // Day before the Flower Dance
-				"summer_10_2": "{{i18n:dialogue.summer10.year2}}", // Day before the Luau
-				"summer_27_2": "{{i18n:dialogue.summer27.year2}}", // Day before the Midnight Jellies
-				"fall_15_2": "{{i18n:dialogue.fall15.year2}}", // Day before the Stardew Fair
-				"fall_26_2": "{{i18n:dialogue.fall26.year2}}", // Day before Spirit's Eve
-				"winter_7_2": "{{i18n:dialogue.winter7.year2}}", // Day before the Ice Festival
-				"winter_24_2": "{{i18n:dialogue.winter24.year2}}", // Day before Winter Star
 			},
 			"When": {
 				"HasSeenEvent": "{{ModId}}.AelinEightHearts"
@@ -335,8 +308,8 @@
 			"Action": "EditData",
 			"Target": "Data/EngagementDialogue",
 			"Entries": {
-				"{{ModId}}.Aelin0": "{{i18n:engagement0}}",
-				"{{ModId}}.Aelin1": "{{i18n:engagement1}}"
+				"{{ModId}}.Aelin0": "{{i18n:dialogue.engagement0}}",
+				"{{ModId}}.Aelin1": "{{i18n:dialogue.engagement1}}"
 			}
 		},
 		
@@ -362,6 +335,15 @@
 			"Entries": {
 				"MovieInvite_Spouse_{{ModId}}.Aelin": "{{i18n:dialogue.movieInvite.spouse}}",
 				"MovieInvite_Invited_{{ModId}}.Aelin": "{{i18n:dialogue.movieInvite}}",
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"{{ModId}}.Aelin_AfterWedding": "{{i18n:dialogue.afterWedding}}",
+				"{{ModId}}.Aelin_Engaged": "{{i18n:dialogue.pendant}}",
 			}
 		}
 	]
