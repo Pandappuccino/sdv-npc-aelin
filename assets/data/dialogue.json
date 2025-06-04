@@ -202,6 +202,8 @@
 				"WinterStar_GiveGift_After_Spouse": "{{i18n:dialogue.winterStar.giftAfter.spouse}}",
 				"WinterStar_GiveGift_After": "{{i18n:dialogue.winterStar.giftAfter}}",
 				"WinterStar_ReceiveGift_category_fish": "{{i18n:dialogue.winterStar.receiveGift.fish}}",
+				"WinterStar_ReceiveGift_category_flowers": "{{i18n:dialogue.winterStar.receiveGift.flowers}}",
+				"WinterStar_ReceiveGift_(O)417": "{{i18n:dialogue.winterStar.receiveGift.sweetGemBerry}}",
 				"WinterStar_ReceiveGift": "{{i18n:dialogue.winterStar.receiveGift}}",
 				
 				// GENERIC DIALOGUE				
