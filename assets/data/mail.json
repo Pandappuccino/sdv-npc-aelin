@@ -13,22 +13,6 @@
 			}
 		},
 		
-		// LOAD ALTERNATE MAIL ON JOJA ROUTE
-		{
-			"Action": "EditData",
-			"Target": "Data/Mail",
-			"Entries": {
-				"{{ModId}}.WizardMail": "{{i18n:mail.wizard.text}}%item quest {{ModId}}.IntroQuest true %%[letterbg 2][#]{{i18n:mail.wizard.name}}",
-				"{{ModId}}.Mail1": "{{i18n:mail.joja1.text}}%item cookingRecipe {{ModId}}.PainTonic%%[#]{{i18n:mail.joja1.name}}",
-				"{{ModId}}.Mail2": "{{i18n:mail.joja2.text}}%item cookingRecipe {{ModId}}.EnergizingTonic%%[#]{{i18n:mail.joja2.name}}",
-				"{{ModId}}.Mail3": "{{i18n:mail.joja3.text}}%item cookingRecipe {{ModId}}.SunshineTonic%%{{i18n:mail.joja3.name}}",
-				"{{ModId}}.Mail4": "{{i18n:mail.joja4.text}}%item cookingRecipe {{ModId}}.AncientTonic%%[#]{{i18n:mail.joja4.name}}"
-			},
-			"When": {
-				"HasFlag": "jojaMember"
-			}
-		},
-		
 		// LOAD EUGENE MAIL
 		{
 			"Action": "EditData",
