@@ -1,6 +1,31 @@
 {
 	// GENERIC DIALOGUE
 	
+	// SPECIFIC DATE DIALOGUE
+	"dialogue.spring1": "Ah...it's springtime.#$b#Nature is waking from its long slumber, and the flowers are blooming again.#$e#Perhaps I'll try to grow some tulips...",
+	"dialogue.summer1": "So hot out...$3#$b#O-oh, @. I didn't see you there.#$b#Sorry...it's getting rather hot out, and I'm all sweaty.$2",
+	"dialogue.fall1": "The season of harvest is here at last. How have things been on your farm, @?#$e#I heard there's some sort of festival in the village to celebrate the harvest.",
+	"dialogue.winter1": "Winter is here, and nature slumbers in blankets of cold...#$b#*yawn* Oh, I'm getting quite sleepy...",
+	"dialogue.spring1.year2": "Mm...good morning, @. It seems spring has arrived once more.#$e#Ah, my hibernation? It was quite restful, actually.",
+	"dialogue.summer1.year2": "Urgh...$3#$b#No matter how many years pass, I can never adjust to this heat...$3#$e#I imagine I'll be spending quite a lot of time in the stream...$3",
+	"dialogue.fall1.year2": "Ah, fall has arrived again. The leaves look quite beautiful this time of year, don't they?#$e#Hmm...I wonder what harvests this season will bring?",
+	"dialogue.winter1.year2": "Ah...hello, @. You caught me just as I was waking up.#$b#I hope I'll be able to stay awake a bit longer to talk to you this year...",
+	"dialogue.spring12": "My friends saw eggs being painted all sorts of colors in the village.#$b#What sort of customs are they following...?",
+	"dialogue.spring23": "The forest is so noisy today...#$b#What is going on out there?",
+	"dialogue.summer10": "My friends told me that there's some sort of festival on the beach tomorrow...#$b#Have fun. I'm...going to try to stay cool here.",
+	"dialogue.summer27": "A migration of jellyfish visible only at night...?#$b#Perhaps I might sneak a peek...",
+	"dialogue.fall15": "The festival of harvest is coming up soon, is it not?#$b#Be sure to thank the spirits for your farm's sake.#$e#Huh? I-I didn't mean to say you had to thank ME!",
+	"dialogue.fall26": "The veil between the mortal world and the world of spirits is quite thin.#$b#Perhaps I may see some old friends soon.",
+	"dialogue.winter7": "So loud...I'm trying to sleep...#$b#@, what in Yoba's name is going on out there...?",
+	"dialogue.winter24": "A festival to show gratitude to those around you...#$b#Ah--it's nothing. Do have fun.",
+	"dialogue.spring12.year2": "The Egg Festival is tomorrow, isn't it? I hope those poor chickens aren't being too overworked...",
+	"dialogue.spring23.year2": "The Flower Dance...it's a very important part of the valley's culture.#$b#Will you be dancing tomorrow, @?",
+	"dialogue.summer10.year2": "It's almost time for the Luau again. The weather is quite nice for a beach outing.#$b#Me? Ah...I don't know. I don't handle heat well.",
+	"dialogue.fall15.year2": "It's almost time for the fair. Will you be participating in the grange display?#$e#I'm sure you'll win--the love you have for your farm is incredible.$1",
+	"dialogue.fall26.year2": "The spirits whisper to me...they haunt the lands, and seek to steal your crops...#$e#Hehe, just kidding.$1",
+	"dialogue.winter7.year2": "The Ice Festival...I know it's an important date, but could they be a little quieter...?",
+	"dialogue.winter24.year2": "Ah, it's almost time for the Winter Star festival.#$b#I hope you have a blessed time, @.",
+	
 	// RAINY DAY DIALOGUE
 	"dialogue.rain.1": "It's raining pretty hard today...$2#$b#Rain makes my body ache. I may turn in early today.$2",
 	"dialogue.rain.2": "This weather is awful, but at least you don't need to water your crops today.#$b#Oh, but...do take care, there could be lighting strikes.",
@@ -13,7 +38,7 @@
 	"dialogue.monsters": "AUGH!!#$b#@, what's going on?! Why are there monsters--#$b#*cough cough!* *cough!*$3#$b#H-help!$3",
 	
 	// CONVERSATION TOPICS
-	"dialogue.intro": "Sorry for that rather unseemly first impression...$2#$b#I suppose I got too excited to see someone in my grove. It's been a long time.#$b#I hope that you aren't too frightened by it.",
+	"dialogue.intro": "*cough cough*$3#$b#*ahem* Sorry about that.$3#$b#Anyway...please feel free to make yourself comfortable.",
 	"dialogue.cc.boulder": "I saw some glimmering stones drifting through the stream this morning.#$b#I wonder where they're coming from...",
 	"dialogue.cc.bridge": "My friends tell me that they repaired the bridge in the mountains.#$b#Do be careful, though...the caves there can be a bit dangerous.",
 	"dialogue.cc.bus": "My friends tell me that they repaired the bus. Wasn't there someone in the village who used to drive it?#$e#I wonder what the desert is like...",
@@ -53,6 +78,25 @@
 	"dialogue.breakup": "W...what?#$b#%firstnameletter...@...#$b#I...I understand.$2#$b#Even if it was just a fleeting dream...that joy I felt was real.$2#$b#I hope that whatever comes in your future, you'll be happy.$2#$e#%Aelin avoids your gaze.",
 	"dialogue.divorce": "...leave me alone. Your cruelty is unfathomable.$5#$e#%Aelin glares at you for a moment, before looking away.",
 	"dialogue.trash": "Um...@? What are you doing...?"
+
+	// FESTIVAL DIALOGUE
+	"dialogue.eggHunt.win": "That's...a lot of eggs.#$b#I almost feel a bit bad for the chickens...",
+	"dialogue.fair.judging": "The displays all look nice, but...#$b#That one there...the one Pierre made...#$e#Why does it look like crops that @ grew...?",
+	"dialogue.fair.shorts": "Um...@? Why were there a pair of...#$b#N-nevermind.",
+	"dialogue.fair.skipped": "Is everything alright, @? I thought you were going to enter the contest.$#e#Well...perhaps next year.",
+	"dialogue.fair.lost": "Ah...I thought for certain you would win.#$b#Well, there's always next year, yes?#$e#I wonder if I might be able to help next year...",
+	"dialogue.fair.won": "You won! I knew you would win, @!$1#$b#You've worked so hard this year, you deserved this win!",
+	"dialogue.flowerDance.spouse": "This is quite a convoluted way to ask me to dance with you, isn't it, @?$4#$b#I jest, I jest. I'd be happy to join you.$1",
+	"dialogue.flowerDance": "Ah, you...want to dance with me?#$b#Well...alright, though I do have two left feet.",
+	"dialogue.flowerDance.decline": "Um...sorry, I'm afraid I'm not much for dances.",
+	"dialogue.winterStar.giftBefore.spouse": "Hehe, surprise! I'm your gift partner this year.$1#$b#It wasn't easy hiding this from you, you know...#$b#I hope you like what I picked out for you, @.#$b#Though, since you're my ${husband^wife^partner}$, I have a good feeling about it.$1",
+	"dialogue.winterStar.giftBefore": "Surprise, I'm your gift partner! I hope you like it...I had to do some guesswork on what you might like most.",
+	"dialogue.winterStar.giftAfter.spouse": "Well, did I guess right?$1#$b#Hehe, I'm glad. I had a good feeling about this, and I was right.$1#$b#I have another gift lined up for you for later, too.$4",
+	"dialogue.winterStar.giftAfter": "Well...do you like it?#$b#Ah...I'm glad. I wasn't too confident, really.$1",
+	"dialogue.winterStar.receiveGift.fish": "Oh my, you're my partner, @? Let's see...#$b#!!#$b#...@...?$2#$b#Do you hate me this much...?$2",
+	"dialogue.winterStar.receiveGift.flowers": "Oh my, you're my partner, @? Let's see...#$b#*gasp* Oh, these are lovely, @! Thank you!$1",
+	"dialogue.winterStar.receiveGift.sweetGemBerry": "Oh my, you're my partner, @? Let's see...#$b#*gasp!* A-A Sweet Gem Berry...!#$b#Oh, thank you so much, @!$1",
+	"dialogue.winterStar.receiveGift": "Oh my, you're my partner? Thank you, @. I know you've picked something nice.$1",
 
 	// EVENTS
 	
@@ -114,14 +158,6 @@
 	"mail.aelin2.name": "Aelin's Appreciation",
 	"mail.aelin3.name": "Aelin's Gratitude",
 	"mail.aelin4.name": "A Friend of Nature",
-	"mail.joja1.text": "",
-	"mail.joja2.text": "",
-	"mail.joja3.text": "",
-	"mail.joja4.text": "",
-	"mail.joja1.name": "A Tonic for Pain",
-	"mail.joja2.name": "A Tonic for Energy",
-	"mail.joja3.name": "A Tonic for Nature",
-	"mail.joja4.name": "A Miracle Medicine",
 	"mail.eq.text": "Farmer @,^How have you been? Aelin can't seem to stop talking about you and how often you visit him. I haven't seen him full of this much energy in a very long time!^^I want to surprise him with a little gift, if you would like to help. I'll need some tea leaves to start, if you could bring some. Don't tell him--it'll be our secret!^^   -Eugene",
 	"mail.eq.name": "A Secret Gift",
 	"mail.er.text": "Farmer @,^Thank you again for helping me prepare a gift for my old friend. The way his eyes lit up...he looked so happy, didn't he? He doesn't get to enjoy strawberries very often, even though they're his favorite.^^Here, I've attached the recipe for the tea we made for him as thanks, both for helping me and for being his friend.^^   -Eugene",
