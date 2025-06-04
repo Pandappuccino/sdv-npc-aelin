@@ -9,51 +9,6 @@
 			}
 		},
 		
-		// QUEUE MAIL ON JOJA ROUTE
-		{
-			"Action": "EditData",
-			"Target": "Data/Events/Farm",
-			"Entries": {
-				"{{ModId}}.joja.01/x {{ModId}}.Mail1": "null"
-			},
-			"When": {
-				"HasFlag": "jojaMember"
-			}
-		},
-		
-		{
-			"Action": "EditData",
-			"Target": "Data/Events/Farm",
-			"Entries": {
-				"{{ModId}}.joja.02/x {{ModId}}.Mail2": "null"
-			},
-			"When": {
-				"HasFlag": "jojaBoilerRoom"
-			}
-		},
-		
-		{
-			"Action": "EditData",
-			"Target": "Data/Events/Farm",
-			"Entries": {
-				"{{ModId}}.joja.03/x {{ModId}}.Mail3": "null"
-			},
-			"When": {
-				"HasFlag": "jojaVault"
-			}
-		},
-		
-		{
-			"Action": "EditData",
-			"Target": "Data/Events/Farm",
-			"Entries": {
-				"{{ModId}}.joja.04/x {{ModId}}.Mail4": "null"
-			},
-			"When": {
-				"HasFlag": "jojaPantry"
-			}
-		},
-		
 		// LOAD AELIN HEART EVENTS
 		{
 			"Action": "EditData",
