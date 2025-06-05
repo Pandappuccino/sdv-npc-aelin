@@ -69,7 +69,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Town",
 			"Entries": {
-				"{{ModId}}.AelinEightHearts": "null"
+				"{{ModId}}.AelinEightHearts": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -80,7 +80,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Beach",
 			"Entries": {
-				"{{ModId}}.AelinFourteenHearts": "null"
+				"{{ModId}}.AelinFourteenHearts": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -116,7 +116,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Custom_NPCEugene_House",
 			"Entries": {
-				"{{ModId}}.OldFriends": "null"
+				"{{ModId}}.OldFriends": null
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
