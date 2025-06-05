@@ -1,0 +1,47 @@
+{
+	"Changes": [
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": [ "Hospital", "Items" ],
+		"Entries": {
+			"{{ModId}}.PainTonicShop" {
+				"Condition": "PLAYER_HAS_MAIL Host jojaMember Any",
+				"Id": "{{ModId}}.PainTonic.Recipe",
+				"ItemId": "(O){{ModId}}.PainTonic",
+				"IsRecipe": true,
+				"Price": 2500,
+				"Object_InternalName": "{{ModId}}.PainTonic"
+			},
+
+			"{{ModId}}.EnergizingTonicShop" {
+				"Condition": "PLAYER_HAS_MAIL Host jojaVault Any",
+				"Id": "{{ModId}}.EnergizingTonic.Recipe",
+				"ItemId": "(O){{ModId}}.EnergizingTonic",
+				"IsRecipe": true,
+				"Price": 3500,
+				"Object_InternalName": "{{ModId}}.EnergizingTonic"
+			},
+
+			"{{ModId}}.SunshineTonicShop" {
+				"Condition": "PLAYER_HAS_MAIL Host jojaBoilerRoom Any",
+				"Id": "{{ModId}}.SunshineTonic.Recipe",
+				"ItemId": "(O){{ModId}}.SunshineTonic",
+				"IsRecipe": true,
+				"Price": 7500,
+				"Object_InternalName": "{{ModId}}.SunshineTonic"
+			},
+
+			"{{ModId}}.AncientTonicShop" {
+				"Condition": "PLAYER_HAS_MAIL Host IsJojaMartComplete Any",
+				"Id": "{{ModId}}.AncientTonic.Recipe",
+				"ItemId": "(O){{ModId}}.AncientTonic",
+				"IsRecipe": true,
+				"Price": 25000,
+				"Object_InternalName": "{{ModId}}.AncientTonic"
+			},
+		},
+		"When": {
+			"HasFlag": "jojaMember"
+		}
+	]
+}
