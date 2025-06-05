@@ -15,8 +15,8 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.IntroQuest": "",
-				"{{ModId}}.PoppyQuest": ""
+				"{{ModId}}.IntroQuest": null,
+				"{{ModId}}.PoppyQuest": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -42,10 +42,10 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.SecretGift1": "",
-				"{{ModId}}.SecretGift2": "",
-				"{{ModId}}.SecretGift3": "",
-				"{{ModId}}.SecretGift4": ""
+				"{{ModId}}.SecretGift1": null,
+				"{{ModId}}.SecretGift2": null,
+				"{{ModId}}.SecretGift3": null,
+				"{{ModId}}.SecretGift4": null
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
