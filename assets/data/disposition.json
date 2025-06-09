@@ -5,7 +5,7 @@
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"{{ModId}}.Aelin": {
+				"Aelin": {
 					"DisplayName": "Aelin",
 					"BirthSeason": "Summer",
 					"BirthDay": "22",
@@ -43,7 +43,7 @@
 					"Home": [
 						"Id": "Default",
 						"Condition": null,
-						"Location": "{{ModId}}.HouseInterior",
+						"Location": "AelinHouseInterior",
 						"Tile": {
 							"X": 0,
 							"Y": 0
@@ -73,7 +73,7 @@
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"{{ModId}}.Aelin": {
+				"Aelin": {
 					"DisplayName": "Aelin",
 					"BirthSeason": "Summer",
 					"BirthDay": "22",
@@ -238,7 +238,7 @@
 					"Home": [
 						"Id": "Default",
 						"Condition": null,
-						"Location": "{{ModId}}.HouseInterior",
+						"Location": "AelinHouseInterior",
 						"Tile": {
 							"X": 0,
 							"Y": 0
@@ -259,7 +259,7 @@
 				}
 			},
 			"When": {
-				"HasSeenEvent": "{{ModId}}.AelinEightHearts"
+				"HasSeenEvent": "AelinEightHearts"
 			}
 		},
 		
@@ -268,7 +268,7 @@
 			"Action": "EditData",
 			"Target": "Data/Characters",
 			"Entries": {
-				"{{ModId}}.Aelin": {	}
+				"Aelin": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
