@@ -347,4 +347,26 @@
 	// STRINGS
 	"engagement0": "I still can't believe it...it's like a dream...$4",
 	"engagement1": "I'm so nervous...this feeling, it's called \"butterflies\", yes?$4#$b#I can hardly wait...$4",
+
+	// MAP STRINGS
+	"hiddengrove.emptypot": "%An empty terracotta pot. There's some loose soil residue at the bottom.",
+	"hiddengrove.garden": "%A flower garden. Many of the flowers seem to be wilting.",
+	"hiddengrove.sigil": "%A strange sigil, glowing in the grass...",
+	"hiddengrove.tealeaves": "%There's a basket of tea leaves drying out on the doorstep.",
+	"houseinterior.clock": "%The clock's pendulum is moving, but the time on the clock's face is frozen.",
+	"houseinterior.bathtub": "%The water is warm, but there's nothing dripping from the faucet.",
+	"houseinterior.toilet": "%This toilet looks like it's never been used.",
+	"houseinterior.sink": "%The sink is so clean it practically sparkles.",
+	"houseinterior.trashbin": "%Crumpled up papers sit in the bottom of the trash bin.",
+	"houseinterior.bedroomtable": "%There's a letter in unfamiliar script on the table, with multiple scribbles on it.",
+	"houseinterior.wizardorb": "%This crystal looks familiar...",
+	"houseinterior.notes": "%A variety of little notes are written on colored paper and pinned to the wall. They look faded.",
+	"houseinterior.flowers": "%These flowers look to be wilting.",
+	"houseinterior.fridge": "%The fridge is empty, and it isn't even cold. Is it even on?",
+	"houseinterior.stove": "%It looks like a stove, but it's actually just a replica carved out of wood.",
+	"houseinterior.teaset": "%This tea set looks like it hasn't been used in a long time.",
+	"houseinterior.kitchentable": "%There are two cups on the table, but they're both empty.",
+	"houseinterior.bookstand": "%There is a book here: \"The Scripture of Yoba\".",
+	"houseinterior.writingdesk": "%There's an old typewriter here. The ink ribbon is totally dried out.",
+	"houseinterior.potionshelf": "%Various bottles line the shelf, filled with unknown liquids."
 }
