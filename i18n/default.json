@@ -9,7 +9,7 @@
 	"dialogue.sun.noHearts": "Ah...I didn't think you would come to see me today.#$e#You're a strange human...",
 
 	"dialogue.mon.twoHearts": "A little bird flew into my room this morning when I was waking up.#$e#I hope I didn't startle it...$2",
-	"dialogue.tue.twoHearts": "$1 {{ModId}}.AboutPoppies#%revealtaste:{{ModId}}.Aelin:(O)376Have you thought about growing some flowers, @?#$b#They're a great gift to others.#$b#My favorite is Poppy...they make a fantastic medicine.#$e#Have you thought about growing some flowers, @?#$b#They're a great gift to others.",
+	"dialogue.tue.twoHearts": "$1 AboutPoppies#%revealtaste:Aelin:(O)376Have you thought about growing some flowers, @?#$b#They're a great gift to others.#$b#My favorite is Poppy...they make a fantastic medicine.#$e#Have you thought about growing some flowers, @?#$b#They're a great gift to others.",
 	"dialogue.wed.twoHearts": "I'm sorry if I don't seem like I have a lot of energy...$2#$e#Today is a bit of a rough day for me...$3",
 	"dialogue.thu.twoHearts": "Ah--please don't touch my antlers. They're quite fragile...#$e#...yes, they're real. Is that so strange...?",
 	"dialogue.fri.twoHearts": "I should probably prepare some more medicine soon, before I run out...$2",
