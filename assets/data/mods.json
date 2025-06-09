@@ -1,5 +1,90 @@
 {
 	"Changes": [
-		
+		{
+            "Action": "EditData",
+            "Target": "JoXW.MobilePhone/npcs",
+            "Entries": {
+                "{{ModId}}.Aelin": {
+                    "reminisces": [
+                        {
+                            
+                        }
+                    ],
+                    "minPointsToCall": 9999,
+                    "canCall": true
+                }
+            }
+        },
+        
+        {
+            "Action": "EditData",
+            "Target": "JoXW.MobilePhone/npcs",
+            "Entries": {
+                "{{ModId}}.Aelin": {
+                    "reminisces": [
+                        {
+                            "name": "{{i18n:mobilephone.event0hearts}}",
+                            "location": "{{ModId}}.HiddenGrove",
+                            "eventId": "{{ModId}}.AelinIntro",
+                            "night": false,
+                            "mail": null
+                        },
+                        
+                        {
+                            "name": "{{i18n:mobilephone.event2hearts}}",
+                            "location": "{{ModId}}.HouseInterior",
+                            "eventId": "{{ModId}}.AelinTwoHearts",
+                            "night": false,
+                            "mail": null
+                        },
+                        
+                        {
+                            "name": "{{i18n:mobilephone.event4hearts}}",
+                            "location": "{{ModId}}.HouseInterior",
+                            "eventId": "{{ModId}}.AelinFourHearts",
+                            "night": false,
+                            "mail": null
+                        },
+                        
+                        {
+                            "name": "{{i18n:mobilephone.event6hearts}}",
+                            "location": "{{ModId}}.HiddenGrove",
+                            "eventId": "{{ModId}}.AelinSixHearts",
+                            "night": false,
+                            "mail": null
+                        },
+                        
+                        {
+                            "name": "{{i18n:mobilephone.event8hearts}}",
+                            "location": "Town",
+                            "eventId": "{{ModId}}.AelinEightHearts",
+                            "night": false,
+                            "mail": null
+                        },
+                        
+                        {
+                            "name": "{{i18n:mobilephone.event10hearts}}",
+                            "location": "{{ModId}}.HiddenGrove",
+                            "eventId": "{{ModId}}.AelinTenHearts",
+                            "night": false,
+                            "mail": null
+                        },
+                        
+                        {
+                            "name": "{{i18n:mobilephone.event14hearts}}",
+                            "location": "Beach",
+                            "eventId": "{{ModId}}.AelinFourteenHearts",
+                            "night": false,
+                            "mail": null
+                        }                    
+                    ],
+                    "minPointsToCall": 250,
+                    "canCall": true
+                }
+            },
+            "When": {
+                "HasSeenEvent": "{{ModId}}.AelinEightHearts"
+            }
+        },
 	]
 }

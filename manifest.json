@@ -49,11 +49,37 @@
 		{
 			"UniqueID": "bb.beesPlus",
 			"Required": false
+		}
+		
+		// TILESETS
+		{
+			"UniqueID": "Luan125gui.Indoor",
+			"Required": true,
 		},
 		
 		{
-			"UniqueID": "Aimon111.CharityDSA",
-			"Required": false
+			"UniqueID": "Lumisteria.LumiTilesheetsIndoor",
+			"Required": true,
 		},
+		
+		{
+			"UniqueID": "Lumisteria.LumiWallsAndFloors",
+			"Required": true,
+		},
+		
+		{
+			"UniqueID": "Lumisteria.TtilesheetsOutdoor",
+			"Required": true,
+		},
+		
+		{
+			"UniqueID": "crystalinerose.Tilesheets",
+			"Required": true,
+		},
+		
+		{
+			"UniqueID": "Sharogg.Tilesheets",
+			"Required": true,
+		}
 	]
 }

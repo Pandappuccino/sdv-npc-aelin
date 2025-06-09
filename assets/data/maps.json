@@ -1,5 +1,587 @@
 {
 	"Changes": [
+		// CG TEMP MAPS
+		{
+			"Action": "Load",
+			"Target": "maps/MeetAelin, maps/ThankYou",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.tmx"
+		},
 		
+		// MAP PATCHES (ADD PATH TO HIDDEN GROVE)
+		{
+            "LogName": "Load map patch to Hidden Grove (SVE)",
+			"Action": "EditMap",
+            "Target": "Maps/Woods",
+            "FromFile": "assets/maps/GroveWarp_SVE.tmx",
+            "ToArea": {
+                "X": 25,
+                "Y": 0,
+                "Width": 6,
+                "Height": 5
+			},
+            "When": {
+                "HasMod |contains=StardewValleyExpanded": true
+			}
+		},
+		
+		{
+            "LogName": "Load map patch to Hidden Grove (vanilla)",
+			"Action": "EditMap",
+            "Target": "Maps/Woods",
+            "FromFile": "assets/maps/GroveWarp_Vanilla.tmx",
+            "ToArea": {
+                "X": 7,
+                "Y": 0,
+                "Width": 4,
+                "Height": 4
+			},
+            "When": {
+                "HasMod |contains=StardewValleyExpanded": false
+			}
+		},
+		
+		// NEW MAPS (HIDDEN GROVE AND HOUSE INTERIOR)
+		{
+			"LogName": "Load Hidden Grove map",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.HiddenGrove",
+			"FromFile": "assets/maps/HiddenGrove.tmx"
+		},
+		
+		{
+			"LogName": "Load house interior map",
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.HouseInterior",
+			"FromFile": "assets/maps/HouseInterior.tmx"
+		},
+		
+		// MAP DATA
+		{
+			"LogName": "Add Hidden Grove and house interior maps",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}.HiddenGrove": {
+					"DisplayName": "{{i18n:hiddengrove.name}}",
+					"DefaultArrivalTile": {
+						"X": 29,
+						"Y": 33
+					},
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}.HiddenGrove"
+					},
+					"CanPlantHere": false,
+					"CanHaveGreenRainSpawns": false,
+					"FishAreas": {
+						"HiddenGrove.Stream": {
+							"DisplayName": null,
+							"Position": {
+								"X": 0,
+								"Y": 15,
+								"Width": 35,
+								"Height": 11
+							},
+							"CrabPotFishTypes": [
+								"freshwater"
+							],
+							"CrabPotJunkChance": 0.3
+						}
+					}
+					"Forage": [
+						{
+							"Chance": 0.52,
+							"Season": "spring",
+							"Id": "{{ModId}}.Spring.WildHorseradish",
+							"ItemId": "(O)16",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.25,
+							"Season": "spring",
+							"Id": "{{ModId}}.Spring.Leek",
+							"ItemId": "(O)20",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "spring",
+							"Id": "{{ModId}}.Spring.Dandelion",
+							"ItemId": "(O)22",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.16,
+							"Season": "spring",
+							"Id": "{{ModId}}.Spring.Mushroom",
+							"ItemId": "(O)404",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.32,
+							"Season": "spring",
+							"Id": "{{ModId}}.Spring.Morel",
+							"ItemId": "(O)257",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.78,
+							"Season": "summer",
+							"Id": "{{ModId}}.Summer.FiddleheadFern",
+							"ItemId": "(O)259",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.22,
+							"Season": "summer",
+							"Id": "{{ModId}}.Summer.RedMushroom",
+							"ItemId": "(O)420",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.4,
+							"Season": "summer",
+							"Id": "{{ModId}}.Summer.SpiceBerry",
+							"ItemId": "(O)396",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.6,
+							"Season": "summer",
+							"Id": "{{ModId}}.Summer.SweetPea",
+							"ItemId": "(O)402",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "fall",
+							"Id": "{{ModId}}.Fall.Blackberry",
+							"ItemId": "(O)410",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.38,
+							"Season": "fall",
+							"Id": "{{ModId}}.Fall.Chanterelle",
+							"ItemId": "(O)281",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "fall",
+							"Id": "{{ModId}}.Fall.Mushroom",
+							"ItemId": "(O)404",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.15,
+							"Season": "fall",
+							"Id": "{{ModId}}.Fall.RedMushroom",
+							"ItemId": "(O)420",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.39,
+							"Season": "winter",
+							"Id": "{{ModId}}.Winter.Crocus",
+							"ItemId": "(O)418",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.39,
+							"Season": "winter",
+							"Id": "{{ModId}}.Winter.CrystalFruit",
+							"ItemId": "(O)414",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 1,
+							"Season": "winter",
+							"Id": "{{ModId}}.Winter.Holly",
+							"ItemId": "(O)283",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.39,
+							"Season": "winter",
+							"Id": "{{ModId}}.Winter.Crocus",
+							"ItemId": "(O)418",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+					],
+					"MaxDailyForageSpawn": 3,
+					"MaxSpawnedForageAtOnce": 5,
+					"ChanceForClay": 0,
+					"Music": [],
+					"MusicDefault": "junimoStarSong",
+				},
+				
+				"{{ModId}}.HouseInterior": {
+					"DisplayName": "{{i18n:houseinterior.name}}",
+					"DefaultArrivalTile": {
+						"X": 0,
+						"Y": 0
+					},
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}.HouseInterior}}"
+					},
+					"CanPlantHere": false,
+					"CanHaveGreenRainSpawns": false
+				}
+			}
+		},
+		
+		// WARPS
+		{
+            "LogName": "Load warp from Secret Woods to Hidden Grove (SVE)",
+			"Action": "EditMap",
+            "Target": "Maps/Woods",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+					],
+                    "Value": "27 0 {{ModId}}.HiddenGrove 29 34 28 0 {{ModId}}.HiddenGrove 30 34",
+                    "Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains=StardewValleyExpanded": true
+			}
+		},
+		
+		{
+			"LogName": "Load warp from Hidden Grove to Secret Woods (SVE)",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.HiddenGrove",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"MapProperties",
+						"Warp"
+					],
+					"Value": "29 35 Woods 27 1 30 35 Woods 28 1",
+					"Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains=StardewValleyExpanded": true
+			}
+		},
+		
+		{
+            "LogName": "Load warp from Secret Woods to Hidden Grove (vanilla)",
+			"Action": "EditMap",
+            "Target": "Maps/Woods",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+					],
+                    "Value": "8 0 {{ModId}}.HiddenGrove 29 34 9 0 {{ModId}}.HiddenGrove 30 34",
+                    "Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains=StardewValleyExpanded": false
+			}
+		},
+		
+		{
+			"LogName": "Load warp from Hidden Grove to Secret Woods (vanilla)",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.HiddenGrove",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"MapProperties",
+						"Warp"
+					],
+					"Value": "29 35 Woods 8 1 30 35 Woods 9 1",
+					"Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains=StardewValleyExpanded": false
+			}
+		},
+		
+		{
+			"LogName": "Load warp from house interior to Hidden Grove",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}.HouseInterior",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"MapProperties",
+						"Warp"
+					],
+					"Value": "7 26 {{ModId}}.HiddenGrove 19 11",
+					"Delimiter": " "
+				}
+			]
+		},
+		
+		{
+            "LogName": "Load warp from Hidden Grove to house interior",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}.HiddenGrove",
+            "MapTiles": [
+                {
+                    "Position": { 
+						"X": 19, 
+						"Y": 10 
+					},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 7 25 {{ModID}}.HouseInterior 600 2600"
+					}
+				}
+			]
+		}
 	]
-}
+}	

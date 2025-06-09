@@ -2,18 +2,6 @@
 	"Format": "2.6.0",
 	
 	"ConfigSchema": {
-		"Seasonal Designs": {
-			"AllowValues": "true, false",
-			"Default": "true",
-			"Description": "Changes Aelin's appearance with each season. True by default."
-		},
-		
-		"Default Design": {
-			"AllowValues": "Spring, Summer, Fall, Winter",
-			"Default": "Summer",
-			"Description": "If \"Seasonal Designs\" is disabled, defines which appearance Aelin uses."
-		},
-		
 		"Alternate Gift Tastes": {
 			"AllowValues": "true, false",
 			"Default": "false",
@@ -117,6 +105,12 @@
 			"LogName": "Load quest data",
 			"Action": "Include",
 			"FromFile": "assets/data/quests.json"
+		},
+		
+		{
+			"LogName": "Load shop data",
+			"Action": "Include",
+			"FromFile": "assets/data/shops.json"
 		},
 		
 		{

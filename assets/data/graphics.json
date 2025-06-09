@@ -5,18 +5,6 @@
 			"Action": "Load",
 			"Target": "Characters/{{ModId}}.Aelin",
 			"FromFile": "assets/img/Aelin_{{season}}.png",
-			"When": {
-				"Seasonal Designs": true
-			}
-		},
-		
-		{
-			"Action": "Load",
-			"Target": "Characters/{{ModId}}.Aelin",
-			"FromFile": "assets/img/Aelin_{{Default Design}}.png",
-			"When": {
-				"Seasonal Designs": false
-			}
 		},
 		
 		// PORTRAITS
@@ -24,25 +12,13 @@
 			"Action": "Load",
 			"Target": "Portraits/{{ModId}}.Aelin",
 			"FromFile": "assets/img/Aelin_{{season}}_Portrait.png",
-			"When": {
-				"Seasonal Designs": true
-			}
-		},
-		
-		{
-			"Action": "Load",
-			"Target": "Portraits/{{ModId}}.Aelin",
-			"FromFile": "assets/img/Aelin_{{Default Design}}_Portrait.png",
-			"When": {
-				"Seasonal Designs": false
-			}
-		},
+		}
 		
 		// ITEM ICONS
 		{
 			"Action": "Load",
-            		"Target": "Mods/{{ModId}}/Objects",
-            		"FromFile": "assets/img/items.png"
+			"Target": "Mods/{{ModId}}/Objects",
+			"FromFile": "assets/img/items.png"
 		},
 		
 		// CUSTOM MAIL BG
@@ -51,6 +27,20 @@
 			"Target": "LooseSprites/LetterBG",
 			"FromFile": "assets/img/customLetter.png",
 			"PatchMode": "Overlay"
+		},
+		
+		// HOUSE TILESHEETS
+		{
+			"Action": "Load",
+			"Target": "maps/Spring_AelinHouse, maps/Summer_AelinHouse, maps/Fall_AelinHouse, maps/Winter_AelinHouse",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png"
+		},
+		
+		// CGS
+		{
+			"Action": "Load",
+			"Target": "maps/CG_MeetAelin, maps/CG_ThankYou",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png"
 		}
 	]
 }
