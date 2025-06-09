@@ -13,7 +13,7 @@
 		{
 			"LogName": "Initialize mod",
 			"Action": "Load",
-			"Target": "Characters/Dialogue/{{ModId}}.Aelin, Characters/Schedules/{{ModId}}.Aelin, Strings/Schedules/{{ModId}}.Aelin, Characters/Dialogue/MarriageDialogue{{ModId}}.Aelin",
+			"Target": "Characters/Dialogue/Aelin, Characters/Schedules/Aelin, Strings/Schedules/Aelin, Characters/Dialogue/MarriageDialogueAelin",
 			"FromFile": "assets/data/blank.json"
 		},
 		
