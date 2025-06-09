@@ -467,6 +467,35 @@
 				}
 			}
 		},
+
+		// STRINGS
+		{
+			"LogName": "Load string data for maps",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"HiddenGrove.EmptyPot": "{{i18n:hiddengrove.emptypot}}",
+				"HiddenGrove.Garden": "{{i18n:hiddengrove.garden}}",
+				"HiddenGrove.Sigil": "{{i18n:hiddengrove.sigil}}",
+				"HiddenGrove.TeaLeaves": "{{i18n:hiddengrove.tealeaves}}",
+				"HouseInterior.Clock": "{{i18n:houseinterior.clock}}",
+				"HouseInterior.Bathtub": "{{i18n:houseinterior.bathtub}}",
+				"HouseInterior.Toilet": "{{i18n:houseinterior.toilet}}",
+				"HouseInterior.TrashBin": "{{i18n:houseinterior.trashbin}}",
+				"HouseInterior.Sink": "{{i18n:houseinterior.sink}}",
+				"HouseInterior.BedroomTable": "{{i18n:houseinterior.bedroomtable}}",
+				"HouseInterior.WizardOrb": "{{i18n:houseinterior.wizardorb}}",
+				"HouseInterior.Flowers": "{{i18n:houseinterior.flowers}}",
+				"HouseInterior.Notes": "{{i18n:houseinterior.notes}}",
+				"HouseInterior.Fridge": "{{i18n:houseinterior.fridge}}",
+				"HouseInterior.Stove": "{{i18n:houseinterior.stove}}",
+				"HouseInterior.TeaSet": "{{i18n:houseinterior.teaset}}",
+				"HouseInterior.BookStand": "{{i18n:houseinterior.bookstand}}",
+				"HouseInterior.WritingDesk": "{{i18n:houseinterior.writingdesk}}",
+				"HouseInterior.KitchenTable": "{{i18n:houseinterior.kitchentable}}",
+				"HouseInterior.PotionShelf": "{{i18n:houseinterior.potionshelf}}",
+			},
+		},
 		
 		// WARPS
 		{
