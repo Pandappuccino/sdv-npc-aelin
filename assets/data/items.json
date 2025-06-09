@@ -256,7 +256,7 @@
 				
 				{
                     "Operation": "Append",
-                    "Target": ["Fields", "{{ModId}}.Aelin", "1"],
+                    "Target": ["Fields", "Aelin", "1"],
                     "Value": "{{ModId}}.StrawberryTea",
                     "Delimiter": " "
                 },
