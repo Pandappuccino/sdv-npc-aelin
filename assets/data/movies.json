@@ -4,7 +4,7 @@
 			"Action": "EditData",
 			"Target": "Data/MovieReactions",
 			"Entries": {
-				"{{ModId}}.Aelin" {
+				"Aelin" {
 					"NPCName": "Aelin",
 					"Reactions": [
 						{
@@ -38,7 +38,7 @@
 			"Action": "EditData",
 			"Target": "Data/ConcessionTastes",
 			"Entries": {
-				"{{ModId}}.Aelin": {
+				"Aelin": {
 					"Name": "Aelin",
 					"LovedTags": [
 						"Healthy"
