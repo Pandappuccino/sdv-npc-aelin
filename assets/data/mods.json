@@ -4,7 +4,7 @@
             "Action": "EditData",
             "Target": "JoXW.MobilePhone/npcs",
             "Entries": {
-                "{{ModId}}.Aelin": {
+                "Aelin": {
                     "reminisces": [
                         {
                             
@@ -20,36 +20,36 @@
             "Action": "EditData",
             "Target": "JoXW.MobilePhone/npcs",
             "Entries": {
-                "{{ModId}}.Aelin": {
+                "Aelin": {
                     "reminisces": [
                         {
                             "name": "{{i18n:mobilephone.event0hearts}}",
-                            "location": "{{ModId}}.HiddenGrove",
-                            "eventId": "{{ModId}}.AelinIntro",
+                            "location": "AelinHiddenGrove",
+                            "eventId": "AelinAelinIntro",
                             "night": false,
                             "mail": null
                         },
                         
                         {
                             "name": "{{i18n:mobilephone.event2hearts}}",
-                            "location": "{{ModId}}.HouseInterior",
-                            "eventId": "{{ModId}}.AelinTwoHearts",
+                            "location": "AelinHouseInterior",
+                            "eventId": "AelinAelinTwoHearts",
                             "night": false,
                             "mail": null
                         },
                         
                         {
                             "name": "{{i18n:mobilephone.event4hearts}}",
-                            "location": "{{ModId}}.HouseInterior",
-                            "eventId": "{{ModId}}.AelinFourHearts",
+                            "location": "AelinHouseInterior",
+                            "eventId": "AelinAelinFourHearts",
                             "night": false,
                             "mail": null
                         },
                         
                         {
                             "name": "{{i18n:mobilephone.event6hearts}}",
-                            "location": "{{ModId}}.HiddenGrove",
-                            "eventId": "{{ModId}}.AelinSixHearts",
+                            "location": "AelinHiddenGrove",
+                            "eventId": "AelinAelinSixHearts",
                             "night": false,
                             "mail": null
                         },
@@ -57,15 +57,15 @@
                         {
                             "name": "{{i18n:mobilephone.event8hearts}}",
                             "location": "Town",
-                            "eventId": "{{ModId}}.AelinEightHearts",
+                            "eventId": "AelinAelinEightHearts",
                             "night": false,
                             "mail": null
                         },
                         
                         {
                             "name": "{{i18n:mobilephone.event10hearts}}",
-                            "location": "{{ModId}}.HiddenGrove",
-                            "eventId": "{{ModId}}.AelinTenHearts",
+                            "location": "AelinHiddenGrove",
+                            "eventId": "AelinAelinTenHearts",
                             "night": false,
                             "mail": null
                         },
@@ -73,7 +73,7 @@
                         {
                             "name": "{{i18n:mobilephone.event14hearts}}",
                             "location": "Beach",
-                            "eventId": "{{ModId}}.AelinFourteenHearts",
+                            "eventId": "AelinFourteenHearts",
                             "night": false,
                             "mail": null
                         }                    
@@ -83,7 +83,7 @@
                 }
             },
             "When": {
-                "HasSeenEvent": "{{ModId}}.AelinEightHearts"
+                "HasSeenEvent": "AelinEightHearts"
             }
         },
 	]
