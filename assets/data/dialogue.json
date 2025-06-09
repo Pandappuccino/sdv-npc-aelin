@@ -3,7 +3,7 @@
 		// DEFAULT DIALOGUE
 		{
 			"Actions": "EditData",
-			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Target": "Characters/Dialogue/Aelin",
 			"Entries": {
 				// CONVERSATION TOPICS
 				"Introduction": "{{i18n:dialogue.intro}}",
@@ -131,7 +131,7 @@
 		
 		{
 			"Actions": "EditData",
-			"Target": "Characters/Dialogue/{{ModId}}.Aelin",
+			"Target": "Characters/Dialogue/Aelin",
 			"Entries": {
 				// CONVERSATION TOPICS
 				"cc_Boulder": "{{i18n:dialogue.cc.boulder}}",
@@ -234,7 +234,7 @@
 		
 		{
 			"Actions": "EditData",
-			"Target": "Characters/Dialogue/MarriageDialogue{{ModId}}.Aelin",
+			"Target": "Characters/Dialogue/MarriageDialogueAelin",
 			"Entries": {
 				// STANDARD DIALOGUE
 				"patio_{{ModId}}.Aelin": "{{i18n:dialogue.patio.{{Random: 1, 2, 3}}}}",
@@ -328,7 +328,7 @@
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Rainy",
 			"Entries": {
-				"{{ModId}}.Aelin": "{{i18n:dialogue.rain.{{Random: 1, 1, 1, 2, 2, 3}}}}"
+				"Aelin": "{{i18n:dialogue.rain.{{Random: 1, 1, 1, 2, 2, 3}}}}"
 			}
 		},
 		
@@ -336,8 +336,8 @@
 			"Action": "EditData",
 			"Target": "Data/EngagementDialogue",
 			"Entries": {
-				"{{ModId}}.Aelin0": "{{i18n:dialogue.engagement0}}",
-				"{{ModId}}.Aelin1": "{{i18n:dialogue.engagement1}}"
+				"Aelin0": "{{i18n:dialogue.engagement0}}",
+				"Aelin1": "{{i18n:dialogue.engagement1}}"
 			}
 		},
 		
@@ -345,7 +345,7 @@
 			"Action": "EditData",
 			"Target": "Data/ExtraDialogue",
 			"Entries": {
-				"SummitEvent_Dialogue3_{{ModId}}.Aelin": "{{i18n:dialogue.summit}}"
+				"SummitEvent_Dialogue3_Aelin": "{{i18n:dialogue.summit}}"
 			}
 		},
 		
@@ -361,8 +361,8 @@
 			"Action": "EditData",
 			"Target": "Strings/Characters",
 			"Entries": {
-				"MovieInvite_Spouse_{{ModId}}.Aelin": "{{i18n:dialogue.movieInvite.spouse}}",
-				"MovieInvite_Invited_{{ModId}}.Aelin": "{{i18n:dialogue.movieInvite}}",
+				"MovieInvite_Spouse_Aelin": "{{i18n:dialogue.movieInvite.spouse}}",
+				"MovieInvite_Invited_Aelin": "{{i18n:dialogue.movieInvite}}",
 			}
 		},
 		
@@ -370,8 +370,8 @@
 			"Action": "EditData",
 			"Target": "Strings/StringsFromCSFiles",
 			"Entries": {
-				"{{ModId}}.Aelin_AfterWedding": "{{i18n:dialogue.afterWedding}}",
-				"{{ModId}}.Aelin_Engaged": "{{i18n:dialogue.pendant}}",
+				"Aelin_AfterWedding": "{{i18n:dialogue.afterWedding}}",
+				"Aelin_Engaged": "{{i18n:dialogue.pendant}}",
 			}
 		}
 	]
