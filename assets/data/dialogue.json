@@ -228,7 +228,7 @@
 				"Sun10": "{{i18n:dialogue.sun.tenHearts}}", 
 			},
 			"When": {
-				"HasSeenEvent": "{{ModId}}.AelinEightHearts"
+				"HasSeenEvent": "AelinEightHearts"
 			}
 		},
 		
