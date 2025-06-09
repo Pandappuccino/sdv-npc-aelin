@@ -5,35 +5,35 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Forest",
 			"Entries": {
-				"{{ModId}}.01/SawEvent 112/x {{ModId}}.WizardMail": "null"
+				"AelinMeetWizard/SawEvent 112/x AelinWizardMail": "null"
 			}
 		},
 		
 		// LOAD AELIN HEART EVENTS
 		{
 			"Action": "EditData",
-			"Target": "Data/Events/{{ModId}}.HiddenGrove",
+			"Target": "Data/Events/AelinHiddenGrove",
 			"Entries": {
 				// INTRODUCTION: Enter Hidden Grove between 9AM and 6PM after getting the ability to read Junimo text
-				"{{ModId}}.AelinIntro/Time 900 1800/Season spring/Weather sunny/SawEvent 112": "",
+				"AelinIntro/Time 900 1800/Season spring/Weather sunny/SawEvent 112": "",
 
 				// SIX HEARTS: Enter Hidden Grove between 6PM and 10PM in the summer, after fixing the Boiler Room
-				"{{ModId}}.AelinSixHearts/Time 1800 2200/Season summer/Weather sunny/SawEvent {{ModId}}.AelinFourHearts/Hn ccBoilerRoom/Friendship {{ModId}}.Aelin 1500": "",
+				"AelinSixHearts/Time 1800 2200/Season summer/Weather sunny/SawEvent AelinFourHearts/Hn ccBoilerRoom/Friendship Aelin 1500": "",
 
 				// TEN HEARTS: Enter Hidden Grove between 9AM and 9PM in the winter
-				"{{ModId}}.AelinTenHearts/Time 900 2100/Season winter/Weather sunny/SawEvent {{ModId}}.AelinEightHearts/Friendship {{ModId}}.Aelin 2500": "",
+				"AelinTenHearts/Time 900 2100/Season winter/Weather sunny/SawEvent AelinEightHearts/Friendship Aelin 2500": "",
 			}
 		},
 		
 		{
 			"Action": "EditData",
-			"Target": "Data/Events/{{ModId}}.HouseInterior",
+			"Target": "Data/Events/AelinHouseInterior",
 			"Entries": {
 				// TWO HEARTS: Enter Aelin's house between 6AM and 9PM in the spring
-				"{{ModId}}.AelinTwoHearts/Time 600 2100/Season spring/Weather sunny/SawEvent {{ModId}}.AelinIntro/Friendship {{ModId}}.Aelin 500": "",
+				"AelinTwoHearts/Time 600 2100/Season spring/Weather sunny/SawEvent AelinIntro/Friendship Aelin 500": "",
 
 				// FOUR HEARTS: Enter Aelin's house between 3PM and 9PM in the summer when it is raining
-				"{{ModId}}.AelinFourHearts/Time 1500 2100/Season summer/Weather rainy/SawEvent {{ModId}}.AelinTwoHearts/Friendship {{ModId}}.Aelin 1000": ""
+				"AelinFourHearts/Time 1500 2100/Season summer/Weather rainy/SawEvent AelinTwoHearts/Friendship {{ModId}}.Aelin 1000": ""
 			}
 		},
 		
@@ -42,7 +42,7 @@
 			"Target": "Data/Events/Town",
 			"Entries": {
 				// EIGHT HEARTS: Enter town between 12PM and 4PM in the fall after fixing the Vault
-				"{{ModId}}.AelinEightHearts/Time 1200 1600/Season fall/Weather sunny/SawEvent {{ModId}}.AelinSixHearts/Hn ccVault/Friendship {{ModId}}.Aelin 2000": ""
+				"AelinEightHearts/Time 1200 1600/Season fall/Weather sunny/SawEvent AelinSixHearts/Hn ccVault/Friendship Aelin 2000": ""
 			}
 		},
 		
@@ -51,14 +51,14 @@
 			"Target": "Data/Events/Beach",
 			"Entries": {
 				// FOURTEEN HEARTS: Enter the beach between 8PM and 11PM in the spring, starting from Year 2
-				"{{ModId}}.AelinFourteenHearts/Time 2000 2300/Season spring/Weather sunny/SawEvent {{ModId}}.AelinTenHearts/Friendship {{ModId}}.Aelin 3500/Year 2": ""
+				"AelinFourteenHearts/Time 2000 2300/Season spring/Weather sunny/SawEvent AelinTenHearts/Friendship Aelin 3500/Year 2": ""
 			}
 		},
 		
 		// REMOVE AELIN HEART EVENTS ON JOJA PATH
 		{
 			"Action": "Load",
-			"Target": "Data/Events/{{ModId}}.HiddenGrove, Data/Events/{{ModId}}.HouseInterior",
+			"Target": "Data/Events/AelinHiddenGrove, Data/Events/AelinHouseInterior",
 			"FromFile": "assets/data/blank.json",
 			"When": {
 				"HasFlag": "jojaMember"
@@ -69,7 +69,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Town",
 			"Entries": {
-				"{{ModId}}.AelinEightHearts": null
+				"AelinEightHearts": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -80,7 +80,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Beach",
 			"Entries": {
-				"{{ModId}}.AelinFourteenHearts": null
+				"AelinFourteenHearts": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -93,7 +93,7 @@
 			"Target": "Data/Events/Custom_NPCEugene_House",
 			"Entries": {
 				// OLD FRIENDS: Enter Eugene's house between 10AM and 4PM after seeing Aelin's four-heart event
-				"{{ModId}}.OldFriends/Time 1000 1600/SeenEvent {{ModId}}.AelinFourHearts": ""
+				"OldFriends/Time 1000 1600/SeenEvent AelinFourHearts": ""
 			},
 			"When": {
 				"HasMod |contains=Eugene": true
@@ -105,7 +105,7 @@
 			"Target": "Data/Events/{{ModId}}.HouseInterior",
 			"Entries": {
 				// SECRET GIFT: Following the "A Secret Gift" quests, enter Aelin's house for the last step of the quest
-				"{{ModId}}.SecretGift/Time 900 1800/ActiveDialogueEvent {{ModId}}.SecretGiftCT": ""
+				"SecretGift/Time 900 1800/ActiveDialogueEvent SecretGiftCT": ""
 			},
 			"When": {
 				"HasMod |contains=Eugene": true
@@ -116,7 +116,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Custom_NPCEugene_House",
 			"Entries": {
-				"{{ModId}}.OldFriends": null
+				"OldFriends": null
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
@@ -129,7 +129,7 @@
 			"Target": "Data/Events/{{ModId}}.HiddenGrove",
 			"Entries": {
 				// FAREWELL: Enter the Hidden Grove on a sunny day before 4PM after reaching two hearts with Eugene
-				"{{ModId}}.Farewell/Time 600 1600/Weather sunny/Friendship Eugene 500": ""
+				"AelinFarewell/Time 600 1600/Weather sunny/Friendship Eugene 500": ""
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
@@ -141,7 +141,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Farm",
 			"Entries": {
-				"{{ModId}}.SB.R/x {{ModId}}.EugeneRecipeMail": "null"
+				"SB.R/x {{ModId}}.EugeneRecipeMail": "null"
 			},
 			"When": {
 				"Hearts:Eugene": 6,
