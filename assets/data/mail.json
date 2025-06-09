@@ -5,11 +5,11 @@
 			"Action": "EditData",
 			"Target": "Data/Mail",
 			"Entries": {
-				"{{ModId}}.WizardMail": "{{i18n:mail.wizard.text}}%item quest {{ModId}}.IntroQuest true %%[letterbg 2][#]{{i18n:mail.wizard.name}}",
-				"{{ModId}}.Mail1": "{{i18n:mail.aelin1.text}}%item cookingRecipe {{ModId}}.PainTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin1.name}}",
-				"{{ModId}}.Mail2": "{{i18n:mail.aelin2.text}}%item cookingRecipe {{ModId}}.EnergizingTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin2.name}}",
-				"{{ModId}}.Mail3": "{{i18n:mail.aelin3.text}}%item cookingRecipe {{ModId}}.SunshineTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin3.name}}",
-				"{{ModId}}.Mail4": "{{i18n:mail.aelin4.text}}%item cookingRecipe {{ModId}}.AncientTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin4.name}}"
+				"AelinWizardMail": "{{i18n:mail.wizard.text}}%item quest AelinIntroQuest true %%[letterbg 2][#]{{i18n:mail.wizard.name}}",
+				"AelinMail1": "{{i18n:mail.aelin1.text}}%item cookingRecipe {{ModId}}.PainTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin1.name}}",
+				"AelinMail2": "{{i18n:mail.aelin2.text}}%item cookingRecipe {{ModId}}.EnergizingTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin2.name}}",
+				"AelinMail3": "{{i18n:mail.aelin3.text}}%item cookingRecipe {{ModId}}.SunshineTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin3.name}}",
+				"AelinMail4": "{{i18n:mail.aelin4.text}}%item cookingRecipe {{ModId}}.AncientTonic%%[letterbg 5][textcolor gray][#]{{i18n:mail.aelin4.name}}"
 			}
 		},
 		
@@ -18,8 +18,8 @@
 			"Action": "EditData",
 			"Target": "Data/Mail",
 			"Entries": {
-				"{{ModId}}.EugeneQuestMail": "{{i18n:mail.eq.text}}%item quest {{ModId}}.SecretGift1 true%%[#]{{i18n:mail.eq.name}}",
-				"{{ModId}}.EugeneRecipeMail": "{{i18n:mail.er.text}}%item cookingRecipe {{ModId}}.StrawberryTea%%[#]{{i18n:mail.er.name}}"
+				"EugeneQuestMail": "{{i18n:mail.eq.text}}%item quest SecretGift1 true%%[#]{{i18n:mail.eq.name}}",
+				"EugeneRecipeMail": "{{i18n:mail.er.text}}%item cookingRecipe {{ModId}}.StrawberryTea%%[#]{{i18n:mail.er.name}}"
 			},
 			"When": {
 				"HasMod |contains=Eugene": true
@@ -30,7 +30,7 @@
 			"Action": "EditData",
 			"Target": "Data/Mail",
 			"Entries": {
-				"{{ModId}}.EugeneRecipeMail": "{{i18n:mail.eralt.text}}%item cookingRecipe {{ModId}}.StrawberryTea%%[#]{{i18n:mail.er.name}}"
+				"EugeneRecipeMail": "{{i18n:mail.eralt.text}}%item cookingRecipe {{ModId}}.StrawberryTea%%[#]{{i18n:mail.er.name}}"
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
