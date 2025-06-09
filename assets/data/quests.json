@@ -5,8 +5,8 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.IntroQuest": "Location/{{i18n:q01.name}}/{{i18n:q01.desc}}/{{i18n:q01.hint}}/{{ModId}}.HiddenGrove/-1/0/-1/false",
-				"{{ModId}}.PoppyQuest": ""
+				"AelinIntroQuest": "Location/{{i18n:q01.name}}/{{i18n:q01.desc}}/{{i18n:q01.hint}}/AelinHiddenGrove/-1/0/-1/false",
+				"AelinPoppyQuest": ""
 			}
 		},
 		
@@ -15,8 +15,8 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.IntroQuest": null,
-				"{{ModId}}.PoppyQuest": null
+				"AelinIntroQuest": null,
+				"AelinPoppyQuest": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -28,10 +28,10 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.SecretGift1": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc1}}/{{i18n:q.e.hint1}}/Eugene (O)815 3/{{ModId}}.SecretGift2/0/-1/false/{{i18n:q.e.text1}}",
-				"{{ModId}}.SecretGift2": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc2}}/{{i18n:q.e.hint2}}/Eugene (O)340 1/{{ModId}}.SecretGift3/0/-1/false/{{i18n:q.e.text2}}",
-				"{{ModId}}.SecretGift3": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc3}}/{{i18n:q.e.hint3}}/Eugene (O)400 3/{{ModId}}.SecretGift4/0/-1/false/%revealtaste:{{ModId}}.Aelin:(O)400{{i18n:q.e.text3}}",
-				"{{ModId}}.SecretGift4": "Location/{{i18n:q.e.name}}/{{i18n:q.e.desc4}}/{{i18n:q.e.hint4}}/{{ModId}}.HouseInterior/-1/0/-1/false"
+				"SecretGift1": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc1}}/{{i18n:q.e.hint1}}/Eugene (O)815 3/SecretGift2/0/-1/false/{{i18n:q.e.text1}}",
+				"SecretGift2": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc2}}/{{i18n:q.e.hint2}}/Eugene (O)340 1/SecretGift3/0/-1/false/{{i18n:q.e.text2}}",
+				"SecretGift3": "ItemDelivery/{{i18n:q.e.name}}/{{i18n:q.e.desc3}}/{{i18n:q.e.hint3}}/Eugene (O)400 3/SecretGift4/0/-1/false/%revealtaste:Aelin:(O)400{{i18n:q.e.text3}}",
+				"SecretGift4": "Location/{{i18n:q.e.name}}/{{i18n:q.e.desc4}}/{{i18n:q.e.hint4}}/AelinHouseInterior/-1/0/-1/false"
 			},
 			"When": {
 				"HasMod |contains=Eugene": true
@@ -42,10 +42,10 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.SecretGift1": null,
-				"{{ModId}}.SecretGift2": null,
-				"{{ModId}}.SecretGift3": null,
-				"{{ModId}}.SecretGift4": null
+				"SecretGift1": null,
+				"SecretGift2": null,
+				"SecretGift3": null,
+				"SecretGift4": null
 			},
 			"When": {
 				"HasMod |contains=Eugene": true,
