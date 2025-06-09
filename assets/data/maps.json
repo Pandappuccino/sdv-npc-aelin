@@ -44,14 +44,14 @@
 		{
 			"LogName": "Load Hidden Grove map",
 			"Action": "Load",
-			"Target": "Maps/{{ModId}}.HiddenGrove",
+			"Target": "Maps/AelinHiddenGrove",
 			"FromFile": "assets/maps/HiddenGrove.tmx"
 		},
 		
 		{
 			"LogName": "Load house interior map",
 			"Action": "Load",
-			"Target": "Maps/{{ModId}}.HouseInterior",
+			"Target": "Maps/AelinHouseInterior",
 			"FromFile": "assets/maps/HouseInterior.tmx"
 		},
 		
@@ -61,14 +61,14 @@
 			"Action": "EditData",
 			"Target": "Data/Locations",
 			"Entries": {
-				"{{ModId}}.HiddenGrove": {
+				"AelinHiddenGrove": {
 					"DisplayName": "{{i18n:hiddengrove.name}}",
 					"DefaultArrivalTile": {
 						"X": 29,
 						"Y": 33
 					},
 					"CreateOnLoad": {
-						"MapPath": "Maps/{{ModId}}.HiddenGrove"
+						"MapPath": "Maps/AelinHiddenGrove"
 					},
 					"CanPlantHere": false,
 					"CanHaveGreenRainSpawns": false,
@@ -453,14 +453,14 @@
 					"MusicDefault": "junimoStarSong",
 				},
 				
-				"{{ModId}}.HouseInterior": {
+				"AelinHouseInterior": {
 					"DisplayName": "{{i18n:houseinterior.name}}",
 					"DefaultArrivalTile": {
 						"X": 0,
 						"Y": 0
 					},
 					"CreateOnLoad": {
-						"MapPath": "Maps/{{ModId}}.HouseInterior}}"
+						"MapPath": "Maps/AelinHouseInterior}}"
 					},
 					"CanPlantHere": false,
 					"CanHaveGreenRainSpawns": false
@@ -480,7 +480,7 @@
                         "MapProperties",
                         "Warp"
 					],
-                    "Value": "27 0 {{ModId}}.HiddenGrove 29 34 28 0 {{ModId}}.HiddenGrove 30 34",
+                    "Value": "27 0 AelinHiddenGrove 29 34 28 0 AelinHiddenGrove 30 34",
                     "Delimiter": " "
 				}
 			],
@@ -492,7 +492,7 @@
 		{
 			"LogName": "Load warp from Hidden Grove to Secret Woods (SVE)",
 			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}.HiddenGrove",
+			"Target": "Maps/AelinHiddenGrove",
 			"TextOperations": [
 				{
 					"Operation": "Append",
@@ -520,7 +520,7 @@
                         "MapProperties",
                         "Warp"
 					],
-                    "Value": "8 0 {{ModId}}.HiddenGrove 29 34 9 0 {{ModId}}.HiddenGrove 30 34",
+                    "Value": "8 0 AelinHiddenGrove 29 34 9 0 AelinHiddenGrove 30 34",
                     "Delimiter": " "
 				}
 			],
@@ -532,7 +532,7 @@
 		{
 			"LogName": "Load warp from Hidden Grove to Secret Woods (vanilla)",
 			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}.HiddenGrove",
+			"Target": "Maps/AelinHiddenGrove",
 			"TextOperations": [
 				{
 					"Operation": "Append",
@@ -552,7 +552,7 @@
 		{
 			"LogName": "Load warp from house interior to Hidden Grove",
 			"Action": "EditMap",
-			"Target": "Maps/{{ModId}}.HouseInterior",
+			"Target": "Maps/AelinHouseInterior",
 			"TextOperations": [
 				{
 					"Operation": "Append",
@@ -560,7 +560,7 @@
 						"MapProperties",
 						"Warp"
 					],
-					"Value": "7 26 {{ModId}}.HiddenGrove 19 11",
+					"Value": "7 26 AelinHiddenGrove 19 11",
 					"Delimiter": " "
 				}
 			]
@@ -569,7 +569,7 @@
 		{
             "LogName": "Load warp from Hidden Grove to house interior",
             "Action": "EditMap",
-            "Target": "Maps/{{ModId}}.HiddenGrove",
+            "Target": "Maps/AelinHiddenGrove",
             "MapTiles": [
                 {
                     "Position": { 
@@ -578,7 +578,7 @@
 					},
                     "Layer": "Buildings",
                     "SetProperties": {
-                        "Action": "LockedDoorWarp 7 25 {{ModID}}.HouseInterior 600 2600"
+                        "Action": "LockedDoorWarp 7 25 AelinHouseInterior 600 2600"
 					}
 				}
 			]
