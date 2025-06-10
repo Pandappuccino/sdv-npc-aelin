@@ -12,7 +12,7 @@
 				"Price": 2500,
 				"Object_InternalName": "{{ModId}}.PainTonic"
 			},
-
+			
 			"{{ModId}}.EnergizingTonicShop" {
 				"Condition": "PLAYER_HAS_MAIL Host jojaVault Any",
 				"Id": "{{ModId}}.EnergizingTonic.Recipe",
@@ -21,7 +21,7 @@
 				"Price": 3500,
 				"Object_InternalName": "{{ModId}}.EnergizingTonic"
 			},
-
+			
 			"{{ModId}}.SunshineTonicShop" {
 				"Condition": "PLAYER_HAS_MAIL Host jojaBoilerRoom Any",
 				"Id": "{{ModId}}.SunshineTonic.Recipe",
@@ -30,7 +30,7 @@
 				"Price": 7500,
 				"Object_InternalName": "{{ModId}}.SunshineTonic"
 			},
-
+			
 			"{{ModId}}.AncientTonicShop" {
 				"Condition": "PLAYER_HAS_MAIL Host IsJojaMartComplete Any",
 				"Id": "{{ModId}}.AncientTonic.Recipe",

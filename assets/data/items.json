@@ -159,63 +159,63 @@
                     "Target": ["Fields", "Alex", "3"],
                     "Value": "{{ModId}}.PainTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Clive", "3"],
                     "Value": "{{ModId}}.PainTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Evelyn", "3"],
                     "Value": "{{ModId}}.PainTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "George", "3"],
                     "Value": "{{ModId}}.PainTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Robin", "3"],
                     "Value": "{{ModId}}.PainTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Willy", "3"],
                     "Value": "{{ModId}}.PainTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Jas", "7"],
                     "Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Leo", "7"],
                     "Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
                     "Delimiter": " "
-                },
+				},
 				
 				{
                     "Operation": "Append",
                     "Target": ["Fields", "Vincent", "7"],
                     "Value": "{{ModId}}.PainTonic {{ModId}}.EnergizingTonic {{ModId}}.SunshineTonic {{ModId}}.AncientTonic",
                     "Delimiter": " "
-                },
+				},
 			]
 		},
 		
@@ -235,70 +235,70 @@
 					"SpriteIndex": 4,
 					"Edibility": 10,
 					"IsDrink": true
-					]
-				}
-			},
-			"When": {
-				"HasMod |contains=Eugene": true
+				]
 			}
 		},
-		
-		{
-			"Action": "EditData",
-			"Target": "Data/NPCGiftTastes",
-			"TextOperations": [
-				{
-					"Operation": "Append",
-					"Target": ["Entries", "Universal_Likes"],
-					"Value": "{{ModId}}.StrawberryTea",
-					"Delimiter": " "
-				},
-				
-				{
-                    "Operation": "Append",
-                    "Target": ["Fields", "Aelin", "1"],
-                    "Value": "{{ModId}}.StrawberryTea",
-                    "Delimiter": " "
-                },
-				
-				{
-                    "Operation": "Append",
-                    "Target": ["Fields", "Emily", "1"],
-                    "Value": "{{ModId}}.StrawberryTea",
-                    "Delimiter": " "
-                },
-				
-				{
-                    "Operation": "Append",
-                    "Target": ["Fields", "Eugene", "1"],
-                    "Value": "{{ModId}}.StrawberryTea",
-                    "Delimiter": " "
-                },
-				
-				{
-                    "Operation": "Append",
-                    "Target": ["Fields", "Evelyn", "1"],
-                    "Value": "{{ModId}}.StrawberryTea",
-                    "Delimiter": " "
-                },
-				
-				{
-                    "Operation": "Append",
-                    "Target": ["Fields", "Leah", "1"],
-                    "Value": "{{ModId}}.StrawberryTea",
-                    "Delimiter": " "
-                },
-				
-				{
-                    "Operation": "Append",
-                    "Target": ["Fields", "Sandy", "1"],
-                    "Value": "{{ModId}}.StrawberryTea",
-                    "Delimiter": " "
-                },
-			],
-			"When": {
-				"HasMod |contains=Eugene": true
-			}
+		"When": {
+			"HasMod |contains=Eugene": true
 		}
-	]
+	},
+	
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Universal_Likes"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Aelin", "1"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Emily", "1"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Eugene", "1"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Evelyn", "1"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", "1"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+			
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sandy", "1"],
+				"Value": "{{ModId}}.StrawberryTea",
+				"Delimiter": " "
+			},
+		],
+		"When": {
+			"HasMod |contains=Eugene": true
+		}
+	}
+]
 }

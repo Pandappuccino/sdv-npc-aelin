@@ -16,10 +16,10 @@
 			"Entries": {
 				// INTRODUCTION: Enter Hidden Grove between 9AM and 6PM after getting the ability to read Junimo text
 				"AelinIntro/Time 900 1800/Season spring/Weather sunny/SawEvent 112": "",
-
+				
 				// SIX HEARTS: Enter Hidden Grove between 6PM and 10PM in the summer, after fixing the Boiler Room
 				"AelinSixHearts/Time 1800 2200/Season summer/Weather sunny/SawEvent AelinFourHearts/Hn ccBoilerRoom/Friendship Aelin 1500": "",
-
+				
 				// TEN HEARTS: Enter Hidden Grove between 9AM and 9PM in the winter
 				"AelinTenHearts/Time 900 2100/Season winter/Weather sunny/SawEvent AelinEightHearts/Friendship Aelin 2500": "",
 			}
@@ -31,7 +31,7 @@
 			"Entries": {
 				// TWO HEARTS: Enter Aelin's house between 6AM and 9PM in the spring
 				"AelinTwoHearts/Time 600 2100/Season spring/Weather sunny/SawEvent AelinIntro/Friendship Aelin 500": "",
-
+				
 				// FOUR HEARTS: Enter Aelin's house between 3PM and 9PM in the summer when it is raining
 				"AelinFourHearts/Time 1500 2100/Season summer/Weather rainy/SawEvent AelinTwoHearts/Friendship {{ModId}}.Aelin 1000": ""
 			}
@@ -148,24 +148,24 @@
 				"HasFlag": "jojaMember"
 			}
 		},
-
+		
 		// LOAD RRRR EVENTS
 		{
 			"Action": "EditData",
 			"Target": "Data/Events/{{ModId}}.HouseInterior",
 			"Entries": {
-
+				
 			},
 			"When": {
 				"HasMod |contains=RRRR": true
 			}
 		},
-
+		
 		{
 			"Action": "EditData",
 			"Target": "Data/Events/WizardHouse",
 			"Entries": {
-
+				
 			},
 			"When": {
 				"HasMod |contains=RRRR": true

@@ -467,7 +467,7 @@
 				}
 			}
 		},
-
+		
 		// STRINGS
 		{
 			"LogName": "Load string data for maps",

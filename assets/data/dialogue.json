@@ -324,6 +324,7 @@
 			}
 		},
 		
+		// RAINY DAY DIALOGUE
 		{
 			"Action": "EditData",
 			"Target": "Characters/Dialogue/Rainy",
@@ -332,23 +333,28 @@
 			}
 		},
 		
+		// ENGAGEMENT DIALOGUE
 		{
 			"Action": "EditData",
 			"Target": "Data/EngagementDialogue",
 			"Entries": {
-				"Aelin0": "{{i18n:dialogue.engagement0}}",
-				"Aelin1": "{{i18n:dialogue.engagement1}}"
+				"Aelin1": "{{i18n:dialogue.engagement1}}",
+				"Aelin0": "{{i18n:dialogue.engagement0}}"
 			}
 		},
 		
+		// EXTRA DIALOGUE
 		{
 			"Action": "EditData",
 			"Target": "Data/ExtraDialogue",
 			"Entries": {
-				"SummitEvent_Dialogue3_Aelin": "{{i18n:dialogue.summit}}"
+				"SummitEvent_Dialogue3_Aelin": "{{i18n:dialogue.summit}}",
+				"Mines_PlayerKilled_Aelin_NotSpouse": "{{i18n:dialogue.killed}}",
+				"Mines_PlayerKilled_Aelin_Spouse": "{{i18n:dialogue.killed.spouse}}",
 			}
 		},
 		
+		// ANIMATION DESCRIPTION STRINGS
 		{
 			"Action": "EditData",
 			"Target": "Strings/animationDescriptions",
@@ -357,6 +363,7 @@
 			}
 		},
 		
+		// CHARACTER STRINGS
 		{
 			"Action": "EditData",
 			"Target": "Strings/Characters",
@@ -370,8 +377,7 @@
 			"Action": "EditData",
 			"Target": "Strings/StringsFromCSFiles",
 			"Entries": {
-				"Aelin_AfterWedding": "{{i18n:dialogue.afterWedding}}",
-				"Aelin_Engaged": "{{i18n:dialogue.pendant}}",
+				"Aelin_AfterWedding": "{{i18n:dialogue.afterWedding}}"
 			}
 		}
 	]
