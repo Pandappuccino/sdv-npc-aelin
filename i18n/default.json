@@ -76,16 +76,16 @@
 	// RAINY DAY DIALOGUE
 	"dialogue.rain.1": "It's raining pretty hard today...$2#$b#Rain makes my body ache. I may turn in early today.$2",
 	"dialogue.rain.2": "This weather is awful, but at least you don't need to water your crops today.#$b#Oh, but... do take care, there could be lighting strikes.",
-	"dialogue.rain.3": "Ah! @, you're soaked!#$b#Here--have a seat and warm up a bit. You can head back out when you feel better.",
+	"dialogue.rain.3": "Ah! @, you're soaked!#$b#Here, have a seat and warm up a bit. You can head back out when you feel better.",
 	
 	// MARRIAGE DIALOGUE
-	"dialogue.afterWedding": "It still doesn't quite feel real... but it is.$4#$b#We're married now...my beloved @ is now my ${husband^wife^spouse}$.$4#$e#I hope that we can enjoy many happy years together.$4",
+	"dialogue.afterWedding": "It still doesn't quite feel real... but it is.$4#$b#We're married now... my beloved @ is now my ${husband^wife^spouse}$.$4#$e#I hope that we can enjoy many happy years together.$4",
 	"dialogue.stardrop": "@, my dearest...#$b#You've been working incredibly hard, haven't you?$#b#But, despite that, you still went out of your way to help someone like me.#$b#It isn't much, compared to what you've done for me... but I want you to have this.$4#$b#May our love endure even the stars fading from the skies.$1",
 	"dialogue.clutter": "Ah... @?$2#$b#I didn't want to say anything, but... the house is becoming a bit... stifling.$2#$e#Do you need me to help clean...?$2",
-	"dialogue.monsters": "AUGH!!#$b#@, what's going on?! Why are there monsters--#$b#*cough cough!* *cough!*$3#$b#H-help!$3",
+	"dialogue.monsters": "AUGH!!#$b#@, what's going on?! Why are there monsters--#$b#*cough cough!* *cough!*$3",
 
 	"dialogue.patio.1": "%Aelin is dutifully tending to his flowers. They look beautiful!",
-	"dialogue.patio.2": "Oh, hello, dearest. Did you need something?",
+	"dialogue.patio.2": "Oh, hello, dearest. Did you need something?$1",
 	"dialogue.patio.3": "Ah, come look! This one is blooming so beautifully...$1$#b#Here, this is for you.[(O)421 (O)591 (O)593 (O)595 (O)597]$4",
 
 	"dialogue.room": "I'm thinking about changing up the decorations in my room...#$e#What do you think about some garden pots?",
@@ -226,7 +226,7 @@
 	// FESTIVAL DIALOGUE
 	"dialogue.eggHunt.win": "That's... a lot of eggs.#$b#I almost feel a bit bad for the chickens...",
 	"dialogue.fair.judging": "The displays all look nice, but...#$b#That one there... the one Pierre made...#$e#Why does it look like crops that @ grew...?",
-	"dialogue.fair.shorts": "Um...@? Why were there a pair of...#$b#N-nevermind.",
+	"dialogue.fair.shorts": "Um... @? Why were there a pair of...#$b#N-nevermind.",
 	"dialogue.fair.skipped": "Is everything alright, @? I thought you were going to enter the contest.$#e#Well... perhaps next year.",
 	"dialogue.fair.lost": "Ah... I thought for certain you would win.#$b#Well, there's always next year, yes?#$e#I wonder if I might be able to help next year...",
 	"dialogue.fair.won": "You won! I knew you would win, @!$1#$e#You've worked so hard this year. You definitely deserved this win!$1",
@@ -248,7 +248,7 @@
 	// GIFTS
 	"gifts.love": "A-are you sure I can have this, @? Thank you so much!",
 	"gifts.like": "Oh, thank you! I really appreciate this.",
-	"gifts.dislike": "Um...I suppose I could hold onto this for you...",
+	"gifts.dislike": "Um... I suppose I could hold onto this for you...",
 	"gifts.hate": "@...? Do... do you hate me...?",
 	"gifts.neutral": "Thank you.",
 	"gifts.birthday": "You remembered my birthday? Thank you.$1",
@@ -260,9 +260,9 @@
 	"gifts.honey": "Oh, this looks amazing...! The quality looks incredible. It almost feels a shame to take it...$1",
 	"gifts.teaSet": "What beautiful craftsmanship! Would you like to have some tea with me to test the quality?$1",
 	"gifts.poppy": "Poppies have fantastic medical use. I can never have too many of them.$1#$b#Now, if I could just grow them myself...$2",
-	"gifts.sweetGemBerry": "I've tried for so long to cultivate one of these... are you sure I can have it?",
+	"gifts.sweetGemBerry": "I've tried for so long to grow one of these... are you sure I can have it?",
 	"gifts.strawberry": "How did you know this was my favorite?$1",
-	"gifts.redMushroom": "Um...@? Are you trying to poison me...?$2",
+	"gifts.redMushroom": "Um... @? Are you trying to poison me...?$2",
 	"gifts.ancientFruit": "This little fruit has endured countless eons, and you managed to help it grow...#$b#Are you truly sure I can have this?",
 	"gifts.greenTea": "Mm, such a soothing scent... I should have brought something to eat with this.$1",
 	"gifts.pineapple": "Urf... mm... $2#$b#I don't think my mouth is supposed to feel like this, is it...?$3",
