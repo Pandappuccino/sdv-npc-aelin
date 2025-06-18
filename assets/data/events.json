@@ -42,7 +42,10 @@
 			"Target": "Data/Events/Town",
 			"Entries": {
 				// EIGHT HEARTS: Enter town between 12PM and 4PM in the fall after fixing the Vault
-				"AelinEightHearts/Time 1200 1600/Season fall/Weather sunny/SawEvent AelinSixHearts/Hn ccVault/Friendship Aelin 2000": ""
+				"AelinEightHearts/Time 1200 1600/Season fall/Weather sunny/SawEvent AelinSixHearts/Hn ccVault/Friendship Aelin 2000": "",
+
+				// PAPER FLOWERS: Enter town between 8AM and 5PM between Fall 24 and Fall 26 after seeing Aelin's Eight Heart event
+				"AelinPaperFlowers/Time 800 1700/Season fall/DayOfMonth 24 25 26/SawEvent AelinEightHearts": "",
 			}
 		},
 		
@@ -52,6 +55,24 @@
 			"Entries": {
 				// FOURTEEN HEARTS: Enter the beach between 8PM and 11PM in the spring, starting from Year 2
 				"AelinFourteenHearts/Time 2000 2300/Season spring/Weather sunny/SawEvent AelinTenHearts/Friendship Aelin 3500/Year 2": ""
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Entries": {
+				// RESELLING CROPS: Enter Pierre's General Store between 9AM and 3PM after seeing Aelin's Eight Heart event, any time after the Stardew Valley Fair in Year 2
+				"AelinResellingCrops/Time 800 1500/DATE_RANGE Fall 17 2/AelinEightHearts": ""
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Mountain",
+			"Entries": {
+				// FORAGE FRIENDS: Enter the Mountain on a sunny day between 6AM and 5PM after seeing Aelin's Eight Heart event and having at least 4 hearts with Linus
+				"AelinForageFriends/Time 600 1700/Weather sunny/Friendship Linus 1000/AelinEightHearts": ""
 			}
 		},
 		
@@ -69,7 +90,8 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Town",
 			"Entries": {
-				"AelinEightHearts": null
+				"AelinEightHearts": null,
+				"AelinPaperFlowers": null,
 			},
 			"When": {
 				"HasFlag": "jojaMember"
@@ -81,6 +103,28 @@
 			"Target": "Data/Events/Beach",
 			"Entries": {
 				"AelinFourteenHearts": null
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Entries": {
+				"AelinResellingCrops": null
+			},
+			"When": {
+				"HasFlag": "jojaMember"
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Mountain",
+			"Entries": {
+				"AelinForageFriends": null
 			},
 			"When": {
 				"HasFlag": "jojaMember"
