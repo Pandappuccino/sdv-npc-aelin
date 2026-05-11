@@ -21,24 +21,27 @@ There are some configuration options that you can use to make it easier to make 
 - **Seasonal Designs:** By default, Aelin has seasonal designs that change with each season. However, you can disable this if you prefer.
 - **Default Design:** If Seasonal Designs has been disabled, you can define which appearance Aelin uses instead. By default, he will use his Summer sprites.
 - **Alternative Gift Tastes:** By default, Aelin has *very* specific tastes. This toggle loads a different set, making it slightly easier to befriend him.
+- **Move Into Apartment:** If **Pelican Valley Loft** is installed, the player can toggle whether or not Aelin moves into an apartment to be closer to Pelican Town. By default, he does not move in.
 
 ## Mod Compatibility
 I've been working hard to make sure this mod is compatible with various mods. For the most part, the biggest compatibility options are gift tastes: I actually went through the mods I use to add specific tastes that match his default tastes. The mod has built-in compatibility for the following mods:
-- **Stardew Valley Expanded:** Because of the way the Secret Woods and Cindersap Forest maps get changed, there is a patch built-in to change the location of the Hidden Grove. There are also built-in gift tastes.
-- **Mobile Phone Continued:** For immersion and lore reasons, Aelin does *not* have a phone until a certain point in his relationship events, and so he cannot be called or call the player.
+- **[Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753):** Because of the way the Secret Woods and Cindersap Forest maps get changed, there is a patch built-in to change the location of the Hidden Grove. There are also built-in gift tastes.
+- **[Mobile Phone](https://www.nexusmods.com/stardewvalley/mods/6523):** For immersion and lore reasons, Aelin does *not* have a phone until a certain point in his relationship events, and so he cannot be called or call the player.
+- **[Pelican Valley Loft](https://www.nexusmods.com/stardewvalley/mods/30295):** After a certain point, if enabled in the config, Aelin can move into an apartment to be able to visit Pelican Town!
 
 ## NPC Interactions
 Aelin has built-in interactions with some other custom NPCs I like to use! If you have these NPCs installed, there are additional patches for events and dialogue:
-- **Eugene:** Adds two events, custom dialogue, a quest line, and an extra item and recipe, as well as adjusts one of the lines in Aelin's gift dialogue.
-- **Romanceable Rasmodius Redux Revamped:** Adds an event, custom dialogue, and a quest line, as well as adjusts Aelin's schedule after a certain point in his events.
-- **Lucikiel:** Adds an event and custom dialogue.
+- **[Eugene](https://www.nexusmods.com/stardewvalley/mods/9222):** Adds two events, custom dialogue, a quest line, and an extra item and recipe, as well as adjusts one of the lines in Aelin's gift dialogue.
+- **[Romanceable Rasmodius Redux Revamped](https://www.nexusmods.com/stardewvalley/mods/16893):** Adds an event, custom dialogue, and a quest line, as well as adjusts Aelin's schedule after a certain point in his events.
+- **[Lucikiel](https://www.nexusmods.com/stardewvalley/mods/6307):** Adds an event and custom dialogue.
 
 ## Custom Gift Tastes
 By default, Aelin has custom tastes for the following mods:
-- **Blue Eggs and Golden Mayo**
-- **Wild Eggs**
-- **Stardew Valley Expanded**
-- **Bees Plus**
+- **[Blue Eggs and Golden Mayo](https://www.nexusmods.com/stardewvalley/mods/20266)**
+- **[Foraging Wild Eggs](https://www.nexusmods.com/stardewvalley/mods/20222)**
+- **[Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753)**
+- **[Bees Plus](https://www.nexusmods.com/stardewvalley/mods/30597)**
+- **[Alchemistry](https://www.nexusmods.com/stardewvalley/mods/22743)**
 
 ## Meeting Aelin
 There are a few requirements to be able to meet Aelin for the first time. The player won't be able to cheese things early using noclip or spawning items, to ensure things don't go out of order:
