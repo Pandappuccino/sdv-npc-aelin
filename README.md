@@ -70,6 +70,8 @@ Below is a comprehensive list of everything he likes and dislikes in the vanilla
 - **Eugene Event 1:** Enter Eugene's house between 10Am and 4PM after seeing Aelin's four-heart event.
 - **Eugene Event 2:** Complete the questline "A Secret Gift"
 - **Farewell Event:** Enter the Hidden Grove on a sunny day, between 6AM and 4PM, after reaching at least two hearts of friendship with Eugene and buying a Joja membership.
+- **Rasmodius Event:** Enter the Wizard's Tower on a Fall day, between 4PM and 10PM, after seeing Aelin's eight-heart event.
+- **Lucikiel Event:** Enter the Hidden Grove between 6PM and 11PM after reaching at least six hearts of friendship with both Aelin and Lucikiel.
 
 ## New Items
 There are new cooking items to make and profit off of, obtained by befriending Aelin and viewing his events, as well as an extra recipe that can only be made if Eugene is in the game world and the questline "A Secret Gift" is completed:
