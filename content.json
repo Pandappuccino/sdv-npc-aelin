@@ -25,7 +25,7 @@
 		"AlternateStrawberryTeaRecipe": {
 			"AllowValues": "true, false",
 			"Default": false,
-			"Description": "Enables obtaining Aelin's Strawberry Tea recipe even if Eugene is not present in the game world.",
+			"Description": "Enables obtaining Aelin's Strawberry Tea recipe through a new event if Eugene is present in the game world.",
 			"Section": "Gameplay"
 		}
 	},
