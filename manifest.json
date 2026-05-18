@@ -1,0 +1,18 @@
+{
+  "Name": "Aelin, the Last Nature Spirit (Custom NPC)",
+  "Author": "Pandappuccino",
+  "Version": "0.1.0",
+  "Description": "Adds a new romanceable NPC to Stardew Valley!",
+  "UniqueID": "Pandappuccino.NPC_Aelin",
+  "UpdateKeys": ["Nexus:32819", "Github:Pandappuccino/sdv-npc-aelin"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+   "Dependencies": [
+    {
+      "UniqueID": "spacechase0.JsonAssets",
+      "IsRequired": true,
+   },
+   ],
+  
+}
