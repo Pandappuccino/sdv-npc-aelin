@@ -20,6 +20,13 @@
 			"Default": false,
 			"Description": "Adjusts Aelin's gift tastes towards eggs, milk, and foods or artisan goods containing them.",
 			"Section": "Gameplay"
+		},
+
+		"AlternateStrawberryTeaRecipe": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Enables obtaining Aelin's Strawberry Tea recipe even if Eugene is not present in the game world.",
+			"Section": "Gameplay"
 		}
 	},
     "Changes":
@@ -125,6 +132,18 @@
 			}
 		},
 
+		{
+			"LogName": "Load new items and recipes",
+			"Action": "Include",
+			"FromFile": "data/items.json",
+		},
+
+		{
+			"LogName": "Load Aelin mail",
+			"Action": "Include",
+			"FromFile": "data/mail.json"
+		}
+
 		// LOAD THESE ONLY ON JOJA ROUTE
 		{
 			"LogName": "Load Aelin alt disposition file (Joja Route)",
@@ -139,6 +158,15 @@
 			"LogName": "Load Aelin alt schedule (Joja Route)",
 			"Action": "Include",
 			"FromFile": "data/schedule_joja.json",
+			"When": {
+				"HasFlag": "JojaMember"
+			}
+		},
+
+		{
+			"LogName": "Load recipe letters from Harvey",
+			"Action": "Include",
+			"FromFile": "data/mail_joja.json",
 			"When": {
 				"HasFlag": "JojaMember"
 			}
