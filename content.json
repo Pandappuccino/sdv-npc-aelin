@@ -39,6 +39,24 @@
 		},
 
 		{
+			"LogName": "Load custom areas",
+			"Action": "Include",
+			"FromFile": "data/maps.json"
+		},
+
+		{
+			"LogName": "Add warps to Hidden Grove",
+			"Action": "Include",
+			"FromFile": "data/warps.json"
+		},
+
+		{
+			"LogName": "Load event CGs",
+			"Action": "Include",
+			"FromFile": "data/cg.json"
+		},
+
+		{
 			"LogName": "Load Aelin disposition file",
 			"Action": "Include",
 			"FromFile": "data/dispos.json"
