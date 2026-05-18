@@ -1,0 +1,7 @@
+{
+    "Format": "2.9.0", //if you have a 1.5 NPC, make sure this is updated once you have the NPC converted, or certain things like map patches will break
+    "Changes":
+	  [
+
+    ]
+}
