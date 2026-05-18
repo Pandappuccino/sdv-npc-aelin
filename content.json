@@ -1,7 +1,147 @@
 {
-    "Format": "2.9.0", //if you have a 1.5 NPC, make sure this is updated once you have the NPC converted, or certain things like map patches will break
-    "Changes":
-	  [
+    "Format": "2.9.0",
+	"ConfigSchema": {
+		"SeasonalDesigns" {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Enables Aelin's appearance to change based on the seasons.",
+			"Section": "Aesthetics"
+		},
 
+		"DefaultDesign" {
+			"AllowValues": "Spring, Summer, Autumn, Winter",
+			"Default": "Summer",
+			"Description": "If not using seasonal designs, defines Aelin's appearance.",
+			"Section": "Aesthetics"
+		},
+
+		"AlternateGiftTastes" {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Adjusts Aelin's gift tastes towards eggs, milk, and foods or artisan goods containing them.",
+			"Section": "Gameplay"
+		}
+	},
+    "Changes":
+	[
+		{
+			"LogName": "Blank JSON Load (Initialize Mod)",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/{{ModId}}_Aelin, Characters/schedules/{{ModId}}_Aelin, Strings/schedules/{{ModId}}_Aelin",
+			"FromFile": "data/blank.json"
+		},
+
+		{
+			"LogName": "Load Aelin disposition file",
+			"Action": "Include",
+			"FromFile": "data/dispos.json"
+		},
+
+		{
+			"LogName": "Load Aelin seasonal portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Aelin",
+			"FromFile": "assets/portraits/Aelin_{{Season}}.png",
+			"When": {
+				"Seasonal Portraits": true
+			}
+		},
+
+		{
+			"LogName": "Load Aelin non-seasonal portraits",
+			"Action": "Load",
+			"Target": "Portraits/{{ModId}}_Aelin",
+			"FromFile": "assets/portraits/Aelin_{{DefaultDesign}}.png",
+			"When": {
+				"Seasonal Portraits": false
+			}
+		},
+
+		{
+			"LogName": "Load Aelin seasonal sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Aelin",
+			"FromFile": "assets/sprites/Aelin_{{Season}}.png",
+			"When": {
+				"Seasonal Portraits": true
+			}
+		},
+
+		{
+			"LogName": "Load Aelin non-seasonal sprites",
+			"Action": "Load",
+			"Target": "Characters/{{ModId}}_Aelin",
+			"FromFile": "assets/sprites/Aelin_{{DefaultDesign}}.png",
+			"When": {
+				"Seasonal Portraits": false
+			}
+		},
+
+		{
+			"LogName": "Load Aelin dialogue",
+			"Action": "Include",
+			"FromFile": "data/dialogue.json"
+		},
+
+		{
+			"LogName": "Load Aelin schedule",
+			"Action": "Include",
+			"FromFile": "data/schedule.json"
+		},
+
+		{
+			"LogName": "Load Aelin schedule post-events",
+			"Action": "Include",
+			"FromFile": "data/schedule_postevent.json",
+			"When": {
+				"HasSeenEvent": "{{ModId}}_AelinEightHearts"
+			}
+		},
+
+		{
+			"LogName": "Load Aelin default gift tastes",
+			"Action": "Include",
+			"FromFile": "data/gifts.json",
+			"When": {
+				"AlternateGiftTastes": false
+			}
+		},
+
+		{
+			"LogName": "Load Aelin alternate gift tastes",
+			"Action": "Include",
+			"FromFile": "data/gifts_alternate.json",
+			"When": {
+				"AlternateGiftTastes": true
+			}
+		},
+
+		{
+			"LogName": "Load Aelin into festivals",
+			"Action": "Include",
+			"FromFile": "data/festivals.json",
+			"When": {
+				"HasSeenEvent": "{{ModId}}_AelinEightHearts"
+			}
+		},
+
+		// LOAD THESE ONLY ON JOJA ROUTE
+		{
+			"LogName": "Load Aelin alt disposition file (Joja Route)",
+			"Action": "Include",
+			"FromFile": "data/dispos_joja.json",
+			"When": {
+				"HasFlag": "JojaMember"
+			}
+		},
+
+		{
+			"LogName": "Load Aelin alt schedule (Joja Route)",
+			"Action": "Include",
+			"FromFile": "data/schedule_joja.json",
+			"When": {
+				"HasFlag": "JojaMember"
+			}
+		}
     ]
 }
