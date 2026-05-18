@@ -97,6 +97,12 @@
 		},
 
 		{
+			"LogName": "Load Aelin events",
+			"Action": "Include",
+			"FromFile": "data/events.json"
+		},
+
+		{
 			"LogName": "Load Aelin schedule post-events",
 			"Action": "Include",
 			"FromFile": "data/schedule_postevent.json",
@@ -158,6 +164,15 @@
 			"LogName": "Load Aelin alt schedule (Joja Route)",
 			"Action": "Include",
 			"FromFile": "data/schedule_joja.json",
+			"When": {
+				"HasFlag": "JojaMember"
+			}
+		},
+
+		{
+			"LogName": "Load Aelin alt events (Joja Route)",
+			"Action": "Include",
+			"FromFile": "data/events_joja.json",
 			"When": {
 				"HasFlag": "JojaMember"
 			}
