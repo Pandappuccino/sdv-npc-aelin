@@ -20,7 +20,8 @@ Download the mod either on [Nexus Mods](https://nexusmods.com/stardewvalley/mods
 There are some configuration options that you can use to make it easier to make friends with Aelin, change his appearance, and more. The configuration options available are as follows:
 - **Seasonal Designs:** By default, Aelin has seasonal designs that change with each season. However, you can disable this if you prefer.
 - **Default Design:** If Seasonal Designs has been disabled, you can define which appearance Aelin uses instead. By default, he will use his Summer sprites.
-- **Alternative Gift Tastes:** By default, Aelin has *very* specific tastes. This toggle loads a different set, making it slightly easier to befriend him.
+- **Alternate Gift Tastes:** By default, Aelin has *very* specific tastes. This toggle loads a different set, making it slightly easier to befriend him.
+- **Alternate Strawberry Tea Recipe:** This toggle adds an alternative method of obtaining the "Strawberry Tea" recipe if **[Eugene](https://www.nexusmods.com/stardewvalley/mods/9222)** is present in the game world.
 
 ## Mod Compatibility
 I've been working hard to make sure this mod is compatible with various mods. For the most part, the biggest compatibility options are gift tastes: I actually went through the mods I use to add specific tastes that match his default tastes. The mod has built-in compatibility for the following mods:
@@ -29,7 +30,7 @@ I've been working hard to make sure this mod is compatible with various mods. Fo
 
 ## NPC Interactions
 Aelin has built-in interactions with some other custom NPCs I like to use! If you have these NPCs installed, there are additional patches for events and dialogue:
-- **[Eugene](https://www.nexusmods.com/stardewvalley/mods/9222):** Adds two events, custom dialogue, a quest line, and an extra item and recipe, as well as adjusts one of the lines in Aelin's gift dialogue.
+- **[Eugene](https://www.nexusmods.com/stardewvalley/mods/9222):** Adds two events and custom dialogue, as well as adjusts one of the lines in Aelin's gift dialogue and offers an alternative method of obtaining a recipe.
 - **[Romanceable Rasmodius Redux Revamped](https://www.nexusmods.com/stardewvalley/mods/16893):** Adds an event, custom dialogue, and a quest line, as well as adjusts Aelin's schedule after a certain point in his events.
 - **[Lucikiel](https://www.nexusmods.com/stardewvalley/mods/6307):** Adds an event and custom dialogue.
 
@@ -69,7 +70,7 @@ Below is a comprehensive list of everything he likes and dislikes in the vanilla
 - **Ten Hearts:** Enter the Hidden Grove on a Winter day, between 9AM and 9PM.
 - **Fourteen Hearts:** Enter the Beach on a sunny Spring day, between 8PM and 11PM, starting from Year 2.
 - **Eugene Event 1:** Enter Eugene's house between 10Am and 4PM after seeing Aelin's four-heart event.
-- **Eugene Event 2:** Complete the questline "A Secret Gift"
+- **Eugene Event 2:** Complete the questline "A Secret Gift" (if "Alternate Strawberry Tea Recipe" is enabled)
 - **Farewell Event:** Enter the Hidden Grove on a sunny day, between 6AM and 4PM, after reaching at least two hearts of friendship with Eugene and buying a Joja membership.
 - **Rasmodius Event:** Enter the Wizard's Tower on a Fall day, between 4PM and 10PM, after seeing Aelin's eight-heart event.
 - **Lucikiel Event:** Enter the Hidden Grove between 6PM and 11PM after reaching at least six hearts of friendship with both Aelin and Lucikiel.
@@ -80,10 +81,15 @@ There are new cooking items to make and profit off of, obtained by befriending A
 - **Energizing Tonic (Two Hearts):** Requires 2 Kale, 1 Carrot, and 1 Honey. Restores a decent amount of HP and Energy, and grants +2 Speed for 2 hours.
 - **Sunshine Tonic (Four Hearts):** Requires 3 Strawberry, 3 Summer Spangle, and 1 Honey. Restores a modest amount of HP and Energy, and grants +3 Farming and +3 Foraging for 1 hour.
 - **Ancient Tonic (Eight Hearts):** Requires 3 Ancient Fruit, 3 Sweet Gem Berry, 3 Mystic Syrup, and 3 Honey. Fully restores HP and Energy, and grants +3 to all stats for the rest of the day.
-- **Strawberry Tea (Complete "A Secret Gift"):** Requires 3 Tea Leaves, 1 Strawberry, and 1 Honey. A universally-liked gift, loved by Aelin, Evelyn, Leah, Sandy, and Emily.
+- **Strawberry Tea (Special Requirements):** Requires 3 Tea Leaves, 1 Strawberry, and 1 Honey. A universally-liked gift, loved by Aelin, Evelyn, Leah, Sandy, and Emily.
 The four "Tonic" items are a universal dislike, with a few exceptions: Vincent, Jas, and Leo hate them, while Alex, George, Robin, and Clint like Pain Tonic.
 
-If the player buys a Joja membership, thus removing Aelin from the game, the "Tonic" recipes will be available to buy from Harvey after purchasing certain developments, and the Strawberry Tea recipe will be delivered via mail once the player reaches six hearts of friendship with Eugene.
+If the player buys a Joja membership, thus removing Aelin from the game, the "Tonic" recipes will be available to buy from Harvey after purchasing certain developments.
+
+The Strawberry Tea recipe can be earned in a number of different ways:
+- By default, Aelin will ask for Strawberries early into Summer, and will gift the player the recipe if they bring him the strawberries.
+- If the player buys a Joja membership, Evelyn will send the recipe to the player via mail during the summer.
+- If "Alternate Strawberry Tea Recipe" is enabled, Eugene will ask the player to help him prepare some tea via a four-step quest line called "A Secret Gift", then give the player the recipe afterwards.
 
 ## Contact Me
 Is there something not quite right with the mod? Want me to make a compatibility patch? Contact me either through the posts tab on Nexus Mods, or through my social media on [Bluesky](https://bsky.app/profile/pandappuccino.itch.io) or [Tumblr](https://pandappuccino.tumblr.com)!
