@@ -87,9 +87,9 @@ The four "Tonic" items are a universal dislike, with a few exceptions: Vincent, 
 If the player buys a Joja membership, thus removing Aelin from the game, the "Tonic" recipes will be available to buy from Harvey after purchasing certain developments.
 
 The Strawberry Tea recipe can be earned in a number of different ways:
-- By default, Aelin will ask for Strawberries early into Summer, and will gift the player the recipe if they bring him the strawberries.
-- If the player buys a Joja membership, Evelyn will send the recipe to the player via mail during the summer.
+- By default, Aelin will ask for Strawberries early into Summer, and will gift the player the recipe via mail if they bring him the strawberries.
 - If "Alternate Strawberry Tea Recipe" is enabled, Eugene will ask the player to help him prepare some tea via a four-step quest line called "A Secret Gift", then give the player the recipe afterwards.
+- If the player buys a Joja membership, Evelyn will send the recipe to the player via mail during the summer, regardless of if "Alternate Strawberry Tea Recipe" is enabled.
 
 ## Contact Me
 Is there something not quite right with the mod? Want me to make a compatibility patch? Contact me either through the posts tab on Nexus Mods, or through my social media on [Bluesky](https://bsky.app/profile/pandappuccino.itch.io) or [Tumblr](https://pandappuccino.tumblr.com)!
